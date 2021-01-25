@@ -1,0 +1,55 @@
+.OverviewStats {
+  display: block;
+}
+
+.OverviewStats .majorStatCard {
+  font-size: 20px;
+  border: 0px;
+}
+
+.OverviewStats .minorStatCard {
+  font-size: 16px;
+  border: 0px;
+}
+
+.OverviewStats .statsCard {
+  min-height: 25vh;
+  border-radius: 5px;
+  border: 0px;
+}
+
+.OverviewStats .firstActCard {
+  border: 1px solid #2addf5;
+  border-radius: 5px;
+}
+
+.OverviewStats .firstActCard .FACtitleSpan {
+  font-size: 20px;
+}
+
+.OverviewStats .firstActCard .FACSpecifics {
+  border: 0px;
+  text-align: left;
+}
+
+.OverviewStats .firstActCard .FACInfoSpan {
+  float: right;
+  font-size: 12px;
+}
+
+.OverviewStats .ant-divider-horizontal.ant-divider-with-text {
+}
+
+.OverviewStats .ant-progress-circle .ant-progress-text {
+  font-size: 12px;
+}
+
+.OverviewStats .statsCard .statsCardSpan {
+  font-size: 20px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.OverviewStats .emptySpan {
+  margin-left: 20px;
+}

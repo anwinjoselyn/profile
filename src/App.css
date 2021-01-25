@@ -1,0 +1,210 @@
+@import "~antd/dist/antd.css";
+
+.OuterContainer {
+  min-height: 100vh;
+}
+
+.PBYellow {
+  color: #fff700;
+}
+
+.PBYellowBG {
+  background: #fff700;
+}
+
+.PBRed {
+  color: #fa4a09;
+}
+
+.PBRedBG {
+  background: #fa4a09;
+}
+
+.PBCyan {
+  color: #19dfd1;
+}
+
+.PBCyanBG {
+  background: #19dfd1;
+}
+
+.PBBlack {
+  color: #001b21;
+}
+
+.PBBlackBG {
+  background: #001b21;
+}
+
+.PBDarkGreen {
+  color: #014744;
+}
+
+.PBDarkGreenBG {
+  background: #014744;
+}
+
+.PBLight {
+  color: #fffff7;
+}
+
+.PBLightBG {
+  background: #fffff7;
+}
+
+.PBLightGreen {
+  color: #00ff44;
+}
+
+.PBLightGreenBG {
+  background: #00ff44;
+}
+
+.MainSidebarDC,
+.MainSidebarD {
+  background: #001b21;
+}
+
+.MainSidebarC,
+.MainSidebar {
+  background: #fffff7;
+}
+
+.MainMenu {
+  background: #fffff7;
+  border-right: 0px !important;
+}
+
+.MainMenuD {
+  background: #001b21 !important;
+}
+
+.MainSidebarD .ant-layout-sider-trigger,
+.MainSidebarDC .ant-layout-sider-trigger {
+  background: #001b21;
+}
+
+.MainSidebar .ant-layout-sider-trigger,
+.MainSidebarC .ant-layout-sider-trigger {
+  background: #fffff7;
+}
+
+.MainMenuItem,
+.MainMenuItemD {
+  margin-bottom: 2vw !important;
+  font-size: 1.15em;
+}
+
+.MainMenuItemD {
+  color: #fbfaeb !important;
+}
+
+.MainMenuItem {
+  color: #001b21 !important;
+}
+
+.MainMenuItemDS {
+  color: #fbfaeb !important;
+  margin-bottom: 2vw !important;
+  font-size: 1.15em;
+  background: #fff !important;
+}
+
+.MainMenuItemS {
+  background: #fff !important;
+  margin-bottom: 2vw !important;
+  font-size: 1.15em;
+}
+
+.MainMenuItemS span {
+  color: #fa4a09 !important;
+}
+
+.MainMenuItemDS span {
+  color: #fa4a09 !important;
+}
+
+.MainMenuItemD.ant-menu-item-selected {
+  background: #19dfd1 !important;
+  color: #001b21 !important;
+}
+
+.MainMenuItemD.ant-menu-item-selected span {
+  color: #001b21 !important;
+}
+
+.MainMenuItem.ant-menu-item-selected {
+  background: #fff !important;
+  color: #001b21 !important;
+}
+
+.MainMenuItem.ant-menu-item-selected span {
+  color: #001b21 !important;
+}
+
+.ThemeDiv {
+  text-align: center;
+  color: #001b21;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.ThemeDivD {
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  font-size: 2em;
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .ThemeDiv {
+    font-size: 2em;
+    padding: 2em;
+  }
+
+  .ThemeDivD {
+    font-size: 2em;
+    padding: 2em;
+  }
+
+  .InnerContainer {
+    background: #fff !important;
+  }
+
+  .ContentContainer {
+    background: #fff !important;
+  }
+
+  .InnerContainerD {
+    background: #fff;
+  }
+
+  .ContentContainerD {
+    background: #fff;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 320px) {
+  .ThemeDiv {
+    font-size: 14px;
+    padding: 1em;
+  }
+
+  .ThemeDivD {
+    font-size: 14px;
+    padding: 1em;
+  }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .ThemeDiv {
+    font-size: 1.25em;
+  }
+
+  .ThemeDivD {
+    font-size: 1.25em;
+  }
+}

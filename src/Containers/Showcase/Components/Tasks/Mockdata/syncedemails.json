@@ -1,0 +1,520 @@
+[
+  {
+    "id": 2,
+    "tenantId": 1,
+    "userId": 2,
+    "fromAddress": {
+      "name": "Anwin Joselyn",
+      "email": "anwin@myplaybook.in"
+    },
+    "toAddress": {
+      "data": [
+        {
+          "name": "",
+          "email": "anwin@theplaybook.rocks"
+        },
+        {
+          "name": "Anwin Joselyn",
+          "email": "anwinj@gmail.com"
+        }
+      ]
+    },
+    "ccAddress": {
+      "data": []
+    },
+    "bccAddress": {
+      "data": [
+        {
+          "name": "",
+          "email": "2a7cd750-7674-11ea-8c54-b5e5a3cd8ef4+deal+drift@parse.theplaybook.rocks"
+        }
+      ]
+    },
+    "subject": "Re: JSON parse",
+    "timeStamp": "2020-04-06T13:02:04.352Z",
+    "headers": {
+      "headers": "Received: by mx0037p1mdw1.sendgrid.net with SMTP id es6X16bN6W Mon, 06 Apr 2020 13:02:03 +0000 (UTC)\nReceived: from mail-ua1-f65.google.com (mail-ua1-f65.google.com [209.85.222.65]) by mx0037p1mdw1.sendgrid.net (Postfix) with ESMTPS id 87773605963 for <2a7cd750-7674-11ea-8c54-b5e5a3cd8ef4+deal+drift@parse.theplaybook.rocks>; Mon,  6 Apr 2020 13:01:27 +0000 (UTC)\nReceived: by mail-ua1-f65.google.com with SMTP id a10so5429929uad.7 for <2a7cd750-7674-11ea-8c54-b5e5a3cd8ef4+deal+drift@parse.theplaybook.rocks>; Mon, 06 Apr 2020 06:01:27 -0700 (PDT)\nDKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=myplaybook-in.20150623.gappssmtp.com; s=20150623; h=mime-version:references:in-reply-to:from:date:message-id:subject:to; bh=nO0DLUaAQiqc8hvXI+8/jLynGRyloA4OU3vIv2JsCyY=; b=p3gfXWXxAjBda4WFGTRXUn6C64UZbE+s3GhAhgDgG6cCsXzE3jT0ECbiAU5mMHu1Uy FDwbj8B2oZUWKL6ECRrUec2CC1fQt3O0WIAGyNtB87rK0BCWJSq/s5Vmb/0dPQzQ51/k B5aPzV4azFsLiQdBJs0AxdaW9u/UZJ8ihZe3KQk9iUOQEsUJTpxsQ7xOzbZsV9E+4h1q dBixmIbkzlQ8D0UVjM09rt1BJIeZnsUEMCWgGGJz84xLZ+p+OZrvG5n0+HS7eveZ9Zp7 tOe+b23DHCrLBGVaH4T44tXJOst/2zgYzG+0P2q/4tFVCtbtFcMVkMU1v07j9+y7QKtk BhdA==\nX-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:mime-version:references:in-reply-to:from:date :message-id:subject:to; bh=nO0DLUaAQiqc8hvXI+8/jLynGRyloA4OU3vIv2JsCyY=; b=KadaYWLkP4724z4PQO+mOc+jxOcpoPAi8kd6sI5CGTZbu+PjqGpqViRKGwXX4C8o44 0zu2T6OH9JnzBjDHsddi8jycbQ0TPUDKfO5e/nWsAwl9fxYYhh9jza/hDP29y1RTF5sk snQ9P/tevIpMOyTcWZ2XdDmj++782kBiq1ySVxVsTXqg8ZBPYfQGbkZDcw/eMDnIHCCn 95oZoisHBaH2ZfI3yNBjqVPJOmxSjgnwqrlyVHYXh43Rd0J4VTL8IipYTSnjwKbE6ZOu wQncMJfplRirrKNtQNVy16ZGDU96W6ouxpszah+963Utbu+RBbfnlb93q7JzBkdasci3 Gv6A==\nX-Gm-Message-State: AGi0PuYIXyCG3lg13xPpxiKrZrHRqWgrhIgtbJExnYN65KzWHWb0HHik 83NYIDVmdn8/FWfHkD1JQkVVUR9nIGWLYndMtZ2g9g==\nX-Google-Smtp-Source: APiQypJO9ynNzs1LoiuyTfGEuKCARlfNRzpxIb8X4ci0g+Jo+PwLphxF6DLkhHeFeTt2A9ItQo3/Pqm6Kl2At5DtqeM=\nX-Received: by 2002:ab0:250c:: with SMTP id j12mr14952813uan.113.1586178086916; Mon, 06 Apr 2020 06:01:26 -0700 (PDT)\nMIME-Version: 1.0\nReferences: <CAFagEoHzWtDwokyPwVX2KPWmemO3-mmA85D8BFh756tNWP7jBA@mail.gmail.com> <CAFagEoGLc5GQUcBb5+BWXE98eXZw1X6Cmj_Y-2gBHJ_sPk1-mw@mail.gmail.com> <CAFagEoH3UUEvgwH=m_KFbXCV5s3zCCuUz-E=UpoNZH-sWW-+Gw@mail.gmail.com> <CAFagEoEWaC3DoEV6hpQQXT2N4QLBLk5o98eg1ZsvmUYKEXFKxQ@mail.gmail.com> <CAFagEoG2oNT5HQ9MHrxp0jEbHjyUoLf3Pv=WtYSEw-jWFk5voQ@mail.gmail.com> <CAFagEoE7-D6PAYXfdZoQ=93AWR+sTGyrjYenimK5y47O-NADKA@mail.gmail.com> <CAFagEoGn=T5686srkppQx81K4MrBWARFWMdFZekUSbNoX9tj0Q@mail.gmail.com> <CAFagEoH1JvsKzZi4NmKQABLgoYyFq3o7gLfDL92WjbjQc=anaw@mail.gmail.com> <CAFagEoEzgXqDdEL6xg-PrgA2YJscvyAJtx9pEaP9VWTFBwhoTA@mail.gmail.com>\nIn-Reply-To: <CAFagEoEzgXqDdEL6xg-PrgA2YJscvyAJtx9pEaP9VWTFBwhoTA@mail.gmail.com>\nFrom: Anwin Joselyn <anwin@myplaybook.in>\nDate: Mon, 6 Apr 2020 18:31:15 +0530\nMessage-ID: <CAFagEoE_HW6E=qaRaEjEHoDE_JT9XnQnC1DVPvE7G1OoT7Of3g@mail.gmail.com>\nSubject: Re: JSON parse\nTo: anwin@theplaybook.rocks, Anwin Joselyn <anwinj@gmail.com>\nContent-Type: multipart/alternative; boundary=\"0000000000006be73905a29edd5a\"\n"
+    },
+    "replyTo": {
+      "name": "Anwin Joselyn",
+      "email": "anwin@myplaybook.in"
+    },
+    "dealId": 5,
+    "rDealId": null,
+    "customerId": null,
+    "messageId": "",
+    "attachments": {
+      "data": []
+    },
+    "content": {
+      "data": [
+        {
+          "type": "text/html",
+          "value": "<div dir=\"ltr\">And one more.</div><br><div class=\"gmail_quote\"><div dir=\"ltr\" class=\"gmail_attr\">On Mon, Apr 6, 2020 at 5:59 PM Anwin Joselyn &lt;<a href=\"mailto:anwin@myplaybook.in\">anwin@myplaybook.in</a>&gt; wrote:<br></div><blockquote class=\"gmail_quote\" style=\"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex\"><div dir=\"ltr\">fixing some more errors.</div><br><div class=\"gmail_quote\"><div dir=\"ltr\" class=\"gmail_attr\">On Mon, Apr 6, 2020 at 5:48 PM Anwin Joselyn &lt;<a href=\"mailto:anwin@myplaybook.in\" target=\"_blank\">anwin@myplaybook.in</a>&gt; wrote:<br></div><blockquote class=\"gmail_quote\" style=\"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex\"><div dir=\"ltr\">Made changes in code to handle multiple addresses in to, cc, bcc fields.</div><br><div class=\"gmail_quote\"><div dir=\"ltr\" class=\"gmail_attr\">On Mon, Apr 6, 2020 at 4:48 PM Anwin Joselyn &lt;<a href=\"mailto:anwin@myplaybook.in\" target=\"_blank\">anwin@myplaybook.in</a>&gt; wrote:<br></div><blockquote class=\"gmail_quote\" style=\"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex\"><div dir=\"ltr\">fixing errors</div><br><div class=\"gmail_quote\"><div dir=\"ltr\" class=\"gmail_attr\">On Mon, Apr 6, 2020 at 4:41 PM Anwin Joselyn &lt;<a href=\"mailto:anwin@myplaybook.in\" target=\"_blank\">anwin@myplaybook.in</a>&gt; wrote:<br></div><blockquote class=\"gmail_quote\" style=\"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex\"><div dir=\"ltr\">Forgot to deploy updates. Trying again.</div><br><div class=\"gmail_quote\"><div dir=\"ltr\" class=\"gmail_attr\">On Mon, Apr 6, 2020 at 4:39 PM Anwin Joselyn &lt;<a href=\"mailto:anwin@myplaybook.in\" target=\"_blank\">anwin@myplaybook.in</a>&gt; wrote:<br></div><blockquote class=\"gmail_quote\" style=\"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex\"><div dir=\"ltr\">Trying to parse multiple to address fields.<div><br></div></div><br><div class=\"gmail_quote\"><div dir=\"ltr\" class=\"gmail_attr\">On Mon, Apr 6, 2020 at 4:15 PM Anwin Joselyn &lt;<a href=\"mailto:anwin@myplaybook.in\" target=\"_blank\">anwin@myplaybook.in</a>&gt; wrote:<br></div><blockquote class=\"gmail_quote\" style=\"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex\"><div dir=\"ltr\">Testing how data comes into API if there are multiple email addresses.</div><br><div class=\"gmail_quote\"><div dir=\"ltr\" class=\"gmail_attr\">On Sun, Apr 5, 2020 at 8:34 PM Anwin Joselyn &lt;<a href=\"mailto:anwin@myplaybook.in\" target=\"_blank\">anwin@myplaybook.in</a>&gt; wrote:<br></div><blockquote class=\"gmail_quote\" style=\"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex\"><div dir=\"ltr\">Converting headers to JSON and parsing. Trying to get more info from the email.</div><br><div class=\"gmail_quote\"><div dir=\"ltr\" class=\"gmail_attr\">On Sun, Apr 5, 2020 at 5:25 PM Anwin Joselyn &lt;<a href=\"mailto:anwin@myplaybook.in\" target=\"_blank\">anwin@myplaybook.in</a>&gt; wrote:<br></div><blockquote class=\"gmail_quote\" style=\"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex\"><div dir=\"ltr\">Some changes in functions</div><br><div class=\"gmail_quote\"><div dir=\"ltr\" class=\"gmail_attr\">On Sun, Apr 5, 2020 at 5:11 PM Anwin Joselyn &lt;<a href=\"mailto:anwin@myplaybook.in\" target=\"_blank\">anwin@myplaybook.in</a>&gt; wrote:<br></div><blockquote class=\"gmail_quote\" style=\"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex\"><div dir=\"ltr\">Seems to be working. Was able to get bcc email through JSON parse of envelope data. Now checking other functions.</div>\n</blockquote></div>\n</blockquote></div>\n</blockquote></div>\n</blockquote></div>\n</blockquote></div>\n</blockquote></div>\n</blockquote></div>\n</blockquote></div>\n</blockquote></div>\n"
+        },
+        {
+          "type": "text/plain",
+          "value": "And one more.\r\n\r\nOn Mon, Apr 6, 2020 at 5:59 PM Anwin Joselyn <anwin@myplaybook.in> wrote:\r\n\r\n> fixing some more errors.\r\n>\r\n> On Mon, Apr 6, 2020 at 5:48 PM Anwin Joselyn <anwin@myplaybook.in> wrote:\r\n>\r\n>> Made changes in code to handle multiple addresses in to, cc, bcc fields.\r\n>>\r\n>> On Mon, Apr 6, 2020 at 4:48 PM Anwin Joselyn <anwin@myplaybook.in> wrote:\r\n>>\r\n>>> fixing errors\r\n>>>\r\n>>> On Mon, Apr 6, 2020 at 4:41 PM Anwin Joselyn <anwin@myplaybook.in>\r\n>>> wrote:\r\n>>>\r\n>>>> Forgot to deploy updates. Trying again.\r\n>>>>\r\n>>>> On Mon, Apr 6, 2020 at 4:39 PM Anwin Joselyn <anwin@myplaybook.in>\r\n>>>> wrote:\r\n>>>>\r\n>>>>> Trying to parse multiple to address fields.\r\n>>>>>\r\n>>>>>\r\n>>>>> On Mon, Apr 6, 2020 at 4:15 PM Anwin Joselyn <anwin@myplaybook.in>\r\n>>>>> wrote:\r\n>>>>>\r\n>>>>>> Testing how data comes into API if there are multiple email addresses.\r\n>>>>>>\r\n>>>>>> On Sun, Apr 5, 2020 at 8:34 PM Anwin Joselyn <anwin@myplaybook.in>\r\n>>>>>> wrote:\r\n>>>>>>\r\n>>>>>>> Converting headers to JSON and parsing. Trying to get more info from\r\n>>>>>>> the email.\r\n>>>>>>>\r\n>>>>>>> On Sun, Apr 5, 2020 at 5:25 PM Anwin Joselyn <anwin@myplaybook.in>\r\n>>>>>>> wrote:\r\n>>>>>>>\r\n>>>>>>>> Some changes in functions\r\n>>>>>>>>\r\n>>>>>>>> On Sun, Apr 5, 2020 at 5:11 PM Anwin Joselyn <anwin@myplaybook.in>\r\n>>>>>>>> wrote:\r\n>>>>>>>>\r\n>>>>>>>>> Seems to be working. Was able to get bcc email through JSON parse\r\n>>>>>>>>> of envelope data. Now checking other functions.\r\n>>>>>>>>>\r\n>>>>>>>>\n"
+        }
+      ]
+    },
+    "contactId": 67,
+    "orgId": 67,
+    "uniqueString": "2a7cd750-7674-11ea-8c54-b5e5a3cd8ef4",
+    "isActive": true,
+    "createdAt": "2020-04-06T13:02:04.482Z",
+    "updatedAt": "2020-04-06T14:27:44.025Z"
+  },
+  {
+    "id": 3,
+    "tenantId": 1,
+    "userId": 2,
+    "fromAddress": {
+      "name": "Anwin Joselyn",
+      "email": "anwin@myplaybook.in"
+    },
+    "toAddress": {
+      "name": "",
+      "email": "anwin@theplaybook.rocks"
+    },
+    "ccAddress": {
+      "name": "",
+      "email": "Anwin Joselyn <anwinj@gmail.com>"
+    },
+    "bccAddress": {
+      "name": "",
+      "email": ""
+    },
+    "subject": "Re: More functions",
+    "timeStamp": null,
+    "headers": {
+      "headers": "Received: by mx0055p1mdw1.sendgrid.net with SMTP id 5G0kQGSgN5 Sun, 05 Apr 2020 11:35:37 +0000 (UTC)\nReceived: from mail-vk1-f182.google.com (mail-vk1-f182.google.com [209.85.221.182]) by mx0055p1mdw1.sendgrid.net (Postfix) with ESMTPS id 9A9CC4A1B30 for <2a7cd750-7674-11ea-8c54-b5e5a3cd8ef4+deal+drift@parse.theplaybook.rocks>; Sun,  5 Apr 2020 11:35:37 +0000 (UTC)\nReceived: by mail-vk1-f182.google.com with SMTP id k63so3205153vka.7 for <2a7cd750-7674-11ea-8c54-b5e5a3cd8ef4+deal+drift@parse.theplaybook.rocks>; Sun, 05 Apr 2020 04:35:37 -0700 (PDT)\nDKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=myplaybook-in.20150623.gappssmtp.com; s=20150623; h=mime-version:references:in-reply-to:from:date:message-id:subject:to :cc; bh=9pJrwNaUoaFc9KcAOYeKQe3IFYdY5pKzDBVH9LiCpmE=; b=a4EgCfwmeHSJn1hSECzS4DzoDXyaCwbze3ceYtpbXXMc0cpqryb3aa3ljl8dqgoD4j MmfulLyG2Kml5KSRyZL6lfWEzvC4vpJZo67XNA8o8K3KFoMwF1e3a+cujyOX6rC968/8 +ys+ttWinH8xDJJlMUa5AmwEyLITeppDU+OW/5K+3x6vk3hJlRxZKGDQCCP6cBuZURBt h4xRrFV+2dbgMog0CWXl60O/QpnD14rykGZ7PgU5b3LkdVGW/bZRlMRwwoWqeEmVGSgA HgOhsf/EXXvFGN0leTOYO+4LE7lH4zz+X2nTyd8GhlHx0C1VBJH29dP1EKj5yVJEscoj JUgA==\nX-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:mime-version:references:in-reply-to:from:date :message-id:subject:to:cc; bh=9pJrwNaUoaFc9KcAOYeKQe3IFYdY5pKzDBVH9LiCpmE=; b=OU4Yj30vc8pbodsiK6pIheId2SSM7i59RRTx+nO4jJ0uk3fUdlRMfjbmJ+WyGqeQD3 haLxea/TjcCuj5xrwW8exKMLQ66ozHRWCvVYPPc1gjmG+EtChYThyxDhgH8T0i34YRLa zTbkOuOUKKP7CxGz4RbAiGNxMFN5q/2nDo1d9Hp6C4x8xpG/o67JaGpidchjPPdOyU8p W/3XXY5IqCMTYU+tdpWKwumHBEISibOCo+JuxuuftZIx4cSqG0DvVGgI546j43fgRt8T S+HCNsGbcMaM85UDUJswE87Yj5KcMnS6O/h7mtwxubn8O9lCmzDEey6gq9BIUiZrngs6 O7+Q==\nX-Gm-Message-State: AGi0Puany39fzil/Od1cL+AZW3bKBCs8OcSpXoq0sH9AAMJEU4bMNQtA 7OWQbcjevBy3Dg/J4HM0jFNF4ewZOtW5Qa6lJQ2cag==\nX-Google-Smtp-Source: APiQypKu5n9U48qMFhEkesCg5V85V/oAR7RKl6YtvSk/Ndl/c+xMpFQQaTp7fo6ILlN9aafPSAS5P70EUIwLIfrKKfc=\nX-Received: by 2002:a1f:e004:: with SMTP id x4mr12055057vkg.79.1586086537048; Sun, 05 Apr 2020 04:35:37 -0700 (PDT)\nMIME-Version: 1.0\nReferences: <CAFagEoGp70g1VCqibc1_sBPpYLPhecWsrhrNVWgvsGY9HWp36Q@mail.gmail.com> <CAFagEoF9QBju+E2ZpMf=t1d-otOiaFsP20t0c_5KpCV5U7jcWg@mail.gmail.com> <CAFagEoGjQur1DCDQ9vda7jQuqvhc98U4CrTs8FMaSdb7gsqKWg@mail.gmail.com> <CAFagEoE6XkEDsWQjzoy8087pg3VP1bN11LipCGsUtOTtkDe_Ng@mail.gmail.com> <CAFagEoG7idMoMn5Af+Cyc+Etx86Qww1TyJbBYj-f4Qm26zZoxw@mail.gmail.com> <CAFagEoG7QNgL9RtmEQQWrivMtfuj3PXW=s=T4cQ8kKRj5CJfWg@mail.gmail.com> <CAFagEoEWGGzHGGHsac03ynugtZtJ7-5i27LTCPANYfarxrvG=A@mail.gmail.com> <CAFagEoFhFgTkf04YzGwhKvyVa0qccYsX09TW-Mi6d-VQR6qEBA@mail.gmail.com>\nIn-Reply-To: <CAFagEoFhFgTkf04YzGwhKvyVa0qccYsX09TW-Mi6d-VQR6qEBA@mail.gmail.com>\nFrom: Anwin Joselyn <anwin@myplaybook.in>\nDate: Sun, 5 Apr 2020 17:05:26 +0530\nMessage-ID: <CAFagEoF_cFMAVmEQ-8L8x2jbjbkv2usDOZK5hs9gxKSCUQ0hFw@mail.gmail.com>\nSubject: Re: More functions\nTo: anwin@theplaybook.rocks\nCc: Anwin Joselyn <anwinj@gmail.com>\nContent-Type: multipart/alternative; boundary=\"0000000000009fce6a05a2898c1b\"\n"
+    },
+    "replyTo": {
+      "name": "Anwin Joselyn",
+      "email": "anwin@myplaybook.in"
+    },
+    "dealId": 5,
+    "rDealId": null,
+    "customerId": null,
+    "messageId": "",
+    "attachments": {
+      "data": []
+    },
+    "content": {
+      "data": [
+        {
+          "type": "text/html",
+          "value": "<div dir=\"ltr\">Trying JSON Parse.</div><br><div class=\"gmail_quote\"><div dir=\"ltr\" class=\"gmail_attr\">On Sun, Apr 5, 2020 at 4:28 PM Anwin Joselyn &lt;<a href=\"mailto:anwin@myplaybook.in\">anwin@myplaybook.in</a>&gt; wrote:<br></div><blockquote class=\"gmail_quote\" style=\"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex\"><div dir=\"ltr\">Blah blah blah</div><br><div class=\"gmail_quote\"><div dir=\"ltr\" class=\"gmail_attr\">On Sun, Apr 5, 2020 at 4:26 PM Anwin Joselyn &lt;<a href=\"mailto:anwin@myplaybook.in\" target=\"_blank\">anwin@myplaybook.in</a>&gt; wrote:<br></div><blockquote class=\"gmail_quote\" style=\"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex\"><div dir=\"ltr\">Trying to get bcc from &quot;envelope&quot; &quot;to&quot; data.</div><br><div class=\"gmail_quote\"><div dir=\"ltr\" class=\"gmail_attr\">On Sun, Apr 5, 2020 at 4:16 PM Anwin Joselyn &lt;<a href=\"mailto:anwin@myplaybook.in\" target=\"_blank\">anwin@myplaybook.in</a>&gt; wrote:<br></div><blockquote class=\"gmail_quote\" style=\"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex\"><div dir=\"ltr\">Able to read to and cc fields. Still working out bcc.</div><br><div class=\"gmail_quote\"><div dir=\"ltr\" class=\"gmail_attr\">On Sun, Apr 5, 2020 at 4:10 PM Anwin Joselyn &lt;<a href=\"mailto:anwin@myplaybook.in\" target=\"_blank\">anwin@myplaybook.in</a>&gt; wrote:<br></div><blockquote class=\"gmail_quote\" style=\"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex\"><div dir=\"ltr\">API was not up</div><br><div class=\"gmail_quote\"><div dir=\"ltr\" class=\"gmail_attr\">On Sun, Apr 5, 2020 at 4:06 PM Anwin Joselyn &lt;<a href=\"mailto:anwin@myplaybook.in\" target=\"_blank\">anwin@myplaybook.in</a>&gt; wrote:<br></div><blockquote class=\"gmail_quote\" style=\"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex\"><div dir=\"ltr\">Fixing errors in API and checking</div><br><div class=\"gmail_quote\"><div dir=\"ltr\" class=\"gmail_attr\">On Sun, Apr 5, 2020 at 3:58 PM Anwin Joselyn &lt;<a href=\"mailto:anwin@myplaybook.in\" target=\"_blank\">anwin@myplaybook.in</a>&gt; wrote:<br></div><blockquote class=\"gmail_quote\" style=\"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex\"><div dir=\"ltr\">Blah blah blah</div><br><div class=\"gmail_quote\"><div dir=\"ltr\" class=\"gmail_attr\">On Sun, Apr 5, 2020 at 3:56 PM Anwin Joselyn &lt;<a href=\"mailto:anwin@myplaybook.in\" target=\"_blank\">anwin@myplaybook.in</a>&gt; wrote:<br></div><blockquote class=\"gmail_quote\" style=\"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex\"><div dir=\"ltr\">Forgot to deploy updates...trying again.</div><br><div class=\"gmail_quote\"><div dir=\"ltr\" class=\"gmail_attr\">On Sun, Apr 5, 2020 at 3:53 PM Anwin Joselyn &lt;<a href=\"mailto:anwin@myplaybook.in\" target=\"_blank\">anwin@myplaybook.in</a>&gt; wrote:<br></div><blockquote class=\"gmail_quote\" style=\"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex\"><div dir=\"ltr\">Checking more functions and eventually figure out a way to get bcc address fields.</div>\n</blockquote></div>\n</blockquote></div>\n</blockquote></div>\n</blockquote></div>\n</blockquote></div>\n</blockquote></div>\n</blockquote></div>\n</blockquote></div>\n"
+        },
+        {
+          "type": "text/plain",
+          "value": "Trying JSON Parse.\r\n\r\nOn Sun, Apr 5, 2020 at 4:28 PM Anwin Joselyn <anwin@myplaybook.in> wrote:\r\n\r\n> Blah blah blah\r\n>\r\n> On Sun, Apr 5, 2020 at 4:26 PM Anwin Joselyn <anwin@myplaybook.in> wrote:\r\n>\r\n>> Trying to get bcc from \"envelope\" \"to\" data.\r\n>>\r\n>> On Sun, Apr 5, 2020 at 4:16 PM Anwin Joselyn <anwin@myplaybook.in> wrote:\r\n>>\r\n>>> Able to read to and cc fields. Still working out bcc.\r\n>>>\r\n>>> On Sun, Apr 5, 2020 at 4:10 PM Anwin Joselyn <anwin@myplaybook.in>\r\n>>> wrote:\r\n>>>\r\n>>>> API was not up\r\n>>>>\r\n>>>> On Sun, Apr 5, 2020 at 4:06 PM Anwin Joselyn <anwin@myplaybook.in>\r\n>>>> wrote:\r\n>>>>\r\n>>>>> Fixing errors in API and checking\r\n>>>>>\r\n>>>>> On Sun, Apr 5, 2020 at 3:58 PM Anwin Joselyn <anwin@myplaybook.in>\r\n>>>>> wrote:\r\n>>>>>\r\n>>>>>> Blah blah blah\r\n>>>>>>\r\n>>>>>> On Sun, Apr 5, 2020 at 3:56 PM Anwin Joselyn <anwin@myplaybook.in>\r\n>>>>>> wrote:\r\n>>>>>>\r\n>>>>>>> Forgot to deploy updates...trying again.\r\n>>>>>>>\r\n>>>>>>> On Sun, Apr 5, 2020 at 3:53 PM Anwin Joselyn <anwin@myplaybook.in>\r\n>>>>>>> wrote:\r\n>>>>>>>\r\n>>>>>>>> Checking more functions and eventually figure out a way to get bcc\r\n>>>>>>>> address fields.\r\n>>>>>>>>\r\n>>>>>>>\n"
+        }
+      ]
+    },
+    "contactId": 67,
+    "orgId": 67,
+    "uniqueString": "",
+    "isActive": true,
+    "createdAt": "2020-04-05T11:35:38.271Z",
+    "updatedAt": "2020-04-06T14:57:39.863Z"
+  },
+  {
+    "id": 4,
+    "tenantId": 1,
+    "userId": 2,
+    "fromAddress": {
+      "name": "Anwin Joselyn",
+      "email": "anwin@myplaybook.in"
+    },
+    "toAddress": {
+      "data": [
+        {
+          "name": "Anwin Joselyn",
+          "email": "anwinj@gmail.com"
+        }
+      ]
+    },
+    "ccAddress": {
+      "data": []
+    },
+    "bccAddress": {
+      "data": [
+        {
+          "name": "",
+          "email": "d24f2b40-7980-11ea-98c3-53c5c152b51f+deal+awesome@parse.theplaybook.rocks"
+        }
+      ]
+    },
+    "subject": "Anwin, are you alright?",
+    "timeStamp": "2020-04-08T10:12:23.982Z",
+    "headers": {
+      "headers": "Received: by mx0049p1mdw1.sendgrid.net with SMTP id IyDLJed2R7 Wed, 08 Apr 2020 10:12:23 +0000 (UTC)\nReceived: from mail-ua1-f47.google.com (mail-ua1-f47.google.com [209.85.222.47]) by mx0049p1mdw1.sendgrid.net (Postfix) with ESMTPS id DC837A8571A for <d24f2b40-7980-11ea-98c3-53c5c152b51f+deal+awesome@parse.theplaybook.rocks>; Wed,  8 Apr 2020 10:12:22 +0000 (UTC)\nReceived: by mail-ua1-f47.google.com with SMTP id d23so2472934uak.1 for <d24f2b40-7980-11ea-98c3-53c5c152b51f+deal+awesome@parse.theplaybook.rocks>; Wed, 08 Apr 2020 03:12:22 -0700 (PDT)\nDKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=myplaybook-in.20150623.gappssmtp.com; s=20150623; h=mime-version:from:date:message-id:subject:to; bh=j0Z/7Z0In2RbLj+yvMo4EQ3FpmOGh45uN1/8lANFQJU=; b=Ona69xp6h/2UN3lE7JTaQbJPzGYk1BOoGoCYwpYHqYz4wqYpQlItEoTgMccWGM6iQ2 XYskY+pD46UdXtLzwBTHWs27350R7oKE9EcUMEl3Eh3wrNaINkWyoIOswZr5mAHaDPpv XwVI9qaLhQnzZNW1hLbO/XKeI4UJgbTSa7g+wLFehwLqa1e5FJG+h9fo0sp/a9SiOyz9 TRecRQcJ/LxdxblFqNcZkDDLT1kku6Kfq/vMoE7jvvz8a/DkOlXD2ck/KjZNCKG2fAdW 83pEMqRLPEvbRSVLGTgcC3HHejm3X256W4o20Zs3gN+QiEUJbxXEfyux9CiDRh1oiSpv O/iA==\nX-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:mime-version:from:date:message-id:subject:to; bh=j0Z/7Z0In2RbLj+yvMo4EQ3FpmOGh45uN1/8lANFQJU=; b=T2zN7Vcf2TKUfVXq1J1OZb+5xcVkMJTkZbiRCM/lwDnJCo7w7XZI1HyLQcTd54rl4K y1rF/+rUyYDCm7NNpwrIn8FBE49kTid9oLUbBRqoxoURX6O8HYn9uVZnWMA3cljhh8VI AKCwzoYybigEWcHHq/XjIPH8jDNCu1DDEv4ljMBAFaOqmkUCtg0sZY4ich2shcX+LF+9 j/MAR02rON5L0gHFPS1C+DesDHZHoU5NJgOh/uw6JPBcCRdxCe4cwdEhBD02kQAP2jAb WHZh/tifypPIrpHRD/2StAZIK/nIe6tQoPMiIeSYiTAWCNxIomRmiM/5AFuxtSNRf5GT h2NA==\nX-Gm-Message-State: AGi0PuaPXUikrv1yDF+MBpcugAjfPAyhQU1Ii1prRpimbGhc4CUNFjMl bCTGYO5UZlCgLoVCV4cQ+zQh3KLFRaH8rAacXuucuA==\nX-Google-Smtp-Source: APiQypK8qekyao9My7imDTDH5jcREEq4LrfDXGGpLEzSQ1wLOpHilBXvwccpYXzKkxBC6g8ftojXKcuQ2MDZhSOix/0=\nX-Received: by 2002:ab0:72c5:: with SMTP id g5mr4987631uap.106.1586340742393; Wed, 08 Apr 2020 03:12:22 -0700 (PDT)\nMIME-Version: 1.0\nFrom: Anwin Joselyn <anwin@myplaybook.in>\nDate: Wed, 8 Apr 2020 15:42:11 +0530\nMessage-ID: <CAFagEoG4XNwTHpbk+kRosavUTwMFZafB=DDS99JWsgt9SCLyTw@mail.gmail.com>\nSubject: Anwin, are you alright?\nTo: Anwin Joselyn <anwinj@gmail.com>\nContent-Type: multipart/alternative; boundary=\"00000000000071867705a2c4bc86\"\n"
+    },
+    "replyTo": {
+      "name": "Anwin Joselyn",
+      "email": "anwin@myplaybook.in"
+    },
+    "dealId": 5,
+    "rDealId": null,
+    "customerId": null,
+    "messageId": "",
+    "attachments": {
+      "data": []
+    },
+    "content": {
+      "data": [
+        {
+          "type": "text/html",
+          "value": "<div dir=\"ltr\">Hi Anwin,<div><br></div><div>Hope things are alright with you. We haven&#39;t been able to get in touch with you after the awesome demo we had on the 4th. </div><div><br></div><div>Is this not a priority for you? If it is still a top priority maybe you could depute someone to move this forward? </div><div><br></div><div>As always, PB is committed to your success!</div><div><br></div><div>Catch you soon,</div><div>Anwin</div><div>+91-00000-00000<br></div></div>\n"
+        },
+        {
+          "type": "text/plain",
+          "value": "Hi Anwin,\r\n\r\nHope things are alright with you. We haven't been able to get in touch with\r\nyou after the awesome demo we had on the 4th.\r\n\r\nIs this not a priority for you? If it is still a top priority maybe you\r\ncould depute someone to move this forward?\r\n\r\nAs always, PB is committed to your success!\r\n\r\nCatch you soon,\r\nAnwin\r\n+91-00000-00000\n"
+        }
+      ]
+    },
+    "contactId": 67,
+    "orgId": 67,
+    "uniqueString": "d24f2b40-7980-11ea-98c3-53c5c152b51f",
+    "isActive": true,
+    "createdAt": "2020-04-08T10:12:24.006Z",
+    "updatedAt": "2020-04-08T11:38:02.301Z"
+  },
+  {
+    "id": 5,
+    "tenantId": 1,
+    "userId": 2,
+    "fromAddress": {
+      "name": "Anwin Joselyn",
+      "email": "anwin@myplaybook.in"
+    },
+    "toAddress": {
+      "data": [
+        {
+          "name": "Anwin Joselyn",
+          "email": "anwin@theplaybook.rocks"
+        }
+      ]
+    },
+    "ccAddress": {
+      "data": [
+        {
+          "name": "Anwin Joselyn",
+          "email": "anwinj@gmail.com"
+        }
+      ]
+    },
+    "bccAddress": {
+      "data": [
+        {
+          "name": "",
+          "email": "d24f2b40-7980-11ea-98c3-53c5c152b51f+deal+awesome@parse.theplaybook.rocks"
+        }
+      ]
+    },
+    "subject": "Re: Anwin, are you alright?",
+    "timeStamp": "2020-04-08T10:16:40.176Z",
+    "headers": {
+      "headers": "Received: by mx0058p1mdw1.sendgrid.net with SMTP id 2o8KrprUf5 Wed, 08 Apr 2020 10:16:39 +0000 (UTC)\nReceived: from mail-vs1-f42.google.com (mail-vs1-f42.google.com [209.85.217.42]) by mx0058p1mdw1.sendgrid.net (Postfix) with ESMTPS id D22E13E2351 for <d24f2b40-7980-11ea-98c3-53c5c152b51f+deal+awesome@parse.theplaybook.rocks>; Wed,  8 Apr 2020 10:16:39 +0000 (UTC)\nReceived: by mail-vs1-f42.google.com with SMTP id o3so4364081vsd.4 for <d24f2b40-7980-11ea-98c3-53c5c152b51f+deal+awesome@parse.theplaybook.rocks>; Wed, 08 Apr 2020 03:16:39 -0700 (PDT)\nDKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=myplaybook-in.20150623.gappssmtp.com; s=20150623; h=mime-version:references:in-reply-to:from:date:message-id:subject:to; bh=Mw+N5DXq9KspfO1Z+rBQGSeYzrolEpgO3y3spMXccBQ=; b=Atg966FjF2w7kO5NGoOZC49BoiBvJabfXW0+m5pLiV3CXDnw5d1Ay4zRSPEngBeAS/ SHEf0noYY41mH9sHxKcbQfU08OWI98j4xnC8ul4/vbA2SVHILYC/bqdogsizuKXJ5fxH wRjepnwNbtDo+6eDM6O7vkauHiNfdeNrKHiM9dg1DrLYvh8prSDIuID+LIAo6jovgh1h YgI+SZtX+MJv7wd/p3W5SF/+1GaU/ZIofUN64HciZyVRJLLe1YDve8IyP8suz3MkHgxv S2qEWFOtCRLrH8tMSMpqiQ5UceCe2b93zzeqMWZplPnrWz11t0BCnGSLaywI67Ds1cgX u3Kw==\nX-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:mime-version:references:in-reply-to:from:date :message-id:subject:to; bh=Mw+N5DXq9KspfO1Z+rBQGSeYzrolEpgO3y3spMXccBQ=; b=foG+bsrmN218OqjK+Tdyy3ijI9ZzVgVrwWivVjqnMMHHqeSRzCO9D3EStyGdtY/OJO LFbbjFxvrGmKWsNBksmx7FNm20BgzWxAxoITiv/jUDRtYnV5lRTtIgGSg+rgNLPWyutD HAEh1f8BEJGmPyBcrgTohWZ/h4gSudqVk+KEC8L0y2R+6TqhnKsxIq5O423RwVpdyWzf pAjcDbx/0XIBOU7Uf7KGDiHQzBZn+SyfkskllP7cDDEtSBLa+xMQTBk7g/oJ1y1NXvwo pK8zcwDCGKMT4TsrSv4ALtv9PjqzEoqAnNlJW/E9uIYSV4ZUedDqYnneB7Mi2scFbDV3 2FXw==\nX-Gm-Message-State: AGi0PuackPDv3I/by4d6r9JotoIg0st7+odyqNPnk+BvBVnohp6AocMS v+K6vG1xjT+oFQAJA+RjO4adqVQpZVvmjwIWsGOJJA==\nX-Google-Smtp-Source: APiQypI3FppYkG1EzfLl9yH2wf9NDVYCo/xdiefIXF7fEyp5ZtRQK/wVf/pS68IpZ690UpEBc6eNLlO0R5CfiFMZaSc=\nX-Received: by 2002:a67:3386:: with SMTP id z128mr2539504vsz.86.1586340999126; Wed, 08 Apr 2020 03:16:39 -0700 (PDT)\nMIME-Version: 1.0\nReferences: <CAFagEoG4XNwTHpbk+kRosavUTwMFZafB=DDS99JWsgt9SCLyTw@mail.gmail.com>\nIn-Reply-To: <CAFagEoG4XNwTHpbk+kRosavUTwMFZafB=DDS99JWsgt9SCLyTw@mail.gmail.com>\nFrom: Anwin Joselyn <anwin@myplaybook.in>\nDate: Wed, 8 Apr 2020 15:46:28 +0530\nMessage-ID: <CAFagEoHqCnzPhfsgofymYqeBOewhfyOkQML6e+Twnjy6DxQkLg@mail.gmail.com>\nSubject: Re: Anwin, are you alright?\nTo: Anwin Joselyn <anwinj@gmail.com>\nContent-Type: multipart/alternative; boundary=\"000000000000bef93705a2c4cbc7\"\n"
+    },
+    "replyTo": {
+      "name": "Anwin Joselyn",
+      "email": "anwin@myplaybook.in"
+    },
+    "dealId": 5,
+    "rDealId": null,
+    "customerId": null,
+    "messageId": "",
+    "attachments": {
+      "data": []
+    },
+    "content": {
+      "data": [
+        {
+          "type": "text/html",
+          "value": "<div dir=\"ltr\">Since I haven&#39;t heard back from you we are closing your file for now. Will it be alright to get in touch with you in a couple of weeks?<div><br></div></div><br><div class=\"gmail_quote\"><div dir=\"ltr\" class=\"gmail_attr\">On Wed, Apr 8, 2020 at 3:42 PM Anwin Joselyn &lt;<a href=\"mailto:anwin@myplaybook.in\">anwin@myplaybook.in</a>&gt; wrote:<br></div><blockquote class=\"gmail_quote\" style=\"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex\"><div dir=\"ltr\">Hi Anwin,<div><br></div><div>Hope things are alright with you. We haven&#39;t been able to get in touch with you after the awesome demo we had on the 4th. </div><div><br></div><div>Is this not a priority for you? If it is still a top priority maybe you could depute someone to move this forward? </div><div><br></div><div>As always, PB is committed to your success!</div><div><br></div><div>Catch you soon,</div><div>Anwin</div><div>+91-00000-00000<br></div></div>\n</blockquote></div>\n"
+        },
+        {
+          "type": "text/plain",
+          "value": "Since I haven't heard back from you we are closing your file for now. Will\r\nit be alright to get in touch with you in a couple of weeks?\r\n\r\n\r\nOn Wed, Apr 8, 2020 at 3:42 PM Anwin Joselyn <anwin@myplaybook.in> wrote:\r\n\r\n> Hi Anwin,\r\n>\r\n> Hope things are alright with you. We haven't been able to get in touch\r\n> with you after the awesome demo we had on the 4th.\r\n>\r\n> Is this not a priority for you? If it is still a top priority maybe you\r\n> could depute someone to move this forward?\r\n>\r\n> As always, PB is committed to your success!\r\n>\r\n> Catch you soon,\r\n> Anwin\r\n> +91-00000-00000\r\n>\n"
+        }
+      ]
+    },
+    "contactId": 67,
+    "orgId": 67,
+    "uniqueString": "d24f2b40-7980-11ea-98c3-53c5c152b51f",
+    "isActive": true,
+    "createdAt": "2020-04-08T10:16:40.192Z",
+    "updatedAt": "2020-04-08T11:41:41.060Z"
+  },
+  {
+    "id": 6,
+    "tenantId": 1,
+    "userId": 2,
+    "fromAddress": {
+      "name": "Anwin Joselyn",
+      "email": "anwin@myplaybook.in"
+    },
+    "toAddress": {
+      "data": [
+        {
+          "name": "Anwin Joselyn",
+          "email": "anwin@theplaybook.rocks"
+        }
+      ]
+    },
+    "ccAddress": {
+      "data": [
+        {
+          "name": "Anwin Joselyn",
+          "email": "anwinj@gmail.com"
+        }
+      ]
+    },
+    "bccAddress": {
+      "data": [
+        {
+          "name": "",
+          "email": "d24f2b40-7980-11ea-98c3-53c5c152b51f+deal+awesome@parse.theplaybook.rocks"
+        }
+      ]
+    },
+    "subject": "Re: Anwin, are you alright?",
+    "timeStamp": "2020-04-08T10:25:30.020Z",
+    "headers": {
+      "headers": "Received: by mx0049p1mdw1.sendgrid.net with SMTP id OkIIO6NjsW Wed, 08 Apr 2020 10:25:29 +0000 (UTC)\nReceived: from mail-vs1-f43.google.com (mail-vs1-f43.google.com [209.85.217.43]) by mx0049p1mdw1.sendgrid.net (Postfix) with ESMTPS id 77161A83894 for <d24f2b40-7980-11ea-98c3-53c5c152b51f+deal+awesome@parse.theplaybook.rocks>; Wed,  8 Apr 2020 10:25:29 +0000 (UTC)\nReceived: by mail-vs1-f43.google.com with SMTP id s10so4346048vsi.9 for <d24f2b40-7980-11ea-98c3-53c5c152b51f+deal+awesome@parse.theplaybook.rocks>; Wed, 08 Apr 2020 03:25:29 -0700 (PDT)\nDKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=myplaybook-in.20150623.gappssmtp.com; s=20150623; h=mime-version:references:in-reply-to:from:date:message-id:subject:to; bh=++p02dWWaWXiSyLTrZYAkFkxtDkHio7sqq1jjbbpQY8=; b=cOVbVfD21dqmeVLX7qL8+YYYYibvRB9wG1OOvObwW6tu3KFHetCJvAc32RetNXG6MI zBSFa1XCvVkmAyPfsMG811f1Xokv1bTYTJzi+Ugmfnxc/gx6Xdi2kH5XU0mKbZ4xVUYW 6DsG3oaci8w8G7SBqMDLC9sPNSmUoo3H2SW4LaTDnJSrfzAlKsF4XXsBZeJCwIRWuuIu rA58AbSdzW0NXr8Rf53zxiWvdlrCguqEvD2Xx0gTTMvbVpNvQG0JAXMrOiYvfuVFQKOa kRTHjqnY/LIt4jwIURmVnYBiuBCz9Rlz+GlWUIPp9Ei2SSNLtARBbwlxu7nRHRFvqGE7 r+0w==\nX-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:mime-version:references:in-reply-to:from:date :message-id:subject:to; bh=++p02dWWaWXiSyLTrZYAkFkxtDkHio7sqq1jjbbpQY8=; b=h7bkWZVrLbxtt/zO9PUSjRi6L5v1IhbsdeylbJIVoyK8eF1yJxO7tusUhQsKFmvzE6 t9rqDEnXHlm81rYS5qlumTJYseNyu1QdxvOYx29IhT9nbALihh3mG9q/GZsC+OtUs6f+ 1HOFGXRpEMoBbKHHhoyJ2EgS8po2ERKRRv/VAIQWKQMqWh/EmFflHlrdi8kPPWW8dBjd L5UPOARihvN8Itk9LxNA/in3GMvM9YfMQpwykfB1w+3s9J3IPaTLE6m7hiC/3pOaIlLu 2M+57P1I3BllJCLTrAXS9B4Nx9rWkVD7TQENl+/atxjjdNj56P7o+ORH/z/fhW6Z8hrY 3o0g==\nX-Gm-Message-State: AGi0PuY0FyInEIeTA0cg9XgG3l8JA/c8jibRbKFfvFDSk10HXHPXf8Jv h4iv5Xcf2wb9eFdBD7mz7Hf3S6C8ulCBvMMqm6+64w==\nX-Google-Smtp-Source: APiQypIwJDhQRWkcv76xGVNIvD5THjKN5XwhErWipJ8WqRsnwoT+qUC5Vg6M5XYSfbMBHZi3PVWp7HWjRh6CgYStbQM=\nX-Received: by 2002:a67:7c44:: with SMTP id x65mr420276vsc.52.1586341529012; Wed, 08 Apr 2020 03:25:29 -0700 (PDT)\nMIME-Version: 1.0\nReferences: <CAFagEoG4XNwTHpbk+kRosavUTwMFZafB=DDS99JWsgt9SCLyTw@mail.gmail.com> <CAFagEoHqCnzPhfsgofymYqeBOewhfyOkQML6e+Twnjy6DxQkLg@mail.gmail.com>\nIn-Reply-To: <CAFagEoHqCnzPhfsgofymYqeBOewhfyOkQML6e+Twnjy6DxQkLg@mail.gmail.com>\nFrom: Anwin Joselyn <anwin@myplaybook.in>\nDate: Wed, 8 Apr 2020 15:55:18 +0530\nMessage-ID: <CAFagEoHeHkRya5EDkOgq1abySe0HDup8UN2_zHsYse_E_F4zRA@mail.gmail.com>\nSubject: Re: Anwin, are you alright?\nTo: Anwin Joselyn <anwinj@gmail.com>\nContent-Type: multipart/alternative; boundary=\"000000000000547ddc05a2c4eb32\"\n"
+    },
+    "replyTo": {
+      "name": "Anwin Joselyn",
+      "email": "anwin@myplaybook.in"
+    },
+    "dealId": 5,
+    "rDealId": null,
+    "customerId": null,
+    "messageId": "",
+    "attachments": {
+      "data": []
+    },
+    "content": {
+      "data": [
+        {
+          "type": "text/html",
+          "value": "<div dir=\"ltr\">Awesome.... I got your text message. Will get in touch in the last week of April.<div><br></div><div>Have a great product launch :-)</div></div><br><div class=\"gmail_quote\"><div dir=\"ltr\" class=\"gmail_attr\">On Wed, Apr 8, 2020 at 3:46 PM Anwin Joselyn &lt;<a href=\"mailto:anwin@myplaybook.in\">anwin@myplaybook.in</a>&gt; wrote:<br></div><blockquote class=\"gmail_quote\" style=\"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex\"><div dir=\"ltr\">Since I haven&#39;t heard back from you we are closing your file for now. Will it be alright to get in touch with you in a couple of weeks?<div><br></div></div><br><div class=\"gmail_quote\"><div dir=\"ltr\" class=\"gmail_attr\">On Wed, Apr 8, 2020 at 3:42 PM Anwin Joselyn &lt;<a href=\"mailto:anwin@myplaybook.in\" target=\"_blank\">anwin@myplaybook.in</a>&gt; wrote:<br></div><blockquote class=\"gmail_quote\" style=\"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex\"><div dir=\"ltr\">Hi Anwin,<div><br></div><div>Hope things are alright with you. We haven&#39;t been able to get in touch with you after the awesome demo we had on the 4th. </div><div><br></div><div>Is this not a priority for you? If it is still a top priority maybe you could depute someone to move this forward? </div><div><br></div><div>As always, PB is committed to your success!</div><div><br></div><div>Catch you soon,</div><div>Anwin</div><div>+91-00000-00000<br></div></div>\n</blockquote></div>\n</blockquote></div>\n"
+        },
+        {
+          "type": "text/plain",
+          "value": "Awesome.... I got your text message. Will get in touch in the last week of\r\nApril.\r\n\r\nHave a great product launch :-)\r\n\r\nOn Wed, Apr 8, 2020 at 3:46 PM Anwin Joselyn <anwin@myplaybook.in> wrote:\r\n\r\n> Since I haven't heard back from you we are closing your file for now. Will\r\n> it be alright to get in touch with you in a couple of weeks?\r\n>\r\n>\r\n> On Wed, Apr 8, 2020 at 3:42 PM Anwin Joselyn <anwin@myplaybook.in> wrote:\r\n>\r\n>> Hi Anwin,\r\n>>\r\n>> Hope things are alright with you. We haven't been able to get in touch\r\n>> with you after the awesome demo we had on the 4th.\r\n>>\r\n>> Is this not a priority for you? If it is still a top priority maybe you\r\n>> could depute someone to move this forward?\r\n>>\r\n>> As always, PB is committed to your success!\r\n>>\r\n>> Catch you soon,\r\n>> Anwin\r\n>> +91-00000-00000\r\n>>\r\n>\n"
+        }
+      ]
+    },
+    "contactId": 67,
+    "orgId": 67,
+    "uniqueString": "d24f2b40-7980-11ea-98c3-53c5c152b51f",
+    "isActive": true,
+    "createdAt": "2020-04-08T10:25:30.165Z",
+    "updatedAt": "2020-04-08T11:47:20.129Z"
+  },
+  {
+    "id": 7,
+    "tenantId": 1,
+    "userId": 2,
+    "fromAddress": {
+      "name": "Anwin Joselyn",
+      "email": "anwin@myplaybook.in"
+    },
+    "toAddress": {
+      "data": [
+        {
+          "name": "Anwin Joselyn",
+          "email": "anwin@theplaybook.rocks"
+        }
+      ]
+    },
+    "ccAddress": {
+      "data": [
+        {
+          "name": "Anwin Joselyn",
+          "email": "anwinj@gmail.com"
+        }
+      ]
+    },
+    "bccAddress": {
+      "data": [
+        {
+          "name": "",
+          "email": "d24f2b40-7980-11ea-98c3-53c5c152b51f+deal+awesome@parse.theplaybook.rocks"
+        }
+      ]
+    },
+    "subject": "Covid-19 Stay safe",
+    "timeStamp": "2020-04-08T10:35:19.420Z",
+    "headers": {
+      "headers": "Received: by mx0049p1mdw1.sendgrid.net with SMTP id p6CtbyuZgs Wed, 08 Apr 2020 10:35:18 +0000 (UTC)\nReceived: from mail-ua1-f47.google.com (mail-ua1-f47.google.com [209.85.222.47]) by mx0049p1mdw1.sendgrid.net (Postfix) with ESMTPS id 9CC1DA85874 for <d24f2b40-7980-11ea-98c3-53c5c152b51f+deal+awesome@parse.theplaybook.rocks>; Wed,  8 Apr 2020 10:35:18 +0000 (UTC)\nReceived: by mail-ua1-f47.google.com with SMTP id y17so2461841uap.13 for <d24f2b40-7980-11ea-98c3-53c5c152b51f+deal+awesome@parse.theplaybook.rocks>; Wed, 08 Apr 2020 03:35:18 -0700 (PDT)\nDKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=myplaybook-in.20150623.gappssmtp.com; s=20150623; h=mime-version:from:date:message-id:subject:to; bh=PPDm5WtaImDViEnOZ114xgr2SFKbCsqr2njng148MXo=; b=pIjnoCAFM9ZZgwSPHWEke3dYkQpzLjzMXHGcjm6XDNN6l6kH6x630bflB9eLFe025A qsiCxFdLWHwK00a6IxVgJrBfM325vkSIZAGMshy6FDnVfA9jgu/1F9xIdcNm0a2m/uXz ++KHasTX/hJugdiya+EmafJyCjAZOKpssHkZSFkuxHiU816m0dYCVDDXQih/hRMwVJEa CYdUNE8JMdXt//dDadgWiUkAAXRXJCZ4EyHw64z46DAZ3eEPK9BY2rO6oGL702wcMAOD qbOotOto15KbAjD3l3JIK9uL4AJEKFcuLcL8D/S9znsVtEEErHDHTdMHWzUsJsRySHn/ VCJw==\nX-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:mime-version:from:date:message-id:subject:to; bh=PPDm5WtaImDViEnOZ114xgr2SFKbCsqr2njng148MXo=; b=YMpDc8DUeMnZ71Av34HHiFFJaZYbgMBvlq1tkyh8sPsbvhQ6tQ5DMhv8NH0zBlhkD/ dk7/KxxOkw1Ndm+7O955hsZVMAm+fNMZuHa0h5vYmuZrJ+gc179AyGEY3POZpKrLfetO SbSxoPU/tZekbEoo5Y1942oWIChCQE8mywmoDD+TNMo+aSqICgDhOmRsXxbSGmFZB0Hx mxCeB9caVwYi9bjEvjjj//uvviWG4y5xPcXzqRq6HsGG6XmIGggtXKb9LpnGtnKPuPuf Gr4wJ36zpVpg99aWeGaqAqKP647sX9mQm3DEiUIXRzJ+AkOD2gHe1/A6G8zhGTx1JrHP EHNg==\nX-Gm-Message-State: AGi0PuYTklPm0ah4WIpuAVMQtWIzEu2MZU7E5Ci/54fEQRLFC10aqpU2 SFSBgWEtxkMuJWGSXZ+u+Yjg0WTjjihTTKR4sihDDw==\nX-Google-Smtp-Source: APiQypJrMFM/mNWbwtRH9+M/SR/YhS+DGswQFaMVGU+u+BqsBEGhHa9EWZklNxXfLMJqfeye29EEKVMzEbbYMHVbR1k=\nX-Received: by 2002:ab0:703:: with SMTP id h3mr4814682uah.65.1586342118102; Wed, 08 Apr 2020 03:35:18 -0700 (PDT)\nMIME-Version: 1.0\nFrom: Anwin Joselyn <anwin@myplaybook.in>\nDate: Wed, 8 Apr 2020 16:05:07 +0530\nMessage-ID: <CAFagEoE_yu411Pu3LaQdvj+WR1w6vUNzrQEa71EaKoLxqpHjDQ@mail.gmail.com>\nSubject: Covid-19 Stay safe\nTo: Anwin Joselyn <anwinj@gmail.com>\nContent-Type: multipart/alternative; boundary=\"000000000000712ff205a2c50e76\"\n"
+    },
+    "replyTo": {
+      "name": "Anwin Joselyn",
+      "email": "anwin@myplaybook.in"
+    },
+    "dealId": 5,
+    "rDealId": null,
+    "customerId": null,
+    "messageId": "",
+    "attachments": {
+      "data": []
+    },
+    "content": {
+      "data": [
+        {
+          "type": "text/html",
+          "value": "<div dir=\"ltr\">Dear Anwin,<div><br></div><div>We all feel the pinch due to this pandemic. Since we understand and being in the same boat please take advantage of our 3 months payment waiver.</div><div><br></div><div>Note: No payments required from April - June. Stay safe and sane!</div><div>Anwin</div></div>\n"
+        },
+        {
+          "type": "text/plain",
+          "value": "Dear Anwin,\r\n\r\nWe all feel the pinch due to this pandemic. Since we understand and being\r\nin the same boat please take advantage of our 3 months payment waiver.\r\n\r\nNote: No payments required from April - June. Stay safe and sane!\r\nAnwin\n"
+        }
+      ]
+    },
+    "contactId": 67,
+    "orgId": 67,
+    "uniqueString": "d24f2b40-7980-11ea-98c3-53c5c152b51f",
+    "isActive": true,
+    "createdAt": "2020-04-08T10:35:19.542Z",
+    "updatedAt": "2020-04-08T11:49:06.708Z"
+  },
+  {
+    "id": 8,
+    "tenantId": 1,
+    "userId": 2,
+    "fromAddress": {
+      "name": "Anwin Joselyn",
+      "email": "anwin@myplaybook.in"
+    },
+    "toAddress": {
+      "data": [
+        {
+          "name": "Anwin Joselyn",
+          "email": "anwin@theplaybook.rocks"
+        }
+      ]
+    },
+    "ccAddress": {
+      "data": [
+        {
+          "name": "Anwin Joselyn",
+          "email": "anwinj@gmail.com"
+        }
+      ]
+    },
+    "bccAddress": {
+      "data": [
+        {
+          "name": "",
+          "email": "d24f2b40-7980-11ea-98c3-53c5c152b51f+deal+awesome@parse.theplaybook.rocks"
+        }
+      ]
+    },
+    "subject": "Covid-19 Stay safe",
+    "timeStamp": "2020-04-08T10:35:19.420Z",
+    "headers": {
+      "headers": "Received: by mx0049p1mdw1.sendgrid.net with SMTP id p6CtbyuZgs Wed, 08 Apr 2020 10:35:18 +0000 (UTC)\nReceived: from mail-ua1-f47.google.com (mail-ua1-f47.google.com [209.85.222.47]) by mx0049p1mdw1.sendgrid.net (Postfix) with ESMTPS id 9CC1DA85874 for <d24f2b40-7980-11ea-98c3-53c5c152b51f+deal+awesome@parse.theplaybook.rocks>; Wed,  8 Apr 2020 10:35:18 +0000 (UTC)\nReceived: by mail-ua1-f47.google.com with SMTP id y17so2461841uap.13 for <d24f2b40-7980-11ea-98c3-53c5c152b51f+deal+awesome@parse.theplaybook.rocks>; Wed, 08 Apr 2020 03:35:18 -0700 (PDT)\nDKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=myplaybook-in.20150623.gappssmtp.com; s=20150623; h=mime-version:from:date:message-id:subject:to; bh=PPDm5WtaImDViEnOZ114xgr2SFKbCsqr2njng148MXo=; b=pIjnoCAFM9ZZgwSPHWEke3dYkQpzLjzMXHGcjm6XDNN6l6kH6x630bflB9eLFe025A qsiCxFdLWHwK00a6IxVgJrBfM325vkSIZAGMshy6FDnVfA9jgu/1F9xIdcNm0a2m/uXz ++KHasTX/hJugdiya+EmafJyCjAZOKpssHkZSFkuxHiU816m0dYCVDDXQih/hRMwVJEa CYdUNE8JMdXt//dDadgWiUkAAXRXJCZ4EyHw64z46DAZ3eEPK9BY2rO6oGL702wcMAOD qbOotOto15KbAjD3l3JIK9uL4AJEKFcuLcL8D/S9znsVtEEErHDHTdMHWzUsJsRySHn/ VCJw==\nX-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:mime-version:from:date:message-id:subject:to; bh=PPDm5WtaImDViEnOZ114xgr2SFKbCsqr2njng148MXo=; b=YMpDc8DUeMnZ71Av34HHiFFJaZYbgMBvlq1tkyh8sPsbvhQ6tQ5DMhv8NH0zBlhkD/ dk7/KxxOkw1Ndm+7O955hsZVMAm+fNMZuHa0h5vYmuZrJ+gc179AyGEY3POZpKrLfetO SbSxoPU/tZekbEoo5Y1942oWIChCQE8mywmoDD+TNMo+aSqICgDhOmRsXxbSGmFZB0Hx mxCeB9caVwYi9bjEvjjj//uvviWG4y5xPcXzqRq6HsGG6XmIGggtXKb9LpnGtnKPuPuf Gr4wJ36zpVpg99aWeGaqAqKP647sX9mQm3DEiUIXRzJ+AkOD2gHe1/A6G8zhGTx1JrHP EHNg==\nX-Gm-Message-State: AGi0PuYTklPm0ah4WIpuAVMQtWIzEu2MZU7E5Ci/54fEQRLFC10aqpU2 SFSBgWEtxkMuJWGSXZ+u+Yjg0WTjjihTTKR4sihDDw==\nX-Google-Smtp-Source: APiQypJrMFM/mNWbwtRH9+M/SR/YhS+DGswQFaMVGU+u+BqsBEGhHa9EWZklNxXfLMJqfeye29EEKVMzEbbYMHVbR1k=\nX-Received: by 2002:ab0:703:: with SMTP id h3mr4814682uah.65.1586342118102; Wed, 08 Apr 2020 03:35:18 -0700 (PDT)\nMIME-Version: 1.0\nFrom: Anwin Joselyn <anwin@myplaybook.in>\nDate: Wed, 8 Apr 2020 16:05:07 +0530\nMessage-ID: <CAFagEoE_yu411Pu3LaQdvj+WR1w6vUNzrQEa71EaKoLxqpHjDQ@mail.gmail.com>\nSubject: Covid-19 Stay safe\nTo: Anwin Joselyn <anwinj@gmail.com>\nContent-Type: multipart/alternative; boundary=\"000000000000712ff205a2c50e76\"\n"
+    },
+    "replyTo": {
+      "name": "Anwin Joselyn",
+      "email": "anwin@myplaybook.in"
+    },
+    "dealId": 5,
+    "rDealId": null,
+    "customerId": null,
+    "messageId": "",
+    "attachments": {
+      "data": []
+    },
+    "content": {
+      "data": [
+        {
+          "type": "text/html",
+          "value": "<div dir=\"ltr\">Dear Anwin,<div><br></div><div>We all feel the pinch due to this pandemic. Since we understand and being in the same boat please take advantage of our 3 months payment waiver.</div><div><br></div><div>Note: No payments required from April - June. Stay safe and sane!</div><div>Anwin</div></div>\n"
+        },
+        {
+          "type": "text/plain",
+          "value": "Dear Anwin,\r\n\r\nWe all feel the pinch due to this pandemic. Since we understand and being\r\nin the same boat please take advantage of our 3 months payment waiver.\r\n\r\nNote: No payments required from April - June. Stay safe and sane!\r\nAnwin\n"
+        }
+      ]
+    },
+    "contactId": 67,
+    "orgId": 67,
+    "uniqueString": "d24f2b40-7980-11ea-98c3-53c5c152b51f",
+    "isActive": true,
+    "createdAt": "2020-04-08T10:35:19.542Z",
+    "updatedAt": "2020-06-09T11:58:36.636Z"
+  },
+  {
+    "id": 9,
+    "tenantId": 1,
+    "userId": 2,
+    "fromAddress": {
+      "name": "Anwin Joselyn",
+      "email": "anwin@myplaybook.in"
+    },
+    "toAddress": {
+      "data": [
+        {
+          "name": "Anwin Joselyn",
+          "email": "anwin@theplaybook.rocks"
+        }
+      ]
+    },
+    "ccAddress": {
+      "data": [
+        {
+          "name": "Anwin Joselyn",
+          "email": "anwinj@gmail.com"
+        }
+      ]
+    },
+    "bccAddress": {
+      "data": [
+        {
+          "name": "",
+          "email": "d24f2b40-7980-11ea-98c3-53c5c152b51f+deal+awesome@parse.theplaybook.rocks"
+        }
+      ]
+    },
+    "subject": "Covid-19 Stay safe",
+    "timeStamp": "2020-04-08T10:35:19.420Z",
+    "headers": {
+      "headers": "Received: by mx0049p1mdw1.sendgrid.net with SMTP id p6CtbyuZgs Wed, 08 Apr 2020 10:35:18 +0000 (UTC)\nReceived: from mail-ua1-f47.google.com (mail-ua1-f47.google.com [209.85.222.47]) by mx0049p1mdw1.sendgrid.net (Postfix) with ESMTPS id 9CC1DA85874 for <d24f2b40-7980-11ea-98c3-53c5c152b51f+deal+awesome@parse.theplaybook.rocks>; Wed,  8 Apr 2020 10:35:18 +0000 (UTC)\nReceived: by mail-ua1-f47.google.com with SMTP id y17so2461841uap.13 for <d24f2b40-7980-11ea-98c3-53c5c152b51f+deal+awesome@parse.theplaybook.rocks>; Wed, 08 Apr 2020 03:35:18 -0700 (PDT)\nDKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=myplaybook-in.20150623.gappssmtp.com; s=20150623; h=mime-version:from:date:message-id:subject:to; bh=PPDm5WtaImDViEnOZ114xgr2SFKbCsqr2njng148MXo=; b=pIjnoCAFM9ZZgwSPHWEke3dYkQpzLjzMXHGcjm6XDNN6l6kH6x630bflB9eLFe025A qsiCxFdLWHwK00a6IxVgJrBfM325vkSIZAGMshy6FDnVfA9jgu/1F9xIdcNm0a2m/uXz ++KHasTX/hJugdiya+EmafJyCjAZOKpssHkZSFkuxHiU816m0dYCVDDXQih/hRMwVJEa CYdUNE8JMdXt//dDadgWiUkAAXRXJCZ4EyHw64z46DAZ3eEPK9BY2rO6oGL702wcMAOD qbOotOto15KbAjD3l3JIK9uL4AJEKFcuLcL8D/S9znsVtEEErHDHTdMHWzUsJsRySHn/ VCJw==\nX-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:mime-version:from:date:message-id:subject:to; bh=PPDm5WtaImDViEnOZ114xgr2SFKbCsqr2njng148MXo=; b=YMpDc8DUeMnZ71Av34HHiFFJaZYbgMBvlq1tkyh8sPsbvhQ6tQ5DMhv8NH0zBlhkD/ dk7/KxxOkw1Ndm+7O955hsZVMAm+fNMZuHa0h5vYmuZrJ+gc179AyGEY3POZpKrLfetO SbSxoPU/tZekbEoo5Y1942oWIChCQE8mywmoDD+TNMo+aSqICgDhOmRsXxbSGmFZB0Hx mxCeB9caVwYi9bjEvjjj//uvviWG4y5xPcXzqRq6HsGG6XmIGggtXKb9LpnGtnKPuPuf Gr4wJ36zpVpg99aWeGaqAqKP647sX9mQm3DEiUIXRzJ+AkOD2gHe1/A6G8zhGTx1JrHP EHNg==\nX-Gm-Message-State: AGi0PuYTklPm0ah4WIpuAVMQtWIzEu2MZU7E5Ci/54fEQRLFC10aqpU2 SFSBgWEtxkMuJWGSXZ+u+Yjg0WTjjihTTKR4sihDDw==\nX-Google-Smtp-Source: APiQypJrMFM/mNWbwtRH9+M/SR/YhS+DGswQFaMVGU+u+BqsBEGhHa9EWZklNxXfLMJqfeye29EEKVMzEbbYMHVbR1k=\nX-Received: by 2002:ab0:703:: with SMTP id h3mr4814682uah.65.1586342118102; Wed, 08 Apr 2020 03:35:18 -0700 (PDT)\nMIME-Version: 1.0\nFrom: Anwin Joselyn <anwin@myplaybook.in>\nDate: Wed, 8 Apr 2020 16:05:07 +0530\nMessage-ID: <CAFagEoE_yu411Pu3LaQdvj+WR1w6vUNzrQEa71EaKoLxqpHjDQ@mail.gmail.com>\nSubject: Covid-19 Stay safe\nTo: Anwin Joselyn <anwinj@gmail.com>\nContent-Type: multipart/alternative; boundary=\"000000000000712ff205a2c50e76\"\n"
+    },
+    "replyTo": {
+      "name": "Anwin Joselyn",
+      "email": "anwin@myplaybook.in"
+    },
+    "dealId": 5,
+    "rDealId": null,
+    "customerId": null,
+    "messageId": "",
+    "attachments": {
+      "data": []
+    },
+    "content": {
+      "data": [
+        {
+          "type": "text/html",
+          "value": "<div dir=\"ltr\">Dear Anwin,<div><br></div><div>We all feel the pinch due to this pandemic. Since we understand and being in the same boat please take advantage of our 3 months payment waiver.</div><div><br></div><div>Note: No payments required from April - June. Stay safe and sane!</div><div>Anwin</div></div>\n"
+        },
+        {
+          "type": "text/plain",
+          "value": "Dear Anwin,\r\n\r\nWe all feel the pinch due to this pandemic. Since we understand and being\r\nin the same boat please take advantage of our 3 months payment waiver.\r\n\r\nNote: No payments required from April - June. Stay safe and sane!\r\nAnwin\n"
+        }
+      ]
+    },
+    "contactId": 67,
+    "orgId": 67,
+    "uniqueString": "d24f2b40-7980-11ea-98c3-53c5c152b51f",
+    "isActive": true,
+    "createdAt": "2020-04-08T10:35:19.542Z",
+    "updatedAt": "2020-06-09T12:00:57.565Z"
+  }
+]

@@ -1,0 +1,407 @@
+.Kanban2 .ant-table-thead {
+  height: 0px;
+  visibility: hidden;
+}
+
+.Kanban2 .ant-table-thead tr {
+  height: 0px;
+  visibility: hidden;
+}
+
+.Kanban2 .card-container p {
+  margin: 0;
+}
+
+.Kanban2 .card-container > .ant-tabs-card .ant-tabs-content {
+  margin-top: -16px;
+}
+
+.Kanban2
+  .card-container
+  > .ant-tabs-card
+  .ant-tabs-content
+  > .ant-tabs-tabpane {
+  background: #fff;
+  padding: 16px;
+}
+
+.Kanban2 .card-container > .ant-tabs-card > .ant-tabs-nav::before {
+  display: none;
+}
+
+.Kanban2 .card-container > .ant-tabs-card .ant-tabs-tab,
+[data-theme="compact"] .card-container > .ant-tabs-card .ant-tabs-tab {
+  border-color: transparent;
+  background: transparent;
+}
+
+.Kanban2 .card-container > .ant-tabs-card .ant-tabs-tab-active,
+[data-theme="compact"] .card-container > .ant-tabs-card .ant-tabs-tab-active {
+  border-color: #fff;
+  background: #fff;
+}
+
+.Kanban2 #components-tabs-demo-card-top .code-box-demo {
+  background: #f5f5f5;
+  overflow: hidden;
+  padding: 24px;
+}
+
+.Kanban2
+  [data-theme="compact"]
+  .card-container
+  > .ant-tabs-card
+  .ant-tabs-content {
+  margin-top: -8px;
+}
+
+.Kanban2 [data-theme="dark"] .card-container > .ant-tabs-card .ant-tabs-tab {
+  border-color: transparent;
+  background: transparent;
+}
+
+.Kanban2 [data-theme="dark"] #components-tabs-demo-card-top .code-box-demo {
+  background: #000;
+}
+
+.Kanban2
+  [data-theme="dark"]
+  .card-container
+  > .ant-tabs-card
+  .ant-tabs-content
+  > .ant-tabs-tabpane {
+  background: #141414;
+}
+
+.Kanban2
+  [data-theme="dark"]
+  .card-container
+  > .ant-tabs-card
+  .ant-tabs-tab-active {
+  border-color: #141414;
+  background: #141414;
+}
+
+.Kanban2 .statsCardDeals {
+  border: 0;
+  font-size: 1em;
+  color: #013d4a;
+  display: flex;
+}
+
+.Kanban2 .statsCardDeals .ant-card-body {
+  border: 0;
+  padding: 10px !important;
+  margin: 0;
+}
+
+.Kanban2 .statsCardDeals .ant-card-body .ant-select-sm,
+.ant-select-selector {
+  padding: 0;
+  margin: 0;
+}
+
+.Kanban2 .ant-select-selector {
+  border: 0 !important;
+}
+
+.Kanban2 .statsCardDeals .selectIcon {
+  border: 0;
+  font-size: 1em;
+  color: #013d4a;
+}
+
+.Kanban2 .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #013d4a;
+}
+
+.PipeView2 .drag-container2 .ant-row {
+  text-align: center;
+  margin: 0 -10px 0 -10px !important;
+  padding: 0px;
+  width: 100% !important;
+  border: 0px !important;
+}
+
+.PipeView2 .pipeCol {
+  margin: 0;
+  padding: 2px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  border: 0px !important;
+}
+
+.PipeView2 .drag-container2 {
+  text-align: center;
+  margin: 0px !important;
+  padding: 0px !important;
+  border: 0px !important;
+}
+
+.PipeView2 .head {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background-color: #cccccc;
+  color: black;
+  border-radius: 5px;
+}
+
+.PipeView2 .drag-container2 .group-header2 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+
+  border-radius: 0px;
+  font-weight: bold;
+  display: block;
+}
+
+.PipeView2 .drag-container2 .dealLength2 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  border-radius: 0px !important;
+  border: 0px !important;
+  background-color: #fcfcfc !important;
+}
+
+.PipeView2 .drag-container2 .dealValue2 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  border-radius: 0px !important;
+  border: 0px !important;
+}
+
+.PipeView2 .droppable2 {
+  position: relative;
+  background-color: #fcfcfc;
+  border-radius: 5px;
+  min-height: 82vh;
+  border: 0px !important;
+}
+
+.PipeView2 .droppable2 .dropCard {
+  /*border-top: 2px solid #19bad1;*/
+  border: inherit;
+}
+
+.PipeView2 .droppable2 .dropCard .ant-card-body {
+  /*padding: 5px;*/
+}
+
+.PipeView2 .droppable2 .draggable2 {
+  display: inline-block;
+  background-color: #001b21 !important;
+  max-height: 200px;
+  min-width: 40px;
+  width: 98%;
+  color: #adadad;
+  border-radius: 0.5em;
+  margin: 5px 0px 5px;
+  font-size: 14px;
+  text-align: left !important;
+}
+
+.PipeView2 .droppable2 .SpanDetails2 {
+  border-radius: 0px;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  text-align: left;
+}
+
+.PipeView2 .droppable2 .draggable2 .card-header {
+  padding: 0px !important;
+  margin: 0px !important;
+  border: 0px !important;
+  text-align: left !important;
+  color: #dddddd;
+}
+
+.PipeView2 .droppable2 .draggable2 .userIconDraggable {
+  float: right;
+  font-size: 14px;
+}
+
+.PipeView2 .droppable2 .SpanDetails2 i {
+  float: right;
+  color: #adadad;
+  padding-top: 5px;
+}
+
+.PipeView2 .droppable2 .SpanDetails2 a {
+  color: #fcfcfc !important;
+}
+
+.PipeView2 .droppable2 .SpanDetails2 .leftA {
+  float: left;
+  color: #6d7070 !important;
+}
+
+.PipeView2 .droppable2 .card-body {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  margin-left: 0px;
+  padding-left: 0px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 1em;
+}
+
+.PipeView2 .droppable2 .card-footer i {
+  float: right;
+}
+
+.PipeView2 .droppable2 a {
+  color: #dddddd;
+}
+
+.PipeView2 .droppable2 .detailsP span {
+  color: #19bad1;
+  font-size: 1.2em;
+}
+
+.PipeView2 .droppable2 .card-footer {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  color: #dee0e0 !important;
+  background-color: #343a40 !important;
+}
+
+.footerSpan2 {
+  color: #dddddd !important;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.PipeView2 .draggable2 .red {
+  color: #ff2929 !important;
+  font-weight: bold;
+  background-color: #001b21 !important;
+  padding: 1px;
+  font-size: 1em;
+}
+
+.PipeView2 .draggable2 .orange {
+  color: #fc902b !important;
+  font-weight: bold;
+  background-color: #001b21 !important;
+  padding: 1px;
+  font-size: 1em;
+}
+
+.PipeView2 .draggable2 .green {
+  color: #87ed90 !important;
+  font-weight: bold;
+  background-color: #001b21 !important;
+  padding: 1px;
+  font-size: 14px;
+}
+
+.PipeView2 .draggable2 .yellow {
+  color: #e6f1f2 !important;
+  font-weight: bold;
+  background-color: #001b21 !important;
+  padding: 1px;
+  font-size: 14px;
+}
+
+.PipeView2 .stats {
+  margin: 5px;
+  padding: 5px;
+  border: 0px !important;
+  display: block;
+  border-radius: 0px !important;
+  width: 100%;
+  font-size: 12px !important;
+  margin-bottom: 0px !important;
+}
+
+.PipeView2 .statsCard {
+  border: 0px !important;
+  margin: 0px !important;
+  padding: 0 !important;
+  display: block;
+  border-radius: 0 !important;
+  width: 100%;
+  font-size: 12px !important;
+}
+
+.PipeView2 .statsSpan {
+  border: 0px !important;
+  font-size: 12px !important;
+  align-items: center;
+}
+
+.PipeView2 .statsSpanLeft {
+  float: left;
+  border: 0px !important;
+}
+
+.PipeView2 .statsSpanRight {
+  float: right;
+  border: 0px !important;
+}
+
+.PipeView2 .statsSpanMLeft {
+  float: left;
+  border: 0px !important;
+}
+
+.PipeView2 .statsSpanMRight {
+  float: right;
+  border: 0px !important;
+}
+
+.PipeView2 .actButton2 {
+  float: right;
+  background-color: #001b21;
+  border: 0px !important;
+  padding: 0px !important;
+  margin: 0px !important;
+  height: inherit;
+}
+
+.PipeView2 .actButton2:hover {
+  background-color: #001b21;
+  border: 0px !important;
+  padding: 0px !important;
+  margin: 0px !important;
+  height: inherit;
+}
+
+.PipeView2 .actButton2 .anticon-ellipsis {
+  border-radius: 5px;
+}
+
+.PipeView2 .actButton2 .anticon-ellipsis:hover {
+  background-color: #013d4a !important;
+}
+
+.PipeView2 .showActSpan {
+  font-size: 14px !important;
+}
+
+.ant-switch-inner {
+  width: inherit !important;
+}
+
+span {
+  /*width: inherit !important;*/
+}
+
+.ant-select {
+  width: inherit !important;
+}
+
+.draggable2 .ant-card-body p {
+  color: #dddddd;
+}

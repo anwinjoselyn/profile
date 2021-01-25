@@ -1,0 +1,153 @@
+.Contact {
+  min-height: 100vh;
+  display: flex !important;
+  margin: 5vh 5vw 10vh 5vw !important;
+  color: #001b21;
+}
+
+.Contact a {
+  color: #001b21;
+}
+
+.sec-t h2 span {
+  color: #fa4a09;
+}
+
+.Contact .sub-head h4 {
+  font-size: 1.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0;
+  padding-bottom: 0.75em;
+  text-decoration: none !important;
+}
+
+.Contact .sub-head h4 i {
+  font-size: 1.2em;
+  opacity: 1;
+  color: #19dfd1;
+}
+
+.Contact .ContactCard {
+  margin: 1em !important;
+  border-radius: 1em !important;
+}
+
+.Contact .ContactCard .ant-card-head {
+  border-bottom: 0px !important;
+  font-size: 2em;
+}
+
+.Contact .ContactCard .ant-card-body {
+  padding: 1em;
+  text-align: center;
+  font-size: 1em;
+}
+
+.Contact .ContactCardIconDiv {
+  padding: 0.5em;
+  text-align: center;
+}
+
+.Contact .ContactCard .ContactCardIconDiv i {
+  color: #fa4a09;
+  opacity: 0.7;
+}
+
+.Contact .ContactCard p {
+  font-size: 1em;
+}
+
+.Contact .ContactCard2 {
+  margin: 1em !important;
+  border-radius: 1em !important;
+}
+
+.Contact .ContactCard2 .ant-card-head {
+  border-bottom: 0px !important;
+  font-size: 2em;
+}
+
+.Contact .ContactCard2 .ant-card-body {
+  padding: 1em;
+  font-size: 1em;
+}
+
+.Contact .ContactCardIconDiv2 {
+  padding: 0.5em;
+  text-align: center;
+}
+
+.Contact .ContactCard2 .ContactCardIconDiv2 i {
+  color: #fa4a09;
+  opacity: 0.7;
+}
+
+.Contact .ContactCard2 p {
+  font-size: 1em;
+  margin-bottom: 0.6em;
+}
+
+.Contact .SocialCard {
+  margin: 1em !important;
+  border-radius: 1em !important;
+}
+
+.Contact .SocialCard .ant-card-body {
+  padding: 1em;
+  font-size: 2em;
+  opacity: 0.7;
+}
+
+.Contact .SocialCard .ant-card-body .ant-row {
+  padding: 0.5em;
+}
+
+.Contact .SocialCard .ant-card-body .ant-row .ant-col {
+  text-align: center;
+}
+
+.Contact .ContactFormCard {
+  margin: 1em !important;
+  border-radius: 1em !important;
+}
+
+.Contact .ContactFormCard .ant-card-body {
+  padding: 3em;
+  font-size: 1.2em;
+}
+
+.Contact label {
+  position: absolute;
+  top: -1.6em;
+  left: 0px;
+  font-size: 12px;
+  color: #013d4a;
+  pointer-event: none;
+  transition: all 0.5s ease-in-out;
+  display: block;
+  width: 100%;
+}
+
+.Contact .ant-input {
+  border: 0;
+  border-bottom: 1px solid #19bad1 !important;
+  background: transparent;
+  width: 100%;
+  padding: 8px 0 5px 5px;
+  font-size: 16px;
+  color: #001b21;
+  margin: 5px 0;
+}
+
+.Contact .ant-input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fa4a09;
+  box-shadow: none;
+}
+
+.Contact .ant-form-item {
+  padding-bottom: 1.6em !important;
+}

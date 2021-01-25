@@ -1,0 +1,152 @@
+@keyframes animate {
+  0% {
+    opacity: 0.1;
+  }
+
+  10% {
+    opacity: 0.2;
+  }
+
+  20% {
+    opacity: 0.3;
+  }
+
+  30% {
+    opacity: 0.4;
+  }
+
+  40% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+
+  60% {
+    opacity: 0.7;
+  }
+
+  70% {
+    opacity: 0.8;
+  }
+
+  80% {
+    opacity: 0.9;
+  }
+
+  90% {
+    opacity: 1;
+  }
+}
+
+.Home {
+  height: 100vh;
+  display: flex !important;
+  padding: 20vh 10vw !important;
+}
+
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+  -webkit-animation-timing-function: cubic-bezier(0, 0.99, 0.61, 0.99);
+  animation-timing-function: cubic-bezier(0, 0.99, 0.61, 0.99);
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+
+.MainRow {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.MainColumn {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.Home h5 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.Home h5 span {
+  font-weight: 500;
+}
+
+.Home h2 span {
+  color: #fa4a09;
+  position: relative;
+}
+
+.Home h2 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  position: relative;
+  animation: animate infinite 5s;
+}
+
+.animated.slower {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+.Home .lead {
+  font-size: 1.15em;
+  margin-bottom: 2.25rem;
+  text-align: justify;
+}
+
+p {
+  margin: 0 0 0.75rem 0;
+}
+
+.btn-brand {
+  background-color: #fa4a09 !important;
+  color: rgb(255, 255, 255) !important;
+  border: 2px solid #fa4a09 !important;
+}
+
+.btn-brand-border {
+  border: 2px solid #fa4a09 !important;
+  background-color: transparent !important;
+  color: #fa4a09 !important;
+}
+
+.mr-3,
+.mx-3 {
+  margin-right: 1rem !important;
+}

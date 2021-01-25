@@ -1,0 +1,73 @@
+.About {
+  height: 100vh;
+  padding: 20vh 10vw !important;
+  color: #001b21 !important;
+}
+.About .ant-avatar {
+  width: 64px !important;
+}
+
+.sec-t {
+  margin-bottom: 2em;
+  opacity: 0.7;
+}
+
+.sec-t h2 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+.sub-head p {
+  text-align: justify;
+  font-size: 1.2em;
+}
+
+.sub-head {
+  margin-bottom: 2rem;
+}
+
+.AboutMeList {
+  text-align: center !important;
+  -webkit-box-pack: start !important;
+  -ms-flex-pack: start !important;
+  justify-content: flex-start !important;
+  -ms-flex-wrap: nowrap !important;
+  flex-wrap: nowrap !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  padding-left: 0;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.AboutMeListItem {
+  margin-right: 5rem;
+  display: inline-block;
+}
+
+.AboutMeListItem:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.AboutMeIcon {
+  font-size: 2.5rem;
+  display: inline-block;
+  padding-bottom: 1rem;
+  color: #014744;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  opacity: 0.7;
+}
+
+.AboutMeTag {
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0;
+  font-weight: 400;
+  color: #014744 !important;
+  background: #fff !important;
+  border: 1px solid #014744 !important;
+}

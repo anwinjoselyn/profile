@@ -1,0 +1,613 @@
+.Inbox {
+  min-height: 70vh;
+}
+
+.Inbox .statsCardIT {
+  display: flex;
+  justify-content: space-around;
+  border: 0;
+  font-size: 1.2em;
+  padding: 0.5em 0;
+  background: #013d4a;
+  min-height: 30px;
+  border-radius: 0;
+  color: #e6f1f2;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+  word-break: break-all;
+}
+
+.Inbox .statsCardIT .ant-card-body {
+  padding: 0px 5px;
+}
+
+.Inbox .ant-card-body {
+  padding: 0px;
+}
+
+.Inbox .InboxMainCard {
+  border: 0;
+  font-size: 1.2em;
+  text-align: left;
+  overflow: scroll;
+  height: 100%;
+}
+
+.InboxMainCard
+  .ant-drawer-content-wrapper
+  .ant-drawer-content
+  .ant-drawer-wrapper-body
+  .ant-drawer-body {
+  padding: 0 !important;
+}
+
+.Inbox .InboxMidCard {
+  border: 0;
+  padding: 1em;
+  margin: 0;
+  margin-right: 5px;
+  font-size: 1.2em;
+  text-align: left;
+  overflow: scroll;
+  box-shadow: 2px -2px 5px #013d4a;
+  min-height: 71vh;
+  max-height: 71vh;
+}
+
+.Inbox .InboxMainCard .ant-card-body {
+  padding: 0px;
+}
+
+.Inbox .InboxMidCard .ant-input {
+  border: 1px solid #b1f5ff;
+  font-size: 1em;
+}
+
+.Inbox .InboxMidCard .ant-checkbox-wrapper {
+  font-size: 1em;
+}
+
+.Inbox .InboxMainCard .ant-checkbox-checked {
+  color: #b1f5ff !important;
+}
+
+.Inbox .InboxSideCard {
+  font-size: 1.2em;
+  border: 0;
+  padding: 10px 2px 2px 10px;
+  margin: 2px;
+  min-height: 71vh;
+  max-height: 75vh;
+  overflow: scroll;
+  box-shadow: 2px -2px 5px #013d4a;
+  text-align: left;
+}
+
+.Inbox .InboxSideCard .ant-card-body .ant-row {
+  margin: 0.6em 0;
+}
+
+.Inbox .InboxSideCard .ant-card-body {
+  padding: 0.6em;
+}
+
+.Inbox .InboxSideCard .ant-select {
+  width: 100% !important;
+  display: block;
+  font-size: 1em;
+}
+
+.ant-select-item {
+  font-size: 1.1em !important;
+}
+
+.Inbox .InboxSideCard .ant-select .ant-select-arrow .anticon {
+  /*visibility: hidden;*/
+  text-align: right;
+}
+
+.Inbox .InboxSideCard .ant-avatar {
+  width: 3em !important;
+  height: 3em !important;
+  float: right;
+}
+
+.Inbox .InboxSideCard .ant-avatar.ant-avatar-icon {
+  font-size: 1em;
+}
+
+.Inbox .demo-wrapper {
+  padding: 0px;
+  border-radius: 2px;
+}
+
+.Inbox .demo-editor {
+  min-height: 20vh;
+  border: 1px solid #b1f5ff;
+  padding: 0px 5px;
+  border-radius: 2px;
+  font-size: 1em;
+}
+
+.Inbox .openDrawerSpan {
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  font-size: 40px;
+  color: #fa4a09;
+  cursor: pointer;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+.card-container p {
+  margin: 0;
+}
+.card-container > .ant-tabs-card .ant-tabs-content {
+  margin-top: -16px;
+}
+.card-container > .ant-tabs-card .ant-tabs-content > .ant-tabs-tabpane {
+  background: #fff;
+  padding: 0px;
+}
+.card-container > .ant-tabs-card > .ant-tabs-nav::before {
+  display: none;
+}
+.InboxTabs .ant-tabs-tab {
+  border-color: transparent;
+  background: transparent;
+  border: 0 !important;
+  margin-right: 0 !important;
+}
+.OtherActs .ant-tabs {
+  display: flex;
+  align-content: space-between !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+.OtherActs .ant-tabs .ant-tabs-nav {
+}
+.OtherActs .ant-tabs-tab {
+  border-color: transparent;
+  background: transparent;
+  margin: 0 16px;
+}
+
+.card-container > .ant-tabs-card .ant-tabs-tab-active,
+[data-theme="compact"] .card-container > .ant-tabs-card .ant-tabs-tab-active {
+  border-color: #fff;
+  background: #fff;
+}
+#components-tabs-demo-card-top .code-box-demo {
+  background: #f5f5f5;
+  overflow: hidden;
+  padding: 24px;
+}
+[data-theme="compact"] .card-container > .ant-tabs-card .ant-tabs-content {
+  margin-top: -8px;
+}
+[data-theme="dark"] .card-container > .ant-tabs-card .ant-tabs-tab {
+  border-color: transparent;
+  background: transparent;
+}
+[data-theme="dark"] #components-tabs-demo-card-top .code-box-demo {
+  background: #000;
+}
+[data-theme="dark"]
+  .card-container
+  > .ant-tabs-card
+  .ant-tabs-content
+  > .ant-tabs-tabpane {
+  background: #141414;
+}
+[data-theme="dark"] .card-container > .ant-tabs-card .ant-tabs-tab-active {
+  border-color: #141414;
+  background: #141414;
+}
+
+.ant-tabs-top > .ant-tabs-nav .ant-tabs-nav-wrap::after {
+  box-shadow: 0 0 !important;
+  opacity: 0;
+}
+
+.Inbox .InboxHeaderRow {
+  box-shadow: 0 0 5px #013d4a;
+  margin: 16px 8px 8px;
+}
+
+.OtherActs {
+  margin: 0;
+  padding: 0;
+}
+
+.OtherActs .ant-tabs-tab-btn {
+  font-size: 0.9em;
+}
+
+.OtherActs .OtherActsCard {
+  font-size: 0.9em;
+  min-height: 40vh;
+  overflow: scroll;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.OtherActs .OtherActsCard .ant-card-body {
+  max-height: 80vh;
+  margin: 0;
+  padding: 0;
+}
+
+.OtherActs .OtherActsCard .OtherActsCardItems {
+  font-size: 0.9em;
+  padding: 5px;
+  margin: 5px;
+  /*box-shadow: inset 0 0 20px #b1f5ff;*/
+  cursor: pointer;
+}
+
+.OtherActs .OtherActsCard .OACIActive {
+  border-left: 0.2em solid #001b21;
+  padding-left: 0.3em;
+  margin-left: 0.3em !important;
+}
+
+.OtherActs .OtherActsCard .OtherActsCardItems:hover {
+  box-shadow: 0 0 10px #b1f5ff;
+  background: #001b21 !important;
+  color: #e6f1f2 !important;
+}
+
+.OtherActs .OtherActsCard .OtherActsCardItems .slugP {
+  width: 40px;
+  height: 40px;
+  margin-top: 1em !important;
+  border-radius: 50%;
+  border: 1px solid #19bad1;
+  padding: 5px;
+  padding-top: 10px;
+  background: white;
+  margin-left: 2px;
+  color: inherit;
+}
+
+.OtherActs .OtherActsCard .OtherActsCardItems .slugP i {
+  font-size: 1.8em;
+  color: inherit;
+}
+
+.OtherActs .OtherActsCard .OtherActsCardItems .titleP {
+  font-size: 1.3em;
+  margin: 5px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 10px;
+  color: inherit;
+}
+.OtherActs .OtherActsCard .OtherActsCardItems .withP {
+  font-size: 1.2em;
+  margin: 2px;
+  text-align: left;
+  padding-left: 10px;
+  color: inherit;
+}
+
+.OtherActs .OtherActsCard .OtherActsCardItems .timeP {
+  font-size: 1.2em;
+  margin: 0.2em !important;
+  text-align: right;
+  color: inherit;
+}
+
+.OtherActs .OtherActsCard .OtherActsCardItems .timeP .anticon {
+  margin-right: 0.3em;
+  color: inherit;
+}
+
+.OtherActs .OtherActsCard .OtherActsCardItems .dealP {
+  font-size: 1.1em;
+  margin: 2px;
+  text-align: left;
+  padding-left: 10px;
+  color: inherit;
+}
+
+.OtherActs .OtherActsMainCard {
+  box-shadow: 2px -2px 5px #001b21;
+}
+
+.Inbox .rdw-editor-toolbar {
+  font-size: 0.9em !important;
+  border: 1px solid #b1f5ff;
+}
+
+.Inbox .rdw-dropdown-wrapper {
+  border: 0;
+}
+
+.Inbox .rdw-option-wrapper {
+  border: 0;
+  font-size: 0.9em;
+}
+
+.Inbox .rdw-option-active {
+  background: #013d4a;
+  color: #e6f1f2;
+  border-radius: 3px;
+}
+
+.InboxMidCard .ant-checkbox {
+  width: inherit !important;
+}
+
+.ant-checkbox-inner {
+  border-color: #b1f5ff !important;
+  min-width: 16px;
+  width: inherit !important;
+  border-radius: inherit !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #013d4a !important;
+  border-color: #013d4a !important;
+}
+
+.ant-btn span {
+  width: inherit !important;
+}
+
+/* All Activities */
+
+.AllActivities {
+  min-height: 80vh;
+  max-height: 85vh;
+}
+
+.AllTasksTab .ant-tabs-content {
+  min-height: 80vh;
+  max-height: 85vh;
+}
+
+.AllTasksTab .ant-tabs-tab {
+  border-color: transparent;
+  background: transparent;
+  border: 0 !important;
+  margin-right: 0 !important;
+}
+
+.allTasksRow {
+  min-height: 40vh;
+  max-height: 75vh !important;
+  overflow: scroll;
+  text-align: left;
+  padding-right: 10px;
+}
+
+.allTasksRow .actCard {
+  margin: 0.5em;
+  align-items: center !important;
+  border: 1px solid #fbfaeb;
+  border-radius: 5px;
+  cursor: crosshair;
+  padding: 0.6em;
+}
+
+.allTasksRow .actCard:hover {
+  background: #013d4a;
+  color: #e6f1f2;
+  box-shadow: 5px 5px 5px #001b21;
+  border: 0px;
+}
+
+.allTasksRow .actCard .ant-card-body {
+  padding: 5px !important;
+}
+
+.allTasksRow .activeAct {
+  background: #e6f1f2;
+  color: #001b21;
+  box-shadow: 5px -5px 5px #013d4a, -5px 5px 5px #013d4a;
+  border: 0px;
+}
+
+.allTasksRow .actCard .ant-checkbox {
+}
+
+.allTasksRow .actCard .ant-checkbox .ant-checkbox-inner {
+  border-radius: 100% !important;
+  width: 1.2em !important;
+  height: 1.2em;
+  border-color: #92f0ae !important;
+  padding-left: 2px;
+}
+
+.allTasksRow .actCard .ant-checkbox .ant-checkbox-checked .ant-checkbox-inner {
+  background: #b1f5ff !important;
+  color: #013d4a !important;
+}
+
+.allTasksRow .actCard .ant-checkbox-checked .ant-checkbox-inner::after {
+  width: 6px;
+  height: 10px;
+}
+
+.allTasksRow .allTasksIcon {
+  font-size: 14px;
+  color: #19bad1;
+}
+
+.allTasksRow .actCard .allTasksTitleSpan {
+  font-size: 14px;
+}
+
+.allTasksRow .actCard .allTasksDealSpan {
+  font-size: 14px;
+}
+
+.allTasksRow .actCard .allTasksOrgSpan {
+  font-size: 14px;
+}
+
+.allTasksRow .actCard .allTasksContactSpan {
+  font-size: 14px;
+}
+
+.allTasksRow .actCard .allTasksDateSpan {
+  font-size: 14px;
+}
+
+.allTasksRow .actCard .allTasksTimeSpan {
+  font-size: 14px;
+}
+
+.allTasksRow .actCard .allTasksDurationSpan {
+  font-size: 14px;
+}
+
+.allTasksSelect {
+  border-radius: 10px;
+  color: #013d4a !important;
+  margin-bottom: 0.6em !important;
+}
+
+.allTasksSelect .ant-select-arrow .anticon {
+  /*visibility: hidden;*/
+  text-align: right;
+}
+
+.selectSpan {
+  display: block;
+}
+
+.allTasksRow .ant-divider-vertical {
+  height: 50px;
+}
+
+.detailsCard {
+  min-height: 70vh;
+  text-align: left;
+  font-size: 12px !important;
+}
+
+.detailsCard .rdw-editor-toolbar {
+  font-size: 1em !important;
+  border: 1px solid #b1f5ff;
+}
+
+.detailsCard .rdw-dropdown-wrapper {
+  border: 0;
+}
+
+.detailsCard .rdw-option-wrapper {
+  border: 0;
+  font-size: 0.9em;
+}
+
+.detailsCard .rdw-option-active {
+  background: #013d4a;
+  color: #e6f1f2;
+  border-radius: 3px;
+}
+
+.detailsCard .demo-wrapper {
+  padding: 0px;
+  border-radius: 2px;
+}
+
+.detailsCard .demo-editor {
+  min-height: 20vh;
+  border: 1px solid #b1f5ff;
+  padding: 0px 5px;
+  border-radius: 2px;
+  font-size: 1em;
+}
+
+.detailsCard .ant-drawer-body {
+  padding: 0 10px !important;
+  font-size: 12px;
+}
+
+.detailsCard .ant-drawer-header {
+}
+
+.detailsCard .TimeCard,
+.DetailsCard2,
+.StatusCard,
+.EditorCard {
+  font-size: 12px;
+}
+
+.detailsCard .TimeCard .ant-card-head {
+  min-height: inherit !important;
+}
+
+.detailsCard .TimeCard .ant-card-body {
+  font-size: 12px;
+}
+
+.detailsCard .detailsSelect {
+  width: 100% !important;
+  display: block;
+}
+
+.detailsSelect .ant-select-arrow .anticon {
+  /*visibility: hidden;*/
+  text-align: right;
+}
+
+.detailsCard .ant-space-vertical {
+  padding-top: 0 !important;
+}
+
+.TasksTopCard .ant-card-body {
+  padding: 0.5em 0.2em 0.2em 0.2em;
+}
+
+.TasksTopCard .ant-card-body .ant-row {
+  display: block;
+  width: 100%;
+}
+
+.TasksTopCard .ant-card-body .ant-row .ant-col {
+  display: inline-block;
+  width: 100%;
+}
+
+.ant-picker-small {
+  display: inline-block !important;
+  width: 95% !important;
+}
+
+.TasksFormRow {
+  margin: 1em;
+}
+
+.TasksFormRow .ant-checkbox .ant-checkbox-inner {
+  border-radius: 100% !important;
+  width: 1.2em !important;
+  height: 1.2em;
+  border-color: #92f0ae !important;
+  padding-left: 2px;
+}
+
+.TasksFormRow .ant-checkbox .ant-checkbox-checked .ant-checkbox-inner {
+  background: #b1f5ff !important;
+  color: #013d4a !important;
+}
+
+.TasksFormRow .ant-checkbox-checked .ant-checkbox-inner::after {
+  width: 6px;
+  height: 10px;
+}
+
+.ant-radio-group {
+  display: block;
+  width: 100%;
+}
+
+.TasksSpace {
+  justify-content: space-around;
+  align-items: center !important;
+}

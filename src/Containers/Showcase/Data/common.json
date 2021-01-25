@@ -1,0 +1,1167 @@
+{
+  "activityTypes": [
+    {
+      "id": 1,
+      "name": "Call",
+      "activityTypeSlug": "fas fa-phone-alt",
+      "isActive": true,
+      "createdAt": "2019-12-21T13:47:35.970Z",
+      "updatedAt": "2019-12-21T13:47:35.970Z"
+    },
+    {
+      "id": 2,
+      "name": "Text",
+      "activityTypeSlug": "fas fa-comment-alt",
+      "isActive": true,
+      "createdAt": "2019-12-21T13:48:04.108Z",
+      "updatedAt": "2019-12-21T13:48:04.108Z"
+    },
+    {
+      "id": 3,
+      "name": "Email",
+      "activityTypeSlug": "fas fa-envelope",
+      "isActive": true,
+      "createdAt": "2019-12-21T13:48:22.099Z",
+      "updatedAt": "2019-12-21T13:48:22.099Z"
+    },
+    {
+      "id": 4,
+      "name": "Meeting",
+      "activityTypeSlug": "fas fa-handshake",
+      "isActive": true,
+      "createdAt": "2019-12-21T13:48:39.044Z",
+      "updatedAt": "2019-12-21T13:48:39.044Z"
+    },
+    {
+      "id": 5,
+      "name": "Demo",
+      "activityTypeSlug": "fas fa-laptop",
+      "isActive": true,
+      "createdAt": "2019-12-21T13:48:50.856Z",
+      "updatedAt": "2019-12-21T13:48:50.856Z"
+    },
+    {
+      "id": 6,
+      "name": "Task",
+      "activityTypeSlug": "fas fa-thumbtack",
+      "isActive": true,
+      "createdAt": "2019-12-21T13:49:02.389Z",
+      "updatedAt": "2019-12-21T13:49:02.389Z"
+    },
+    {
+      "id": 7,
+      "name": "Lunch",
+      "activityTypeSlug": "fas fa-utensils",
+      "isActive": true,
+      "createdAt": "2019-12-21T13:49:15.106Z",
+      "updatedAt": "2019-12-21T13:49:15.106Z"
+    }
+  ],
+  "companyTypes": [
+    {
+      "id": 1,
+      "typeName": "Startup",
+      "isActive": true,
+      "createdAt": "2019-12-21T13:51:55.940Z",
+      "updatedAt": "2019-12-21T13:51:55.940Z"
+    },
+    {
+      "id": 2,
+      "typeName": "Micro SME",
+      "isActive": true,
+      "createdAt": "2019-12-21T13:52:05.357Z",
+      "updatedAt": "2019-12-21T13:52:05.357Z"
+    },
+    {
+      "id": 3,
+      "typeName": "SME",
+      "isActive": true,
+      "createdAt": "2019-12-21T13:52:11.487Z",
+      "updatedAt": "2019-12-21T13:52:11.487Z"
+    },
+    {
+      "id": 4,
+      "typeName": "Medium Enterprise",
+      "isActive": true,
+      "createdAt": "2019-12-21T13:52:19.876Z",
+      "updatedAt": "2019-12-21T13:52:19.876Z"
+    },
+    {
+      "id": 5,
+      "typeName": "Large Enterprise",
+      "isActive": true,
+      "createdAt": "2019-12-21T13:52:25.161Z",
+      "updatedAt": "2019-12-21T13:52:25.161Z"
+    },
+    {
+      "id": 6,
+      "typeName": "Corporate",
+      "isActive": true,
+      "createdAt": "2019-12-21T13:52:32.150Z",
+      "updatedAt": "2019-12-21T13:52:32.150Z"
+    }
+  ],
+  "contactTypes": [
+    {
+      "id": 1,
+      "contactTypeName": "User",
+      "isActive": true,
+      "createdAt": "2019-12-21T13:53:12.991Z",
+      "updatedAt": "2019-12-21T13:53:12.991Z"
+    },
+    {
+      "id": 2,
+      "contactTypeName": "Influencer",
+      "isActive": true,
+      "createdAt": "2019-12-21T13:53:19.597Z",
+      "updatedAt": "2019-12-21T13:53:19.597Z"
+    },
+    {
+      "id": 3,
+      "contactTypeName": "Champion",
+      "isActive": true,
+      "createdAt": "2019-12-21T13:53:26.937Z",
+      "updatedAt": "2019-12-21T13:53:26.937Z"
+    },
+    {
+      "id": 4,
+      "contactTypeName": "Decision Maker",
+      "isActive": true,
+      "createdAt": "2019-12-21T13:53:36.124Z",
+      "updatedAt": "2019-12-21T13:53:36.124Z"
+    },
+    {
+      "id": 5,
+      "contactTypeName": "Payment Authority",
+      "isActive": true,
+      "createdAt": "2019-12-21T13:53:44.669Z",
+      "updatedAt": "2019-12-21T13:53:44.669Z"
+    },
+    {
+      "id": 6,
+      "contactTypeName": "Gatekeeper",
+      "isActive": true,
+      "createdAt": "2019-12-21T13:53:52.240Z",
+      "updatedAt": "2019-12-21T13:53:52.240Z"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "productName": "All In all Plan",
+      "productCode": "ALL",
+      "unitCost": "1000",
+      "directCost": "1000",
+      "costPerUnit": "1000",
+      "currency": "USD",
+      "tenantId": 1,
+      "isActive": true,
+      "createdAt": "2019-12-22T19:06:29.858Z",
+      "updatedAt": "2020-02-29T14:32:34.622Z"
+    },
+    {
+      "id": 16,
+      "productName": "Implementation",
+      "productCode": "IMPL",
+      "unitCost": "1000",
+      "directCost": "1000",
+      "costPerUnit": "1000",
+      "currency": "USD",
+      "tenantId": 1,
+      "isActive": true,
+      "createdAt": "2020-07-23T12:07:28.990Z",
+      "updatedAt": "2020-07-23T12:07:28.990Z"
+    }
+  ],
+  "reasons": [
+    {
+      "id": 1,
+      "reasonName": "Matching ICP",
+      "statusId": 1,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:28:33.148Z",
+      "updatedAt": "2019-12-21T14:28:33.148Z"
+    },
+    {
+      "id": 2,
+      "reasonName": "Not happening",
+      "statusId": 2,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:28:46.109Z",
+      "updatedAt": "2019-12-21T14:28:46.109Z"
+    },
+    {
+      "id": 3,
+      "reasonName": "Needs more time",
+      "statusId": 3,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:28:56.379Z",
+      "updatedAt": "2019-12-21T14:28:56.379Z"
+    },
+    {
+      "id": 4,
+      "reasonName": "Interested",
+      "statusId": 4,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:29:06.430Z",
+      "updatedAt": "2019-12-21T14:29:06.430Z"
+    },
+    {
+      "id": 5,
+      "reasonName": "Not gonna happen",
+      "statusId": 5,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:29:19.764Z",
+      "updatedAt": "2019-12-21T14:29:19.764Z"
+    },
+    {
+      "id": 6,
+      "reasonName": "Sales Ready",
+      "statusId": 6,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:29:29.501Z",
+      "updatedAt": "2019-12-21T14:29:29.501Z"
+    },
+    {
+      "id": 7,
+      "reasonName": "Not a fit",
+      "statusId": 7,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:29:43.259Z",
+      "updatedAt": "2019-12-21T14:29:43.259Z"
+    },
+    {
+      "id": 8,
+      "reasonName": "All good",
+      "statusId": 8,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:29:51.497Z",
+      "updatedAt": "2019-12-21T14:29:51.497Z"
+    },
+    {
+      "id": 9,
+      "reasonName": "Using & Happy",
+      "statusId": 9,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:30:01.889Z",
+      "updatedAt": "2019-12-21T14:30:01.889Z"
+    },
+    {
+      "id": 10,
+      "reasonName": "Unhappy",
+      "statusId": 10,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:30:10.440Z",
+      "updatedAt": "2019-12-21T14:30:10.440Z"
+    },
+    {
+      "id": 11,
+      "reasonName": "Happily renewed",
+      "statusId": 11,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:30:19.425Z",
+      "updatedAt": "2019-12-21T14:30:19.425Z"
+    },
+    {
+      "id": 12,
+      "reasonName": "Lost",
+      "statusId": 12,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:30:28.409Z",
+      "updatedAt": "2019-12-21T14:30:28.409Z"
+    },
+    {
+      "id": 13,
+      "reasonName": "May use again",
+      "statusId": 13,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:30:37.115Z",
+      "updatedAt": "2019-12-21T14:30:37.115Z"
+    },
+    {
+      "id": 14,
+      "reasonName": "Happily renewed (Renewal)",
+      "statusId": 14,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:30:46.999Z",
+      "updatedAt": "2019-12-21T14:30:46.999Z"
+    },
+    {
+      "id": 15,
+      "reasonName": "To be Renewed",
+      "statusId": 15,
+      "isActive": true,
+      "createdAt": "2019-12-26T10:56:53.218Z",
+      "updatedAt": "2019-12-26T10:56:53.218Z"
+    }
+  ],
+  "teammap": [
+    {
+      "id": 1,
+      "tenantId": 1,
+      "mgmtTeamActive": true,
+      "mktgTeamActive": true,
+      "sdrTeamActive": true,
+      "salesTeamActive": true,
+      "csTeamActive": true,
+      "renTeamActive": true,
+      "subscriptionStatus": true,
+      "planId": 6,
+      "subscriptionEndDate": "2099-12-30T18:30:00.000Z",
+      "onboardingComplete": true,
+      "cashBalance": true,
+      "revTargets": true,
+      "srTargetsAnnual": true,
+      "srTargets": true,
+      "sdTargets": true,
+      "mTargets": true,
+      "csTargets": true,
+      "pipes": true,
+      "fyUpdated": true,
+      "allInvites": true,
+      "maUserTargets": true,
+      "sdUserTargets": true,
+      "saUserTargets": true,
+      "csUserTargets": true,
+      "reUserTargets": true,
+      "dataOnboarded": true,
+      "rTargets": true,
+      "createdAt": "2019-12-21T14:41:41.349Z",
+      "updatedAt": "2020-02-28T15:05:46.243Z"
+    }
+  ],
+  "tenant": {
+    "id": 1,
+    "tenantName": "Malazan Inc",
+    "url": "https://malazaninc.com",
+    "subdomain": "malazan",
+    "tenantCity": "Malaz",
+    "tenantCountry": "United States - US",
+    "fyStartMonth": "January",
+    "currency": "USD",
+    "timeZone": "PDT - Pacific Daylight Time - (UTC-07:00) Pacific Time (US & Canada)",
+    "logoSlug": "https://pb-extras.s3.amazonaws.com/public/profiles/Malazan-logo-27-05-2020-08-20-30",
+    "industry": null,
+    "companyTypeId": 1,
+    "companySize": null,
+    "annualRevenue": null,
+    "isActive": true,
+    "createdAt": "2019-12-21T12:54:09.384Z",
+    "updatedAt": "2020-05-27T14:50:44.571Z"
+  },
+  "userTargets": [
+    {
+      "id": 1,
+      "userId": 2,
+      "tenantId": 1,
+      "targetTypeId": 1,
+      "targetYear": "2019",
+      "annual": "320",
+      "m1": "20",
+      "m2": "20",
+      "m3": "20",
+      "m4": "24",
+      "m5": "24",
+      "m6": "24",
+      "m7": "28",
+      "m8": "28",
+      "m9": "28",
+      "m10": "32",
+      "m11": "36",
+      "m12": "36",
+      "isActive": true,
+      "createdAt": "2019-12-21T15:13:43.875Z",
+      "updatedAt": "2019-12-21T15:13:43.875Z"
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "tenantId": 1,
+      "targetTypeId": 2,
+      "targetYear": "2019",
+      "annual": "160",
+      "m1": "10",
+      "m2": "10",
+      "m3": "10",
+      "m4": "12",
+      "m5": "12",
+      "m6": "12",
+      "m7": "14",
+      "m8": "14",
+      "m9": "14",
+      "m10": "16",
+      "m11": "18",
+      "m12": "18",
+      "isActive": true,
+      "createdAt": "2019-12-21T15:13:49.192Z",
+      "updatedAt": "2019-12-21T15:13:49.192Z"
+    },
+    {
+      "id": 3,
+      "userId": 4,
+      "tenantId": 1,
+      "targetTypeId": 3,
+      "targetYear": "2019",
+      "annual": "80",
+      "m1": "5",
+      "m2": "5",
+      "m3": "5",
+      "m4": "6",
+      "m5": "6",
+      "m6": "6",
+      "m7": "7",
+      "m8": "7",
+      "m9": "7",
+      "m10": "8",
+      "m11": "9",
+      "m12": "9",
+      "isActive": true,
+      "createdAt": "2019-12-21T15:13:54.687Z",
+      "updatedAt": "2019-12-21T15:13:54.687Z"
+    },
+    {
+      "id": 4,
+      "userId": 5,
+      "tenantId": 1,
+      "targetTypeId": 4,
+      "targetYear": "2019",
+      "annual": "18",
+      "m1": "1",
+      "m2": "1",
+      "m3": "1",
+      "m4": "1",
+      "m5": "1",
+      "m6": "1",
+      "m7": "1",
+      "m8": "2",
+      "m9": "2",
+      "m10": "2",
+      "m11": "2",
+      "m12": "3",
+      "isActive": true,
+      "createdAt": "2019-12-21T15:14:00.221Z",
+      "updatedAt": "2019-12-21T15:14:00.221Z"
+    },
+    {
+      "id": 5,
+      "userId": 6,
+      "tenantId": 1,
+      "targetTypeId": 5,
+      "targetYear": "2019",
+      "annual": "18",
+      "m1": "1",
+      "m2": "1",
+      "m3": "1",
+      "m4": "1",
+      "m5": "1",
+      "m6": "1",
+      "m7": "1",
+      "m8": "2",
+      "m9": "2",
+      "m10": "2",
+      "m11": "2",
+      "m12": "3",
+      "isActive": true,
+      "createdAt": "2019-12-21T15:14:06.511Z",
+      "updatedAt": "2019-12-21T15:14:06.511Z"
+    },
+    {
+      "id": 31,
+      "userId": 2,
+      "tenantId": 1,
+      "targetTypeId": 1,
+      "targetYear": "2020",
+      "annual": "212",
+      "m1": "8",
+      "m2": "12",
+      "m3": "12",
+      "m4": "16",
+      "m5": "16",
+      "m6": "16",
+      "m7": "20",
+      "m8": "20",
+      "m9": "20",
+      "m10": "24",
+      "m11": "24",
+      "m12": "24",
+      "isActive": true,
+      "createdAt": "2020-01-16T15:12:09.809Z",
+      "updatedAt": "2020-01-16T15:12:09.809Z"
+    },
+    {
+      "id": 32,
+      "userId": 3,
+      "tenantId": 1,
+      "targetTypeId": 2,
+      "targetYear": "2020",
+      "annual": "106",
+      "m1": "4",
+      "m2": "6",
+      "m3": "6",
+      "m4": "8",
+      "m5": "8",
+      "m6": "8",
+      "m7": "10",
+      "m8": "10",
+      "m9": "10",
+      "m10": "12",
+      "m11": "12",
+      "m12": "12",
+      "isActive": true,
+      "createdAt": "2020-01-17T09:58:31.256Z",
+      "updatedAt": "2020-01-17T09:58:31.256Z"
+    },
+    {
+      "id": 33,
+      "userId": 4,
+      "tenantId": 1,
+      "targetTypeId": 3,
+      "targetYear": "2020",
+      "annual": "53",
+      "m1": "2",
+      "m2": "3",
+      "m3": "3",
+      "m4": "4",
+      "m5": "4",
+      "m6": "4",
+      "m7": "5",
+      "m8": "5",
+      "m9": "5",
+      "m10": "6",
+      "m11": "6",
+      "m12": "6",
+      "isActive": true,
+      "createdAt": "2020-01-17T09:58:37.300Z",
+      "updatedAt": "2020-01-17T09:58:37.300Z"
+    },
+    {
+      "id": 34,
+      "userId": 5,
+      "tenantId": 1,
+      "targetTypeId": 4,
+      "targetYear": "2020",
+      "annual": "12",
+      "m1": "1",
+      "m2": "1",
+      "m3": "1",
+      "m4": "1",
+      "m5": "1",
+      "m6": "1",
+      "m7": "1",
+      "m8": "1",
+      "m9": "1",
+      "m10": "2",
+      "m11": "2",
+      "m12": "2",
+      "isActive": true,
+      "createdAt": "2020-01-17T09:58:42.071Z",
+      "updatedAt": "2020-01-17T09:58:42.071Z"
+    },
+    {
+      "id": 35,
+      "userId": 6,
+      "tenantId": 1,
+      "targetTypeId": 5,
+      "targetYear": "2020",
+      "annual": "12",
+      "m1": "1",
+      "m2": "1",
+      "m3": "1",
+      "m4": "1",
+      "m5": "1",
+      "m6": "1",
+      "m7": "1",
+      "m8": "1",
+      "m9": "1",
+      "m10": "2",
+      "m11": "2",
+      "m12": "2",
+      "isActive": true,
+      "createdAt": "2020-01-17T10:00:44.891Z",
+      "updatedAt": "2020-01-17T10:00:44.891Z"
+    }
+  ],
+  "teamTargets": [
+    {
+      "id": 1,
+      "tenantId": 1,
+      "teamId": 3,
+      "targetYear": "2019",
+      "annual": "80",
+      "m1": "5",
+      "m2": "5",
+      "m3": "5",
+      "m4": "6",
+      "m5": "6",
+      "m6": "6",
+      "m7": "7",
+      "m8": "7",
+      "m9": "7",
+      "m10": "8",
+      "m11": "9",
+      "m12": "9",
+      "isActive": true,
+      "createdAt": "2019-12-21T14:49:47.980Z",
+      "updatedAt": "2019-12-21T14:50:37.926Z"
+    },
+    {
+      "id": 2,
+      "tenantId": 1,
+      "teamId": 5,
+      "targetYear": "2019",
+      "annual": "18",
+      "m1": "1",
+      "m2": "1",
+      "m3": "1",
+      "m4": "1",
+      "m5": "1",
+      "m6": "1",
+      "m7": "1",
+      "m8": "2",
+      "m9": "2",
+      "m10": "2",
+      "m11": "2",
+      "m12": "3",
+      "isActive": true,
+      "createdAt": "2019-12-21T14:49:47.980Z",
+      "updatedAt": "2019-12-21T14:50:37.962Z"
+    },
+    {
+      "id": 3,
+      "tenantId": 1,
+      "teamId": 2,
+      "targetYear": "2019",
+      "annual": "160",
+      "m1": "10",
+      "m2": "10",
+      "m3": "10",
+      "m4": "12",
+      "m5": "12",
+      "m6": "12",
+      "m7": "14.000000000000002",
+      "m8": "14.000000000000002",
+      "m9": "14.000000000000002",
+      "m10": "16",
+      "m11": "18",
+      "m12": "18",
+      "isActive": true,
+      "createdAt": "2019-12-21T14:50:49.917Z",
+      "updatedAt": "2019-12-21T14:50:49.917Z"
+    },
+    {
+      "id": 4,
+      "tenantId": 1,
+      "teamId": 1,
+      "targetYear": "2019",
+      "annual": "320",
+      "m1": "20",
+      "m2": "20",
+      "m3": "20",
+      "m4": "24",
+      "m5": "24",
+      "m6": "24",
+      "m7": "28.000000000000004",
+      "m8": "28.000000000000004",
+      "m9": "28.000000000000004",
+      "m10": "32",
+      "m11": "36",
+      "m12": "36",
+      "isActive": true,
+      "createdAt": "2019-12-21T14:50:58.736Z",
+      "updatedAt": "2019-12-21T14:50:58.736Z"
+    },
+    {
+      "id": 5,
+      "tenantId": 1,
+      "teamId": 4,
+      "targetYear": "2019",
+      "annual": "18",
+      "m1": "1",
+      "m2": "1",
+      "m3": "1",
+      "m4": "1",
+      "m5": "1",
+      "m6": "1",
+      "m7": "1",
+      "m8": "2",
+      "m9": "2",
+      "m10": "2",
+      "m11": "2",
+      "m12": "3",
+      "isActive": true,
+      "createdAt": "2019-12-21T14:51:06.032Z",
+      "updatedAt": "2019-12-21T14:51:06.032Z"
+    },
+    {
+      "id": 38,
+      "tenantId": 1,
+      "teamId": 3,
+      "targetYear": "2020",
+      "annual": "53",
+      "m1": "2",
+      "m2": "3",
+      "m3": "3",
+      "m4": "4",
+      "m5": "4",
+      "m6": "4",
+      "m7": "5",
+      "m8": "5",
+      "m9": "5",
+      "m10": "6",
+      "m11": "6",
+      "m12": "6",
+      "isActive": true,
+      "createdAt": "2020-01-16T14:57:11.979Z",
+      "updatedAt": "2020-01-16T14:58:15.948Z"
+    },
+    {
+      "id": 39,
+      "tenantId": 1,
+      "teamId": 5,
+      "targetYear": "2020",
+      "annual": "12",
+      "m1": "1",
+      "m2": "1",
+      "m3": "1",
+      "m4": "1",
+      "m5": "1",
+      "m6": "1",
+      "m7": "1",
+      "m8": "1",
+      "m9": "1",
+      "m10": "2",
+      "m11": "2",
+      "m12": "2",
+      "isActive": true,
+      "createdAt": "2020-01-16T14:57:11.979Z",
+      "updatedAt": "2020-01-16T14:58:15.998Z"
+    },
+    {
+      "id": 40,
+      "tenantId": 1,
+      "teamId": 2,
+      "targetYear": "2020",
+      "annual": "106",
+      "m1": "4",
+      "m2": "6",
+      "m3": "6",
+      "m4": "8",
+      "m5": "8",
+      "m6": "8",
+      "m7": "10",
+      "m8": "10",
+      "m9": "10",
+      "m10": "12",
+      "m11": "12",
+      "m12": "12",
+      "isActive": true,
+      "createdAt": "2020-01-16T14:58:25.047Z",
+      "updatedAt": "2020-01-16T14:58:25.047Z"
+    },
+    {
+      "id": 41,
+      "tenantId": 1,
+      "teamId": 1,
+      "targetYear": "2020",
+      "annual": "212",
+      "m1": "8",
+      "m2": "12",
+      "m3": "12",
+      "m4": "16",
+      "m5": "16",
+      "m6": "16",
+      "m7": "20",
+      "m8": "20",
+      "m9": "20",
+      "m10": "24",
+      "m11": "24",
+      "m12": "24",
+      "isActive": true,
+      "createdAt": "2020-01-16T14:58:30.807Z",
+      "updatedAt": "2020-01-16T14:58:30.807Z"
+    },
+    {
+      "id": 42,
+      "tenantId": 1,
+      "teamId": 4,
+      "targetYear": "2020",
+      "annual": "12",
+      "m1": "1",
+      "m2": "1",
+      "m3": "1",
+      "m4": "1",
+      "m5": "1",
+      "m6": "1",
+      "m7": "1",
+      "m8": "1",
+      "m9": "1",
+      "m10": "2",
+      "m11": "2",
+      "m12": "2",
+      "isActive": true,
+      "createdAt": "2020-01-16T14:58:39.838Z",
+      "updatedAt": "2020-01-16T14:58:39.838Z"
+    }
+  ],
+  "teams": [
+    {
+      "id": 1,
+      "teamName": "Marketing",
+      "isActive": true,
+      "createdAt": "2019-12-21T14:20:35.276Z",
+      "updatedAt": "2019-12-21T14:20:35.276Z"
+    },
+    {
+      "id": 2,
+      "teamName": "SDR",
+      "isActive": true,
+      "createdAt": "2019-12-21T14:20:42.642Z",
+      "updatedAt": "2019-12-21T14:20:42.642Z"
+    },
+    {
+      "id": 3,
+      "teamName": "Sales",
+      "isActive": true,
+      "createdAt": "2019-12-21T14:20:48.897Z",
+      "updatedAt": "2019-12-21T14:20:48.897Z"
+    },
+    {
+      "id": 4,
+      "teamName": "Customer Success",
+      "isActive": true,
+      "createdAt": "2019-12-21T14:21:00.040Z",
+      "updatedAt": "2019-12-21T14:21:00.040Z"
+    },
+    {
+      "id": 5,
+      "teamName": "Renewal",
+      "isActive": true,
+      "createdAt": "2019-12-21T14:21:08.060Z",
+      "updatedAt": "2019-12-21T14:21:08.060Z"
+    },
+    {
+      "id": 6,
+      "teamName": "Management",
+      "isActive": true,
+      "createdAt": "2019-12-21T14:21:17.032Z",
+      "updatedAt": "2019-12-21T14:21:17.032Z"
+    },
+    {
+      "id": 7,
+      "teamName": "All",
+      "isActive": true,
+      "createdAt": "2019-12-21T14:21:24.617Z",
+      "updatedAt": "2019-12-21T14:21:24.617Z"
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "roleName": "CEO",
+      "isActive": true,
+      "createdAt": "2019-12-21T14:22:12.358Z",
+      "updatedAt": "2019-12-21T14:22:12.358Z"
+    },
+    {
+      "id": 2,
+      "roleName": "CXO",
+      "isActive": true,
+      "createdAt": "2019-12-21T14:22:19.714Z",
+      "updatedAt": "2019-12-21T14:22:19.714Z"
+    },
+    {
+      "id": 3,
+      "roleName": "Manager",
+      "isActive": true,
+      "createdAt": "2019-12-21T14:22:28.094Z",
+      "updatedAt": "2019-12-21T14:22:28.094Z"
+    },
+    {
+      "id": 4,
+      "roleName": "Rep",
+      "isActive": true,
+      "createdAt": "2019-12-21T14:22:34.023Z",
+      "updatedAt": "2019-12-21T14:22:34.023Z"
+    },
+    {
+      "id": 5,
+      "roleName": "PB Admin",
+      "isActive": true,
+      "createdAt": "2019-12-21T14:22:43.095Z",
+      "updatedAt": "2019-12-21T14:22:43.095Z"
+    }
+  ],
+  "targetTypes": [
+    {
+      "id": 1,
+      "targetName": "MQLs",
+      "isActive": true,
+      "createdAt": "2019-12-21T13:50:25.025Z",
+      "updatedAt": "2019-12-21T13:50:25.025Z"
+    },
+    {
+      "id": 2,
+      "targetName": "SQLs",
+      "isActive": true,
+      "createdAt": "2019-12-21T13:50:33.490Z",
+      "updatedAt": "2019-12-21T13:50:33.490Z"
+    },
+    {
+      "id": 3,
+      "targetName": "WINs",
+      "isActive": true,
+      "createdAt": "2019-12-21T13:50:39.619Z",
+      "updatedAt": "2019-12-21T13:50:39.619Z"
+    },
+    {
+      "id": 4,
+      "targetName": "LIVE",
+      "isActive": true,
+      "createdAt": "2019-12-21T13:50:45.530Z",
+      "updatedAt": "2019-12-21T13:50:45.530Z"
+    },
+    {
+      "id": 5,
+      "targetName": "RENEWs",
+      "isActive": true,
+      "createdAt": "2019-12-21T13:50:52.276Z",
+      "updatedAt": "2019-12-21T13:50:52.276Z"
+    }
+  ],
+  "masterCategories": [
+    {
+      "id": 1,
+      "categoryName": "Intro",
+      "categoryDesc": "For Introductions about your company / product / service",
+      "isActive": true,
+      "createdAt": "2020-06-09T13:51:51.655Z",
+      "updatedAt": "2020-06-09T13:51:51.655Z"
+    },
+    {
+      "id": 2,
+      "categoryName": "Rebuttal",
+      "categoryDesc": "For handling objections",
+      "isActive": true,
+      "createdAt": "2020-06-09T14:27:41.493Z",
+      "updatedAt": "2020-06-09T14:27:41.493Z"
+    },
+    {
+      "id": 3,
+      "categoryName": "About",
+      "categoryDesc": "For talking about your company / product / service",
+      "isActive": true,
+      "createdAt": "2020-06-09T14:32:04.884Z",
+      "updatedAt": "2020-06-09T14:32:04.884Z"
+    },
+    {
+      "id": 4,
+      "categoryName": "Benefits",
+      "categoryDesc": "Intended for plays, scripts, templates etc describing benefits of choosing your company / product / service",
+      "isActive": true,
+      "createdAt": "2020-06-09T14:32:59.301Z",
+      "updatedAt": "2020-06-09T14:32:59.301Z"
+    },
+    {
+      "id": 5,
+      "categoryName": "Features",
+      "categoryDesc": "To describe about your product / service",
+      "isActive": true,
+      "createdAt": "2020-06-09T14:34:11.527Z",
+      "updatedAt": "2020-06-09T14:34:11.527Z"
+    },
+    {
+      "id": 6,
+      "categoryName": "CTA",
+      "categoryDesc": "Call To Action specific items",
+      "isActive": true,
+      "createdAt": "2020-06-09T14:34:46.035Z",
+      "updatedAt": "2020-06-09T14:34:46.035Z"
+    },
+    {
+      "id": 7,
+      "categoryName": "Proposal",
+      "categoryDesc": "For proposal related scripts and templates",
+      "isActive": true,
+      "createdAt": "2020-06-09T14:35:06.847Z",
+      "updatedAt": "2020-06-09T14:35:06.847Z"
+    },
+    {
+      "id": 8,
+      "categoryName": "Contracts",
+      "categoryDesc": "To activities related to sending and speaking about contracts / SLAs / other signatory documents",
+      "isActive": true,
+      "createdAt": "2020-06-09T14:36:04.322Z",
+      "updatedAt": "2020-06-09T14:36:04.322Z"
+    },
+    {
+      "id": 9,
+      "categoryName": "Invoice",
+      "categoryDesc": "For payment related activities / templates etc",
+      "isActive": true,
+      "createdAt": "2020-06-09T14:38:48.114Z",
+      "updatedAt": "2020-06-09T14:38:48.114Z"
+    },
+    {
+      "id": 10,
+      "categoryName": "Up-Sell",
+      "categoryDesc": "For usage in Up Selling moments",
+      "isActive": true,
+      "createdAt": "2020-06-09T14:39:52.639Z",
+      "updatedAt": "2020-06-09T14:39:52.639Z"
+    },
+    {
+      "id": 11,
+      "categoryName": "Cross-Sell",
+      "categoryDesc": "For use in Cross Selling moments",
+      "isActive": true,
+      "createdAt": "2020-06-09T14:40:10.137Z",
+      "updatedAt": "2020-06-09T14:40:10.137Z"
+    },
+    {
+      "id": 12,
+      "categoryName": "Drip",
+      "categoryDesc": "For drip campaign email templates",
+      "isActive": true,
+      "createdAt": "2020-06-09T14:41:16.016Z",
+      "updatedAt": "2020-06-09T14:41:16.016Z"
+    },
+    {
+      "id": 13,
+      "categoryName": "Campaign",
+      "categoryDesc": "For categorizing activities, templates, scripts etc for specific campaigns",
+      "isActive": true,
+      "createdAt": "2020-06-09T14:42:20.856Z",
+      "updatedAt": "2020-06-09T14:42:20.856Z"
+    },
+    {
+      "id": 14,
+      "categoryName": "Newsletter",
+      "categoryDesc": "For usage in newsletter templates",
+      "isActive": true,
+      "createdAt": "2020-06-09T14:42:39.513Z",
+      "updatedAt": "2020-06-09T14:42:39.513Z"
+    }
+  ],
+  "dealStatuses": [
+    {
+      "id": 1,
+      "dealStatusName": "New",
+      "teamId": 1,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:24:46.733Z",
+      "updatedAt": "2019-12-21T14:24:46.733Z"
+    },
+    {
+      "id": 2,
+      "dealStatusName": "Not a fit - Mktg",
+      "teamId": 1,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:24:59.478Z",
+      "updatedAt": "2019-12-21T14:24:59.478Z"
+    },
+    {
+      "id": 3,
+      "dealStatusName": "Needs education and time",
+      "teamId": 1,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:25:08.855Z",
+      "updatedAt": "2019-12-21T14:25:08.855Z"
+    },
+    {
+      "id": 4,
+      "dealStatusName": "MQL",
+      "teamId": 2,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:25:23.491Z",
+      "updatedAt": "2019-12-21T14:25:23.491Z"
+    },
+    {
+      "id": 5,
+      "dealStatusName": "Not a fit - SDR",
+      "teamId": 2,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:25:27.922Z",
+      "updatedAt": "2019-12-21T14:25:27.922Z"
+    },
+    {
+      "id": 6,
+      "dealStatusName": "SQL",
+      "teamId": 3,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:25:58.593Z",
+      "updatedAt": "2019-12-21T14:25:58.593Z"
+    },
+    {
+      "id": 7,
+      "dealStatusName": "Lost",
+      "teamId": 3,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:26:06.992Z",
+      "updatedAt": "2019-12-21T14:26:06.992Z"
+    },
+    {
+      "id": 8,
+      "dealStatusName": "Won",
+      "teamId": 4,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:26:16.335Z",
+      "updatedAt": "2019-12-21T14:26:16.335Z"
+    },
+    {
+      "id": 9,
+      "dealStatusName": "Live",
+      "teamId": 4,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:26:23.152Z",
+      "updatedAt": "2019-12-21T14:26:23.152Z"
+    },
+    {
+      "id": 10,
+      "dealStatusName": "Dormant",
+      "teamId": 4,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:26:29.968Z",
+      "updatedAt": "2019-12-21T14:26:29.968Z"
+    },
+    {
+      "id": 11,
+      "dealStatusName": "Live & Renewed",
+      "teamId": 4,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:26:40.316Z",
+      "updatedAt": "2019-12-21T14:26:40.316Z"
+    },
+    {
+      "id": 12,
+      "dealStatusName": "Churned",
+      "teamId": 5,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:26:50.355Z",
+      "updatedAt": "2019-12-21T14:26:50.355Z"
+    },
+    {
+      "id": 13,
+      "dealStatusName": "Lapsed",
+      "teamId": 5,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:26:56.876Z",
+      "updatedAt": "2019-12-21T14:26:56.876Z"
+    },
+    {
+      "id": 14,
+      "dealStatusName": "Won (Renewal)",
+      "teamId": 5,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:27:10.206Z",
+      "updatedAt": "2019-12-21T14:27:10.206Z"
+    },
+    {
+      "id": 15,
+      "dealStatusName": "In Process",
+      "teamId": 5,
+      "isActive": true,
+      "createdAt": "2019-12-26T10:55:35.788Z",
+      "updatedAt": "2019-12-26T10:55:35.788Z"
+    }
+  ]
+}

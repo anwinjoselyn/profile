@@ -1,0 +1,49 @@
+{
+  "data": [
+    {
+      "id": 2,
+      "pipeName": "Sales Development",
+      "tenantId": 1,
+      "teamId": 2,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:51:27.722Z",
+      "updatedAt": "2019-12-21T14:51:27.722Z"
+    },
+    {
+      "id": 3,
+      "pipeName": "Sales",
+      "tenantId": 1,
+      "teamId": 3,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:51:27.722Z",
+      "updatedAt": "2019-12-21T14:51:27.722Z"
+    },
+    {
+      "id": 4,
+      "pipeName": "Customer Success",
+      "tenantId": 1,
+      "teamId": 4,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:51:27.722Z",
+      "updatedAt": "2019-12-21T14:51:27.722Z"
+    },
+    {
+      "id": 5,
+      "pipeName": "Renewal",
+      "tenantId": 1,
+      "teamId": 5,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:51:27.722Z",
+      "updatedAt": "2019-12-21T14:51:27.722Z"
+    },
+    {
+      "id": 1,
+      "pipeName": "Sourcing",
+      "tenantId": 1,
+      "teamId": 1,
+      "isActive": true,
+      "createdAt": "2019-12-21T14:51:27.722Z",
+      "updatedAt": "2019-12-31T10:29:14.935Z"
+    }
+  ]
+}

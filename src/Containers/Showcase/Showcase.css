@@ -1,0 +1,374 @@
+.ShowMainRow {
+  padding: 5vh 5vw;
+}
+
+.ShowMainColumn {
+}
+
+.Kanban1 {
+  width: 100% !important;
+  min-height: 94vh !important;
+  align-items: center;
+  padding: 0px !important;
+  margin: 0px !important;
+  color: #343a40;
+  display: block;
+  border: 0;
+  font-size: 14px;
+}
+
+.drag-container .row {
+  display: inline-flex;
+  text-align: center;
+  /*margin: 0 -10px 0 -10px !important;*/
+  margin: 0 !important;
+  padding: 0px;
+  width: 100% !important;
+  border: 0px !important;
+}
+
+.form-control {
+  font-size: 12px !important;
+  color: #343a40 !important;
+}
+
+.form-label {
+  font-size: 14px !important;
+}
+
+select.form-control,
+input.form-control {
+  font-size: 14px !important;
+  border-radius: 5px;
+}
+
+.ShowCase span {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.ShowCase h3 {
+  margin: 10px;
+  text-align: center;
+}
+
+.droppable .draggable {
+  display: block;
+  background-color: #343a40 !important;
+  padding: 2px 10px 2px 10px;
+  margin: 1px;
+  max-height: 200px;
+  min-width: 50px;
+  width: 98%;
+
+  color: #dddddd;
+  border-radius: 5px;
+
+  font-size: 14px;
+  text-align: left !important;
+}
+
+.droppable .draggable .card-header {
+  padding: 0px !important;
+  margin: 0px !important;
+  border: 0px !important;
+  text-align: left !important;
+  color: #dddddd;
+}
+
+.draggable .red {
+  color: #ad2102 !important;
+  font-weight: bold;
+  background-color: #343a40 !important;
+  padding: 1px;
+}
+
+.draggable .orange {
+  color: #ffa200 !important;
+  font-weight: bold;
+  background-color: #343a40 !important;
+  padding: 1px;
+}
+
+.draggable .green {
+  color: green !important;
+  font-weight: bold;
+  background-color: #343a40 !important;
+  padding: 1px;
+}
+
+.draggable .yellow {
+  color: #faf6a5 !important;
+  font-weight: bold;
+  background-color: #343a40 !important;
+  padding: 1px;
+}
+
+.droppable .SpanDetails {
+  border-radius: 0px;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  text-align: left;
+}
+
+.droppable .SpanDetails i {
+  float: right;
+  color: #adadad;
+  padding-top: 5px;
+}
+
+.droppable .SpanDetails a {
+  color: #fcfcfc !important;
+}
+
+.droppable .SpanDetails .leftA {
+  float: left;
+  color: #6d7070 !important;
+}
+
+.dealTooltip .tooltip-inner {
+  color: #343a40;
+  background-color: #fcfcfc !important;
+  font-size: 1em;
+  padding: 0.2em;
+}
+
+.dealTooltip {
+  border: 1px solid #dee0e0;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 15vw;
+}
+
+.dealTooltip .tooltip-inner span {
+  color: #343a40;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+}
+
+.droppable .card-footer .footerSpan {
+  color: #adadad !important;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+.actButton {
+  float: right;
+  background-color: #343a40;
+  border: 0px !important;
+  padding: 0px !important;
+  margin: 0px !important;
+
+  padding-bottom: 5px !important;
+  margin-right: -5px !important;
+}
+
+.actButton i {
+  border-radius: 20px;
+}
+
+.drag-container .col {
+  margin: 0;
+  padding: 0;
+  border: 0px !important;
+  width: 100%;
+}
+
+.drag-container {
+  display: block;
+  text-align: center;
+  margin: 0px !important;
+  padding: 0px !important;
+  width: 100% !important;
+  border: 0px !important;
+}
+
+.drag-container .group-header {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  width: 100%;
+
+  border-radius: 0px;
+  border: 1px solid white;
+  font-weight: bold;
+  display: block;
+  border: 0px !important;
+}
+
+.drag-container .dealLength {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  width: 100%;
+  border-radius: 0px !important;
+  border: 0px !important;
+  background-color: #fcfcfc !important;
+}
+
+.drag-container .dealValue {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  width: 100%;
+  border-radius: 0px !important;
+  border: 0px !important;
+}
+
+.TableData .sort-direction {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+.TableData .sort-direction.asc {
+  border-bottom: 5px solid white;
+}
+
+.TableData .sort-direction.desc {
+  border-top: 5px solid white;
+}
+
+.droppable {
+  position: relative;
+  background-color: #fcfcfc;
+  border-radius: 5px;
+  min-height: 82vh;
+  border: 0px !important;
+  /*margin: 0 -10px 0 10px;*/
+  width: 100% !important;
+  margin: 0.5em 0 0 0;
+}
+
+.droppable a {
+  color: #dddddd !important;
+}
+
+.droppable .card-body {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  margin-left: 0px;
+  padding-left: 0px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 12px;
+  width: 100%;
+}
+
+.droppable .card-footer i {
+  float: right;
+}
+
+.droppable .card-footer {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  color: #dee0e0 !important;
+  background-color: #343a40 !important;
+}
+
+.head {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background-color: #cccccc;
+  color: black;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.container-fluid {
+  width: inherit;
+}
+
+.Kanban1 .table {
+  border-radius: 5px !important;
+  background-color: #343a40;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.Kanban1 .form-group {
+  margin-bottom: inherit;
+  color: #343a40 !important;
+  padding: 5px;
+  padding-top: 0;
+}
+
+.Kanban1 tr {
+  border-radius: 5px !important;
+}
+
+.Kanban1 .table th,
+.table td {
+  padding: 0.5em;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.Kanban1 .form-group select.form-control,
+input.form-control {
+  color: #343a40 !important;
+  font-size: 1em;
+  padding: 2px;
+}
+
+.btn-dark {
+  background: #343a40;
+  color: #fcfcfc;
+  width: 100%;
+}
+
+.SelectedButton {
+  background: #19dfd1;
+  color: #343a40;
+}
+
+#downloadTable {
+  background: inherit;
+}
+
+#downloadTable th,
+#downloadTable td {
+  font-size: 12px;
+}
+
+.pagination {
+  display: flex;
+  align-content: stretch;
+  margin: 1em 0.5em;
+  padding: 0.2em;
+  text-align: center;
+}
+
+.pagination .page-item {
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  color: #014744;
+  border: 1px solid #014744;
+  border-radius: 5px;
+  margin: 0.2em;
+}
+
+.pagination .page-item .page-link {
+  color: #014744;
+}
+
+.Explanation {
+  margin-top: 2em;
+}
+
+.ShowCase .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #fa4a09;
+  background: #fff !important;
+}

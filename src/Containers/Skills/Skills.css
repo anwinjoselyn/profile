@@ -1,0 +1,80 @@
+.Skills {
+  height: 100vh;
+  display: flex !important;
+  margin: 10vh 10vw 20vh 10vw !important;
+  color: #001b21;
+}
+
+.MainRow {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.MainColumn {
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.SkillColumn {
+  padding-right: 1em;
+  padding-left: 1em;
+  position: relative;
+  padding-bottom: 3em;
+}
+
+.SkillIcon {
+  font-size: 1.2em !important;
+  display: inline-block;
+  padding-bottom: 0.5em;
+  color: #19dfd1;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  opacity: 0.7;
+}
+
+.sub-head h4,
+.MainColumn h4 {
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.sub-head {
+  margin-bottom: 3em;
+}
+
+.SkillsTag {
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0;
+  font-weight: 400;
+  color: #014744 !important;
+  background: #fff !important;
+  border: 1px solid #014744 !important;
+}
+
+.skill-item {
+  margin-bottom: 1.5rem;
+}
+
+.skill-item .skill-title {
+  font-size: 0.9em;
+  font-weight: normal;
+  padding-bottom: 0.25rem;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.SkillSpan {
+  font-size: 1em;
+  text-transform: uppercase;
+}
