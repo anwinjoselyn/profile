@@ -32,10 +32,18 @@ const Home = props => {
           </p>
 
           <div className="user-btn">
-            <Button type="warning" className="btn btn-brand mr-3">
+            <Button
+              type="warning"
+              className="btn btn-brand mr-3"
+              onClick={() => props.setSelectedKey("7")}
+            >
               Hire Me
             </Button>
-            <Button type="warning" className="btn btn-brand-border">
+            <Button
+              type="warning"
+              className="btn btn-brand-border"
+              onClick={() => props.setSelectedKey("5")}
+            >
               Showcase
             </Button>
           </div>

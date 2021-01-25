@@ -29,9 +29,9 @@ const App = () => {
   const [collapsed, setColapse] = useState(true);
   const [darkTheme, setTheme] = useState(false);
   const [themeClasses, setClasses] = useState({});
-  const [selectedKey, setSelectedKey] = useState("7");
+  const [selectedKey, setSelectedKey] = useState("1");
 
-  console.log("selectedKey", selectedKey);
+  //console.log("selectedKey", selectedKey);
   useEffect(() => {
     //console.log("props.theme", props.theme);
 
@@ -176,7 +176,7 @@ const App = () => {
       <Layout className={themeClasses.layout}>
         <Content className={themeClasses.content}>
           {selectedKey === "1" ? (
-            <Home />
+            <Home setSelectedKey={setSelectedKey} />
           ) : selectedKey === "2" ? (
             <About />
           ) : selectedKey === "3" ? (
