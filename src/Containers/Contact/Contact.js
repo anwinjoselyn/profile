@@ -1,24 +1,56 @@
 import React, { useState } from "react";
 
-import { Card, Row, Col, Form, Input, Button } from "antd";
+import { Card, Row, Col, Form, Input, Button, message } from "antd";
+
+import axios from "axios";
 
 import "./Contact.css";
+
+import { validateEmail } from "../../libs/validators";
 
 const { TextArea } = Input;
 
 const Contact = props => {
   const [emailData, setEmailData] = useState({
     name: "",
-    email: "",
+    _replyto: "",
     phone: "",
-    subject: "",
-    message: ""
+    _subject: "",
+    message: "",
+    _after: "https://myplaybook.in",
+    _confirmation: "Email sent. Thank you! I'll get back to you ASAP.",
+    _honeypot: ""
   });
 
-  const submitEmail = e => {
+  const submitEmail = async e => {
     e.preventDefault();
 
     console.log("emailData", emailData);
+
+    let dataToBeSent = emailData;
+
+    if (emailData.phone && emailData.phone.length >= 8)
+      dataToBeSent._subject = `Contact form from ${emailData.name} and phone: ${emailData.phone}`;
+    else dataToBeSent._subject = `Contact form from ${emailData.name}`;
+
+    console.log("dataToBeSent", dataToBeSent);
+
+    try {
+      const result = await axios({
+        method: "POST",
+        url: `https://mailthis.to/anwinj`,
+        data: emailData
+      });
+
+      //console.log("result.data", result.data);
+
+      if (result)
+        message.success("Email sent. Thank you! I'll get back to you ASAP.");
+      //window.location.href = "https://mailthis.to/confirm";
+    } catch (error) {
+      message.error("Opps, something went wrong :-(");
+      console.log("error", error);
+    }
   };
 
   return (
@@ -99,7 +131,7 @@ const Contact = props => {
                     <a
                       href="https://myplaybook.in"
                       target="_blank"
-                      rel="noopener"
+                      rel="noopener noreferrer"
                     >
                       My Playbook
                     </a>
@@ -202,18 +234,18 @@ const Contact = props => {
               <Form.Item>
                 <Input
                   bordered={false}
-                  value={emailData.email}
+                  value={emailData._replyto}
                   onChange={event =>
                     setEmailData({
                       ...emailData,
-                      email: event.target.value
+                      _replyto: event.target.value
                     })
                   }
                   type="email"
                 />
                 <label>
                   Email{" "}
-                  {emailData.email && emailData.email.length >= 2 && (
+                  {emailData._replyto && validateEmail(emailData._replyto) && (
                     <i
                       style={{ float: "right" }}
                       className="far fa-check-circle PBLightGreen"
@@ -259,6 +291,17 @@ const Contact = props => {
                   )}
                 </label>
               </Form.Item>
+              <input
+                type="hidden"
+                name="_honeypot"
+                value=""
+                onChange={event =>
+                  setEmailData({
+                    ...emailData,
+                    _honeypot: event.target.value
+                  })
+                }
+              />
               <Row>
                 <Col span={24}>
                   <Button
