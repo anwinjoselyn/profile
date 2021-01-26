@@ -35,16 +35,16 @@ const Home = props => {
             <Button
               type="warning"
               className="btn btn-brand mr-3"
-              onClick={() => props.setSelectedKey("7")}
+              onClick={() => props.setSelectedKey("6")}
             >
               Hire Me
             </Button>
             <Button
               type="warning"
               className="btn btn-brand-border"
-              onClick={() => props.setSelectedKey("5")}
+              onClick={() => props.setSelectedKey("3")}
             >
-              Showcase
+              Skills
             </Button>
           </div>
         </Col>

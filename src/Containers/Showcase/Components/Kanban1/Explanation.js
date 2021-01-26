@@ -78,7 +78,7 @@ const Explanation = props => {
           >
             <List
               size="small"
-              bordered
+              bordered={false}
               dataSource={aboutData}
               renderItem={item => <List.Item>{item}</List.Item>}
             />
@@ -94,7 +94,7 @@ const Explanation = props => {
           >
             <List
               size="small"
-              bordered
+              bordered={false}
               dataSource={utiData}
               renderItem={item => <List.Item>{item}</List.Item>}
             />
@@ -108,7 +108,7 @@ const Explanation = props => {
           >
             <List
               size="small"
-              bordered
+              bordered={false}
               dataSource={fnData}
               renderItem={item => <List.Item>{item}</List.Item>}
             />

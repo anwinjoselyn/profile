@@ -4,3 +4,9 @@
   margin: 10vh 10vw 20vh 10vw !important;
   color: #001b21;
 }
+
+@media only screen and (max-width: 425px) and (min-width: 320px) {
+  .Experience {
+    margin: 0 !important;
+  }
+}

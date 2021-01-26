@@ -1059,3 +1059,58 @@ h6 {
   color: #014744;
   padding: 0.2em;
 }
+
+@media only screen and (max-width: 425px) and (min-width: 320px) {
+  .Resume {
+    margin: 0 !important;
+  }
+
+  .c2 {
+    font-size: 1em !important;
+  }
+
+  .c23 {
+    font-size: 0.8em !important;
+  }
+
+  .c14 {
+    font-size: 1em !important;
+  }
+
+  .c37 {
+    font-size: 1em;
+  }
+
+  .c43 {
+    font-size: 0.3em;
+  }
+
+  .c21 {
+    font-size: 1em;
+  }
+
+  .c8 {
+    font-size: 1em;
+  }
+
+  .c5 {
+    font-size: 0.8em;
+  }
+
+  .c41 {
+    font-size: 0.8em;
+  }
+
+  .c26 {
+    font-size: 1em;
+  }
+
+  .c9 {
+    font-size: 0.8em !important;
+  }
+
+  .c15 .c8,
+  .c15 .c8 {
+    font-size: 0.4em !important;
+  }
+}

@@ -10,7 +10,8 @@ import {
   FileOutlined,
   ShakeOutlined,
   ThunderboltOutlined,
-  BulbOutlined
+  BulbOutlined,
+  TrophyOutlined
 } from "@ant-design/icons";
 
 import Home from "./Containers/Home/Home";
@@ -20,6 +21,7 @@ import Experience from "./Containers/Experience/Experience";
 import Resume from "./Containers/Resume/Resume";
 import Showcase from "./Containers/Showcase/Showcase";
 import Contact from "./Containers/Contact/Contact";
+import Badges from "./Containers/Badges/Badges";
 
 import "./App.css";
 
@@ -29,7 +31,7 @@ const App = () => {
   const [collapsed, setColapse] = useState(true);
   const [darkTheme, setTheme] = useState(false);
   const [themeClasses, setClasses] = useState({});
-  const [selectedKey, setSelectedKey] = useState("1");
+  const [selectedKey, setSelectedKey] = useState("8");
 
   //console.log("selectedKey", selectedKey);
   useEffect(() => {
@@ -128,6 +130,17 @@ const App = () => {
             Skills
           </Menu.Item>
           <Menu.Item
+            key={"8"}
+            icon={<TrophyOutlined />}
+            className={
+              selectedKey === "8"
+                ? themeClasses.menuItemS
+                : themeClasses.menuItem
+            }
+          >
+            Badges
+          </Menu.Item>
+          <Menu.Item
             key={"4"}
             icon={<DashboardOutlined />}
             className={
@@ -189,6 +202,8 @@ const App = () => {
             <Showcase />
           ) : selectedKey === "7" ? (
             <Contact />
+          ) : selectedKey === "8" ? (
+            <Badges />
           ) : null}
         </Content>
       </Layout>

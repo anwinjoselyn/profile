@@ -372,3 +372,7 @@ input.form-control {
   color: #fa4a09;
   background: #fff !important;
 }
+
+.Overview .ant-list-item {
+  font-size: 1em !important;
+}

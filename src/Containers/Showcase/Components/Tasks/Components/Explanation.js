@@ -17,21 +17,33 @@ const Explanation = props => {
 
   const utiData = [
     <div>
-      HTML native{" "}
+      <a href="https://draftjs.org/" rel="noopener noreferrer" target="_blank">
+        Draft.JS
+      </a>{" "}
+      Rich Text Editor Framework for React
+    </div>,
+    <div>
       <a
-        href="https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API"
+        href="https://github.com/jpuri/react-draft-wysiwyg"
         rel="noopener noreferrer"
         target="_blank"
       >
-        Drag & Drop
+        React Draft Wysiwyg
       </a>{" "}
-      functions
+      because it was prettier than using Draft.js as a standalone
     </div>,
     <div>
       <a href="https://date-fns.org/" rel="noopener noreferrer" target="_blank">
         date-fns
       </a>{" "}
-      for Date related operations
+      for a variety of date relation functions (isSameWeek, isToday, and so
+      on...)
+    </div>,
+    <div>
+      <a href="https://momentjs.com/" rel="noopener noreferrer" target="_blank">
+        Moment.js
+      </a>{" "}
+      for a few AntD specific date management functions
     </div>,
     <div>
       <a
@@ -39,7 +51,7 @@ const Explanation = props => {
         rel="noopener noreferrer"
         target="_blank"
       >
-        antd
+        Ant Design
       </a>{" "}
       for UI components
     </div>,
@@ -60,25 +72,51 @@ const Explanation = props => {
         Font Awesome
       </a>
     </div>,
+    <div>
+      Few Icons from{" "}
+      <a
+        href="https://ant.design/components/icon/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Ant Design
+      </a>
+    </div>,
     <div>Javascript</div>
   ];
 
-  const fnData = [
-    <div>Dashboard showing Objectives and Achievements (Real-time)</div>,
-    <div>Kanban view of Pipeline</div>,
-    <div>Drag & Drop Deals to move through stages</div>,
-    <div>Hover over "contact" in Kanban view to get contact details</div>,
+  const fnData1 = [
+    <div>View all pending Tasks</div>,
+    <div>Filter tasks by - Type, Time Period, Team & User</div>,
+    <div>Select a Task opens a Side Drawer for easy view/edits</div>,
+    <div>Update tasks with appropriate info</div>,
+    <div>Rich Text Editor to take notes</div>,
     <div>
-      Calendar icon color coded to show expired / active / null Tasks assigned
-      to each Deal
+      Bulk Edit Tasks - Upcoming<sup>*</sup>
+    </div>
+  ];
+
+  const fnData2 = [
+    <div>See only ONE Task at a time</div>,
+    <div>Helps concentrate and apply yourself without distractions</div>,
+    <div>
+      Has a dashboard with most important information (and feedback about the
+      task)
     </div>,
-    <div>Change Pipeline / User</div>
+    <div>Hover over "contact" in Kanban view to get contact details</div>,
+    <div>Rich Text Editor to take notes</div>,
+    <div>Once a Task is completed, the NEXT Task opens automatically</div>,
+    <div>
+      If there are no tasks for the day, it will open the oldest Task to be
+      completed
+    </div>,
+    <div>View ALL TASKS in Side Drawer to select a different Task</div>
   ];
 
   return (
     <div className="site-card-wrapper Explanation">
       <Row gutter={16}>
-        <Col span={8}>
+        <Col span={12}>
           <Card
             hoverable
             title={<div style={{ textAlign: "center" }}>About</div>}
@@ -92,7 +130,7 @@ const Explanation = props => {
             />
           </Card>
         </Col>
-        <Col span={8}>
+        <Col span={12}>
           <Card
             hoverable
             title={
@@ -108,16 +146,36 @@ const Explanation = props => {
             />
           </Card>
         </Col>
-        <Col span={8}>
+      </Row>
+      <Row gutter={16}>
+        <Col span={12}>
           <Card
             hoverable
-            title={<div style={{ textAlign: "center" }}>Functionality</div>}
+            title={
+              <div style={{ textAlign: "center" }}>All Activities - Brief</div>
+            }
             bordered={true}
           >
             <List
               size="small"
               bordered
-              dataSource={fnData}
+              dataSource={fnData1}
+              renderItem={item => <List.Item>{item}</List.Item>}
+            />
+          </Card>
+        </Col>
+        <Col span={12}>
+          <Card
+            hoverable
+            title={
+              <div style={{ textAlign: "center" }}>Inbox View - Brief</div>
+            }
+            bordered={true}
+          >
+            <List
+              size="small"
+              bordered
+              dataSource={fnData2}
               renderItem={item => <List.Item>{item}</List.Item>}
             />
           </Card>

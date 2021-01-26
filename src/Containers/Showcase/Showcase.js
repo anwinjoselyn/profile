@@ -13,6 +13,7 @@ import { isEmpty } from "../../libs/validators.js";
 import Kanban1 from "./Components/Kanban1/Kanban1";
 import Kanban2 from "./Components/Kanban2/Kanban2";
 import Activities from "./Components/Tasks/Tasks";
+import Overview from "./Overview";
 
 import "./Showcase.css";
 
@@ -52,7 +53,7 @@ const ShowCase = props => {
   const [sdDeals, setSdDeals] = useState([]);
   const [saDeals, setsaDeals] = useState([]);
   const [filtered, setFiltered] = useState(null);
-  const [tabKey, setTabKey] = useState("3");
+  const [tabKey, setTabKey] = useState("0");
   const [theActs, setTheActs] = useState([]);
   const [dataLoaded, setLoaded] = useState(false);
 
@@ -748,6 +749,9 @@ const ShowCase = props => {
           type="card"
           activeKey={tabKey}
         >
+          <TabPane tab="Home" key="0">
+            {dataLoaded ? <Overview /> : "Loading..."}
+          </TabPane>
           <TabPane tab="Kanban 1" key="1">
             {dataLoaded ? (
               <Kanban1
