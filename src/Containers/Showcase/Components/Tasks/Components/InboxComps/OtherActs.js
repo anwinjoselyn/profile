@@ -3,22 +3,20 @@ import React, { useState } from "react";
 import { Card, Row, Col } from "antd";
 
 import {
-  PhoneTwoTone,
-  MailTwoTone,
-  LaptopOutlined,
-  CustomerServiceTwoTone,
-  MobileTwoTone,
-  PushpinTwoTone,
-  CoffeeOutlined,
+  //PhoneTwoTone,
+  //MailTwoTone,
+  //LaptopOutlined,
+  //CustomerServiceTwoTone,
+  //MobileTwoTone,
+  //PushpinTwoTone,
+  //CoffeeOutlined,
   ClockCircleTwoTone
 } from "@ant-design/icons";
 
 import { parseISO, format } from "date-fns";
 
-//import axios from "axios";
-
 import "../../Activities.css";
-
+/*
 const taskIcons = [
   <PhoneTwoTone twoToneColor="#19BAD1" color="#19BAD1" />,
   <MobileTwoTone twoToneColor="#19BAD1" color="#19BAD1" />,
@@ -28,7 +26,7 @@ const taskIcons = [
   <PushpinTwoTone twoToneColor="#19BAD1" color="#19BAD1" />,
   <CoffeeOutlined twoToneColor="#19BAD1" color="#19BAD1" />
 ];
-
+*/
 const OtherActs = props => {
   const tabList = [
     {

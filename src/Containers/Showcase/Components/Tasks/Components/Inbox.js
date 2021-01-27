@@ -5,7 +5,7 @@ import {
   Row,
   Col,
   Card,
-  Tabs,
+  //Tabs,
   Select,
   Input,
   Checkbox,
@@ -27,19 +27,21 @@ import {
   //addDays
 } from "date-fns";
 
-import { EditorState, convertToRaw, convertFromRaw } from "draft-js";
+import {
+  EditorState,
+  //convertToRaw,
+  convertFromRaw
+} from "draft-js";
 
 import { Editor } from "react-draft-wysiwyg";
 
-import {
+/*import {
   CheckOutlined,
   SmileTwoTone,
   MehTwoTone,
   PhoneTwoTone,
   UserOutlined
-} from "@ant-design/icons";
-
-//import axios from "axios";
+} from "@ant-design/icons";*/
 
 import { isEmpty } from "../../../../../libs/validators";
 
@@ -53,23 +55,24 @@ import "../Activities.css";
 
 const toolbarOptions = require("./Editor/toolbarOptions.json").data;
 
-const { TabPane } = Tabs;
+//const { TabPane } = Tabs;
 const { Option } = Select;
 
 const Inbox = props => {
   const [dataLoaded, setLoaded] = useState(false);
   const [openDrawer, setOpenDrawer] = useState(false);
   const [changeUser, setChangeUser] = useState(false);
-  const [showDealType, setShowDealType] = useState(false);
+  //const [showDealType, setShowDealType] = useState(false);
   const [showChangeDetails, setChangeDetails] = useState(false);
   const [currentAct, setCurrentAct] = useState({});
   const [currentActFlag, setCurrentActFlag] = useState(false);
-
+  /*
   const [noActsToday, setNoActsToday] = useState(
     props.noActivitiesToday || false
   );
-  const [dealType, setDealType] = useState(1);
   const [noActsPast, setNoActsPast] = useState(props.noPastActivities || false);
+  */
+  const [dealType, setDealType] = useState(1);
   const [allTodayActs, setTodayActs] = useState([]);
   const [allPastActs, setPastActs] = useState([]);
   const [allFutureActs, setFutureActs] = useState([]);
@@ -86,13 +89,13 @@ const Inbox = props => {
       props.processedActs.filter(ua => ua.userId === props.userId)[0]
     );
   }, [props.processedActs, props.userId]);
-*/
+
   //console.log("filteredUserAct", filteredUserAct);
   //console.log("props.processedActs", props.processedActs);
   const selectActId = actId => {
     setSelectedActId(parseInt(actId));
   };
-
+*/
   useEffect(() => {
     if (
       selectedActId !== null &&
@@ -169,7 +172,7 @@ const Inbox = props => {
             )[0]
         );
         setCurrentActFlag(true);
-        setNoActsToday(false);
+        //setNoActsToday(false);
         //noActivitiesToday = false;
       } else if (
         filteredUserAct !== undefined &&
@@ -184,7 +187,7 @@ const Inbox = props => {
           )[0]
         );
         setCurrentActFlag(true);
-        setNoActsToday(true);
+        //setNoActsToday(true);
         /*
         noActivitiesToday = true;
 
@@ -285,13 +288,19 @@ const Inbox = props => {
     ) {
       console.log("if happened");
       //noPastActivities = false;
-      setNoActsPast(false);
+      //setNoActsPast(false);
     } else {
       console.log("else if happened");
       //noPastActivities = true;
-      setNoActsPast(true);
+      //setNoActsPast(true);
     }
-  }, [filteredUserAct, selectedActId]);
+  }, [
+    filteredUserAct,
+    selectedActId,
+    props.dst,
+    props.processedActs,
+    props.today
+  ]);
 
   useEffect(() => {
     if (currentActFlag) {
@@ -321,7 +330,7 @@ const Inbox = props => {
   const onEditorStateChange = editorState => {
     setEditorState(editorState);
   };
-
+  /*
   const saveEditorContent = data => {
     localStorage.setItem("editorData", JSON.stringify(data));
   };
@@ -346,7 +355,7 @@ const Inbox = props => {
       [e.target.name]: e.target.value
     });
   };
-
+*/
   const changeDealDetails = () => {
     return (
       <React.Fragment>
@@ -836,6 +845,8 @@ const Inbox = props => {
                 allFutureActs={allFutureActs}
                 allDeals={props.allDeals}
                 activity={currentAct}
+                setSelectedActId={setSelectedActId}
+                setFilteredUserAct={setFilteredUserAct}
               />
             </Drawer>
           )}

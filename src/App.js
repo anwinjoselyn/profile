@@ -31,7 +31,7 @@ const App = () => {
   const [collapsed, setColapse] = useState(true);
   const [darkTheme, setTheme] = useState(false);
   const [themeClasses, setClasses] = useState({});
-  const [selectedKey, setSelectedKey] = useState("8");
+  const [selectedKey, setSelectedKey] = useState("1");
 
   //console.log("selectedKey", selectedKey);
   useEffect(() => {

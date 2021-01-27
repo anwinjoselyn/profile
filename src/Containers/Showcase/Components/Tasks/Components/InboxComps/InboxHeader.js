@@ -4,16 +4,6 @@ import { Row, Col, Card } from "antd";
 
 import { format, parseISO, isPast, sub } from "date-fns";
 
-import {
-  CheckOutlined,
-  SmileTwoTone,
-  MehTwoTone,
-  PhoneTwoTone,
-  ClockCircleTwoTone
-} from "@ant-design/icons";
-
-//import axios from "axios";
-
 import "../../Activities.css";
 
 const InboxHeader = props => {
