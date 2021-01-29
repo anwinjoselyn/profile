@@ -6,7 +6,7 @@ import { format, parseISO } from "date-fns";
 //import axios from "axios";
 import { Editor } from "react-draft-wysiwyg";
 
-import "../../Playbook.css";
+import "../Template.css";
 
 const { Meta } = Card;
 

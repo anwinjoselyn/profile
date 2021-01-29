@@ -6,7 +6,7 @@ import { Editor } from "react-draft-wysiwyg";
 
 //import axios from "axios";
 
-import "../../Playbook.css";
+import "../Template.css";
 
 const { Option } = Select;
 const { TextArea } = Input;

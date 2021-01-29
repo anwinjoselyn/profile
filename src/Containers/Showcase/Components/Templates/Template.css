@@ -1,0 +1,256 @@
+.Templates {
+  min-height: 89vh;
+  color: #001b21;
+}
+
+.Templates .PlaybookCard {
+  min-height: 89vh;
+}
+
+.Templates .StatsCard {
+  min-height: 89vh;
+  /*box-shadow: 0 0 1px 5px #fbfaeb;
+  border: 0.2em solid #fafafa;*/
+}
+
+.Templates .ant-tabs-tab-btn {
+  font-size: 14px !important;
+}
+
+.Templates .ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #19dfd1 !important;
+}
+
+.Templates .ant-btn-sm {
+  font-size: 12px !important;
+}
+
+.Templates .superscript {
+  color: #fa4a09;
+  font-size: 12px;
+}
+
+.Templates .superscript1 {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.Templates .superscript1 i {
+  color: #001b21;
+}
+
+.PlaybookLayout .mainSubmenuItemS {
+  background-color: #fbfaeb !important;
+  margin-bottom: 2em !important;
+  padding: 0 1em !important;
+}
+
+.PlaybookLayout .mainSubmenuItemS span {
+  color: #19dfd1;
+}
+
+.PlaybookLayout .mainSubmenuItem {
+  margin-bottom: 2em !important;
+  padding: 0 1em !important;
+}
+
+.PlaybookLayout .mainSubmenuItem span {
+  color: #001b21;
+}
+
+.PlaybookLayout .mainSubmenuItem:hover {
+  background-color: white;
+}
+
+.PlaybookLayout .mainSubmenuItem:hover span {
+  color: #001b21;
+}
+
+.PlaybookLayout .mainSubmenuItemSD {
+  background-color: #fbfaeb;
+  margin-bottom: 2em !important;
+  padding: 0 1em !important;
+}
+
+.PlaybookLayout .mainSubmenuItemSD span {
+  color: #19dfd1;
+}
+
+.PlaybookLayout .mainSubmenuItemD {
+  margin-bottom: 2em !important;
+  padding: 0 1em !important;
+}
+
+.PlaybookLayout .mainSubmenuItemD span {
+  color: #fbfaeb;
+}
+
+.PlaybookLayout .mainSubmenuItemD:hover {
+  background-color: white !important;
+}
+
+.PlaybookLayout .maingSubmenuItemD:hover span {
+  color: #001b21;
+}
+
+.Templates .ant-btn-sm {
+  font-size: 12px !important;
+}
+
+.Templates thead tr th {
+  background: #fff !important;
+  color: #013d4a;
+  font-size: 12px;
+}
+
+.Templates tr td {
+  border: 0 !important;
+  font-size: 12px;
+}
+
+.Templates .ant-table table {
+  table-layout: fixed !important;
+}
+
+.Templates tr td .ant-tag {
+  font-size: 12px;
+}
+
+.Templates .ant-table-wrapper .ant-pagination-total-text,
+.Templates .ant-table-wrapper .ant-pagination-prev,
+.Templates .ant-table-wrapper .ant-pagination-next,
+.Templates .ant-table-wrapper .ant-pagination-item,
+.Templates .ant-table-wrapper .ant-pagination-item-active a,
+.Templates
+  .ant-table-wrapper
+  .ant-select
+  .ant-select-selector
+  .ant-select-selection-item {
+  font-size: 12px !important;
+}
+
+.Templates .ant-table-wrapper .ant-pagination-item-active {
+  padding: 1px;
+  line-height: 1.5em !important;
+}
+
+.CreateScript .ant-select-borderless {
+  width: 100% !important;
+}
+
+.CreateTemplate .demo-editor {
+  min-height: 40vh;
+  border: 1px solid #b1f5ff;
+  padding: 0px 5px;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #001b21;
+}
+
+.CreateTemplate .rdw-editor-toolbar {
+  font-size: 12px !important;
+  border: 1px solid #b1f5ff;
+}
+
+.CreateTemplate .rdw-dropdown-wrapper {
+  border: 0;
+}
+
+.CreateTemplate .rdw-option-wrapper {
+  border: 0;
+  font-size: 12px;
+  min-width: inherit;
+  height: inherit;
+  opacity: 0.6;
+  color: #001b21;
+}
+
+.CreateTemplate .rdw-option-active {
+  background: #013d4a;
+  color: #e6f1f2;
+  border-radius: 3px;
+}
+
+.CreateTemplate .ant-checkbox-inner {
+  border-color: #b1f5ff !important;
+}
+
+.CreateTemplate .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #013d4a !important;
+  border-color: #013d4a !important;
+}
+
+.CreateTemplate .ant-select-borderless {
+  width: 100% !important;
+}
+
+.TemplateView .demo-editor {
+  min-height: 40vh;
+  /*border: 1px solid #b1f5ff;*/
+  padding: 0px 5px;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #001b21;
+}
+
+.TemplateView .rdw-editor-toolbar {
+  font-size: 12px !important;
+  border: 1px solid #b1f5ff;
+  visibility: hidden !important;
+}
+
+.TemplateView .rdw-dropdown-wrapper {
+  border: 0;
+}
+
+.TemplateView .rdw-option-wrapper {
+  border: 0;
+  font-size: 12px;
+  min-width: inherit;
+  height: inherit;
+  opacity: 0.6;
+  color: #001b21;
+}
+
+.TemplateView .rdw-option-active {
+  background: #013d4a;
+  color: #e6f1f2;
+  border-radius: 3px;
+}
+
+.TemplateView .ant-checkbox-inner {
+  border-color: #b1f5ff !important;
+}
+
+.TemplateView .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #013d4a !important;
+  border-color: #013d4a !important;
+}
+
+.TemplateView .ant-select-borderless {
+  width: 100% !important;
+}
+
+.Stats {
+  min-height: 89vh;
+  /*box-shadow: 0 0 1px 5px #fbfaeb;
+  border: 0.2em solid #fafafa;*/
+}
+
+.Stats .ant-card-head {
+  border-bottom: 0 !important;
+}
+
+.Stats canvas {
+  height: 40vh !important;
+  display: block !important;
+}
+
+.Templates span {
+  width: inherit !important;
+  border-radius: inherit !important;
+}
+
+.Templates .ant-select-arrow {
+  width: 12px !important;
+}

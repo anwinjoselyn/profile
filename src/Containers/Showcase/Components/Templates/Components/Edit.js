@@ -6,7 +6,7 @@ import { Editor } from "react-draft-wysiwyg";
 
 //import axios from "axios";
 
-import "../../Playbook.css";
+import "../Template.css";
 
 const { Option } = Select;
 const { TextArea } = Input;
@@ -151,10 +151,10 @@ const EditTemplate = props => {
             value={props.selectedPlaybook.record.eTemplateData.categoryId}
             bordered={false}
           >
-            {props.commonData && props.commonData.categories
-              ? props.commonData.categories.data.map(c => (
+            {props.categories && props.categories.length > 0
+              ? props.categories.map(c => (
                   <Option key={c.id} value={c.id}>
-                    {c.name} <small>({c.description})</small>
+                    {c.categoryName} <small>({c.categoryDesc})</small>
                   </Option>
                 ))
               : "Unable to retrieve data"}

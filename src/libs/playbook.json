@@ -1,0 +1,145 @@
+{
+  "playbookTemplate": {
+    "id": null,
+    "tenantId": null,
+    "userId": null,
+    "owner": {
+      "createdBy": null,
+      "lastUpdatedBy": null
+    },
+    "details": {
+      "type": "",
+      "name": "",
+      "description": ""
+    },
+    "icpMaster": {
+      "data": []
+    },
+    "collateralData": {
+      "categoryId": null,
+      "docName": "",
+      "docDesc": "",
+      "docType": "",
+      "docSize": "",
+      "docURL": "",
+      "upVotes": 0,
+      "downVotes": 0,
+      "isActive": true
+    },
+    "eTemplateData": {
+      "categoryId": null,
+      "templateName": "",
+      "templateDesc": "",
+      "eSubjects": [""],
+      "eBody": {},
+      "upVotes": 0,
+      "downVotes": 0,
+      "attachments": [
+        {
+          "fileName": "",
+          "fileURL": "",
+          "fileDesc": "",
+          "fileType": "",
+          "fileSize": ""
+        }
+      ],
+      "isActive": true
+    },
+    "playData": {
+      "categoryId": null,
+      "playName": "",
+      "playDesc": "",
+      "playContent": [],
+      "upVotes": 0,
+      "downVotes": 0,
+      "isActive": true
+    },
+    "scriptData": {
+      "categoryId": null,
+      "scriptName": "",
+      "scriptDesc": "",
+      "scriptContent": [{ "id": 1, "title": "", "content": "" }],
+      "upVotes": 0,
+      "downVotes": 0,
+      "isActive": true
+    },
+    "isActive": true
+  },
+  "scriptTemplate": {
+    "categoryId": null,
+    "scriptName": "",
+    "scriptDesc": "",
+    "scriptContent": [{ "id": null, "title": "", "content": "" }],
+    "upVotes": 0,
+    "downVotes": 0,
+    "isActive": true
+  },
+  "scriptContentTemplate": { "id": null, "title": "", "content": "" },
+  "collateralTemplate": {
+    "categoryId": null,
+    "docName": "",
+    "docDesc": "",
+    "docType": "",
+    "docSize": "",
+    "docURL": "",
+    "upVotes": 0,
+    "downVotes": 0,
+    "isActive": true
+  },
+  "eTemplate": {
+    "categoryId": null,
+    "templateName": "",
+    "templateDesc": "",
+    "eSubjects": [],
+    "eBody": {},
+    "upVotes": 0,
+    "downVotes": 0,
+    "attachments": [],
+    "isActive": true
+  },
+  "sampleTemplate": {
+    "id": null,
+    "step": { "name": "", "type": "", "id": null },
+    "successStep": { "name": "", "type": "", "id": null },
+    "failureStep": { "name": "", "type": "", "id": null },
+    "maybeStep": { "name": "", "type": "", "id": null },
+    "isFinalStep": true
+  },
+  "sampleScript": [
+    {
+      "id": 1,
+      "title": "Greetings of the day",
+      "content": "Hi John, Good morning (or other). It's Marion from Playbook."
+    },
+    {
+      "id": 2,
+      "title": "After pleasantries",
+      "content": "John, in today's 2PM demo my team will show you how your organization can double your sales with Playbook. Is there something specific we should also cover?"
+    },
+    {
+      "id": 3,
+      "title": "If yes",
+      "content": "(Take notes on any specifics). Sure, I'll have the team talk about this as well."
+    },
+    {
+      "id": 4,
+      "title": "If no",
+      "content": "Cool, that sounds great. Just click on the meeting link you would have received by email to start the meeting."
+    },
+    {
+      "id": 5,
+      "title": "If asking for a reschedule",
+      "content": "(Reschedule as per mutual availability)"
+    },
+    {
+      "id": 6,
+      "title": "If dropping out",
+      "content": "(Find out why and how we can solve) John, this is a bit sudden. What has changed in the last few days?"
+    },
+    {
+      "id": 7,
+      "title": "Objections",
+      "content": "Use appropriate objection handling scripts here..."
+    }
+  ]
+}

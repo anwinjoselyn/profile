@@ -14,6 +14,7 @@ import Kanban1 from "./Components/Kanban1/Kanban1";
 import Kanban2 from "./Components/Kanban2/Kanban2";
 import Activities from "./Components/Tasks/Tasks";
 import Parser from "./Components/Parser/Parser";
+import Templates from "./Components/Templates/Templates";
 import Overview from "./Overview";
 
 import "./Showcase.css";
@@ -32,6 +33,8 @@ const contacts = require("./Data/contacts.json").data;
 const orgs = require("./Data/orgs.json").data;
 const stages = require("./Data/stages.json").data;
 const users = require("./Data/users.json").data;
+
+const leadsData = require("../../libs/leadsData.json");
 
 const ShowCase = props => {
   const [filteredDeals, setFilteredDeals] = useState([]);
@@ -54,7 +57,7 @@ const ShowCase = props => {
   const [sdDeals, setSdDeals] = useState([]);
   const [saDeals, setsaDeals] = useState([]);
   const [filtered, setFiltered] = useState(null);
-  const [tabKey, setTabKey] = useState("5");
+  const [tabKey, setTabKey] = useState("4");
   const [theActs, setTheActs] = useState([]);
   const [dataLoaded, setLoaded] = useState(false);
 
@@ -62,7 +65,7 @@ const ShowCase = props => {
     let filteredDeals = [];
 
     let filtered = stages.filter(s => s.pipeId === parseInt(pipeId));
-    console.log("filtered", filtered);
+    //console.log("filtered", filtered);
     setFiltered(filtered);
 
     if (pipeId)
@@ -82,15 +85,15 @@ const ShowCase = props => {
       );
     }
 
-    console.log("deals", deals);
-    console.log("filteredDeals", filteredDeals);
+    //console.log("deals", deals);
+    //console.log("filteredDeals", filteredDeals);
 
     if (common.tenant && common.tenant.fyStartMonth === "January") {
       monthStartNumber = 1;
     } else {
       monthStartNumber = 4;
     }
-    console.log("currentMonthNumber", currentMonthNumber);
+    //console.log("currentMonthNumber", currentMonthNumber);
     currentMonthNumber =
       currentMonthNumber - monthStartNumber >= 0
         ? currentMonthNumber - monthStartNumber + 1
@@ -153,7 +156,7 @@ const ShowCase = props => {
     let teamAchieved = 0;
     let teamQuota = 0;
     let cMN = currentMonthNumber;
-    console.log("cMN", cMN);
+    //console.log("cMN", cMN);
     let currentMonth =
       cMN !== undefined && cMN !== null
         ? cMN === 1
@@ -182,7 +185,7 @@ const ShowCase = props => {
           ? "m12"
           : null
         : null;
-    console.log("currentMonth", currentMonth);
+    //console.log("currentMonth", currentMonth);
     if (!isEmpty(currentUserTarget)) {
       switch (currentMonth) {
         default:
@@ -267,9 +270,9 @@ const ShowCase = props => {
           break;
       }
     }
-    console.log("userQuota", userQuota);
-    console.log("selectedUserId", selectedUserId);
-    console.log("teamId", teamId);
+    //console.log("userQuota", userQuota);
+    //console.log("selectedUserId", selectedUserId);
+    //console.log("teamId", teamId);
     deals.forEach(ad => {
       if (teamId === 3) {
         if (
@@ -321,8 +324,8 @@ const ShowCase = props => {
         }
       }
     });
-    console.log("userAchieved", userAchieved);
-    console.log("teamAchieved", teamAchieved);
+    //console.log("userAchieved", userAchieved);
+    //console.log("teamAchieved", teamAchieved);
 
     setTeamQuota(teamQuota);
     setTeamAch(userAchieved);
@@ -333,7 +336,7 @@ const ShowCase = props => {
   };
 
   const onDragStart = (event, id) => {
-    console.log("dragstart on div/deal: ", id);
+    //console.log("dragstart on div/deal: ", id);
     event.dataTransfer.setData("id", id);
   };
 
@@ -399,11 +402,11 @@ const ShowCase = props => {
     let object = [];
     let filteredDeals = [];
 
-    console.log("selectedUserId", selectedUserId);
-    console.log("maDeals", maDeals);
-    console.log("teamId", teamId);
-    console.log("sdDeals", sdDeals);
-    console.log("saDeals", saDeals);
+    //console.log("selectedUserId", selectedUserId);
+    //console.log("maDeals", maDeals);
+    //console.log("teamId", teamId);
+    //console.log("sdDeals", sdDeals);
+    //console.log("saDeals", saDeals);
 
     if (parseInt(selectedUserId) === -1) {
       if (teamId === 1) {
@@ -439,7 +442,7 @@ const ShowCase = props => {
       );
     }
 
-    console.log("filteredDeals", filteredDeals);
+    //console.log("filteredDeals", filteredDeals);
     let insideTotal = [];
 
     filtered.forEach(stage => {
@@ -458,7 +461,7 @@ const ShowCase = props => {
       });
     });
 
-    console.log("insideTotal", insideTotal);
+    //console.log("insideTotal", insideTotal);
     setTotal(insideTotal);
 
     //console.log("filteredDeals", filteredDeals);
@@ -475,10 +478,10 @@ const ShowCase = props => {
             : 0;
       });
 
-    console.log("sum", sum);
+    //console.log("sum", sum);
 
     filtered.forEach(stage => (object[stage.id] = []));
-    console.log("object", object);
+    //console.log("object", object);
 
     if (
       filteredDeals &&
@@ -714,7 +717,7 @@ const ShowCase = props => {
 
   const handleSelectPipe = e => {
     e.preventDefault();
-    console.log("selecing pipe", e.target.value);
+    //console.log("selecing pipe", e.target.value);
 
     if (
       e.target.value &&
@@ -726,7 +729,7 @@ const ShowCase = props => {
 
   const handleSelectUser = e => {
     e.preventDefault();
-    console.log("selecing user", e.target.value);
+    //console.log("selecing user", e.target.value);
 
     if (e.target.value && !isNaN(e.target.value))
       setSelectedUserId(parseInt(e.target.value));
@@ -858,16 +861,12 @@ const ShowCase = props => {
               "Loading..."
             )}
           </TabPane>
-          <TabPane
-            disabled
-            tab={
-              <div>
-                Templates<sup>*</sup>
-              </div>
-            }
-            key="4"
-          >
-            Content of Tab Pane 4
+          <TabPane tab={<div>Templates</div>} key="4">
+            {dataLoaded ? (
+              <Templates leadsData={leadsData} commonData={common} />
+            ) : (
+              "Loading..."
+            )}
           </TabPane>
           <TabPane tab={<div>Leads</div>} key="5">
             {dataLoaded ? <Parser commonData={common} /> : "Loading..."}

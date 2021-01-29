@@ -18,18 +18,21 @@ import { EditorState, convertToRaw, convertFromRaw } from "draft-js";
 
 import axios from "axios";
 
-import CreateTemplate from "./Components/Templates/Create";
-import TemplateView from "./Components/Templates/View";
-import EditTemplate from "./Components/Templates/Edit";
+import CreateTemplate from "./Components/Create";
+import TemplateView from "./Components/View";
+import EditTemplate from "./Components/Edit";
+import Explanation from "./Components/Explanation";
 
 import "./Template.css";
-import "../../../../node_modules/react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
+import "../../../../../node_modules/react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 
-const template = require("../../../libs/playbook.json");
-const toolbarOptions = require("../../../libs/toolbarOptions.json").data;
-const { isEmpty } = require("../../../libs/validators");
+const template = require("../../../../libs/playbook.json");
+const toolbarOptions = require("../../../../libs/toolbarOptions.json").data;
+const { isEmpty } = require("../../../../libs/validators");
+const tenantData = require("../../../../libs/tenantData.json");
+const token = require("../../../../libs/token.json");
 
-const { Content, Sider } = Layout;
+const { Content } = Layout;
 
 const Template = props => {
   const [loading, setLoading] = useState(true);
@@ -37,7 +40,7 @@ const Template = props => {
     show: false,
     data: "stats"
   });
-  const [minorTab, setMinor] = useState("all");
+  const [minorTab, setMinor] = useState("templates");
   const [selectedRecords, setSelected] = useState({
     loading: false,
     hasSelected: false,
@@ -90,10 +93,10 @@ const Template = props => {
         setPlaybookData(data);
         setLoading(false);
       } catch (error) {
-        console.log("error", error);
+        //console.log("error", error);
       }
     }
-    console.log("props.leadsData", props.leadsData);
+    //console.log("props.leadsData", props.leadsData);
     if (props.leadsData.playbooks) onLoad();
   }, [props.leadsData]);
 
@@ -139,7 +142,7 @@ const Template = props => {
   };
 
   const onTabChange = key => {
-    console.log("key", key);
+    //console.log("key", key);
     setMinor(key);
   };
 
@@ -164,14 +167,14 @@ const Template = props => {
   const submitDeletePlaybook = async e => {
     e.preventDefault();
 
-    console.log("selectedPlaybook.record", selectedPlaybook.record);
+    //console.log("selectedPlaybook.record", selectedPlaybook.record);
     /*
     try {
 
       const result = await axios({
         method: "DELETE",
-        url: `/${props.props.props.stage}/v3/playbooks/byid/${selectedPlaybook.record.id}`,
-        headers: { Authorization: `${props.props.props.token.authToken}` }
+        url: `/${"dev"}/v3/playbooks/byid/${selectedPlaybook.record.id}`,
+        headers: { Authorization: `${token.authToken}` }
       });
 
       console.log("result.data", result.data);
@@ -203,36 +206,34 @@ const Template = props => {
   const submitEditPlaybook = async e => {
     e.preventDefault();
 
-    console.log("selectedPlaybook.record", selectedPlaybook.record);
+    //console.log("selectedPlaybook.record", selectedPlaybook.record);
 
     let playbook = selectedPlaybook.record;
-    playbook.owner.lastUpdatedBy = props.props.props.token.token.id;
+    playbook.owner.lastUpdatedBy = token.id;
 
     let dataToUpdate = {
       playbook: playbook,
       dataChanged: "scriptData"
     };
 
-    console.log("dataToUpdate", dataToUpdate);
+    //console.log("dataToUpdate", dataToUpdate);
 
     try {
+      /*
       const result = await axios({
         method: "PUT",
-        url: `/${props.props.props.stage}/v3/playbooks/byid/${dataToUpdate.playbook.id}`,
-        headers: { Authorization: `${props.props.props.token.authToken}` },
+        url: `/${"dev"}/v3/playbooks/byid/${dataToUpdate.playbook.id}`,
+        headers: { Authorization: `${token.authToken}` },
         data: dataToUpdate
       });
       console.log("result.data", result.data);
-
-      if (
-        result.data &&
-        result.data !== "Tenant ID does not match resource requested"
-      ) {
+*/
+      if (dataToUpdate) {
         let playbooks = props.leadsData.playbooks.map(p => {
-          if (p.id !== result.data.id) {
+          if (p.id !== playbook.id) {
             return p;
           } else {
-            return result.data;
+            return playbook;
           }
         });
 
@@ -249,29 +250,27 @@ const Template = props => {
         });
       }
     } catch (error) {
-      console.log("error", error);
+      //console.log("error", error);
     }
   };
 
   const submitNewPlaybook = async e => {
     e.preventDefault();
-    console.log("newPlaybook.record", newPlaybook.record);
+    //console.log("newPlaybook.record", newPlaybook.record);
 
     try {
+      /*
       const result = await axios({
         method: "POST",
-        url: `/${props.props.props.stage}/v3/playbooks/create`,
-        headers: { Authorization: `${props.props.props.token.authToken}` },
+        url: `/${"dev"}/v3/playbooks/create`,
+        headers: { Authorization: `${token.authToken}` },
         data: newPlaybook.record
       });
       console.log("result.data", result.data);
-
-      if (
-        result.data &&
-        result.data !== "Tenant ID does not match resource requested"
-      ) {
+*/
+      if (newPlaybook.record) {
         let playbooks = props.leadsData.playbooks;
-        playbooks.push(result.data);
+        playbooks.push(newPlaybook.record);
 
         recalculatePlaybooks(playbooks);
         props.setLeads({
@@ -288,7 +287,7 @@ const Template = props => {
         });
       }
     } catch (error) {
-      console.log("error", error);
+      //console.log("error", error);
     }
   };
 
@@ -308,20 +307,18 @@ const Template = props => {
     //console.log("data", data);
 
     try {
+      /*
       const result = await axios({
         method: "POST",
-        url: `/${props.props.props.stage}/v3/playbooks/create`,
-        headers: { Authorization: `${props.props.props.token.authToken}` },
+        url: `/${"dev"}/v3/playbooks/create`,
+        headers: { Authorization: `${token.authToken}` },
         data: newPlaybook.record
       });
       console.log("result.data", result.data);
-
-      if (
-        result.data &&
-        result.data !== "Tenant ID does not match resource requested"
-      ) {
+*/
+      if (data) {
         let playbooks = props.leadsData.playbooks;
-        playbooks.push(result.data);
+        playbooks.push(data);
 
         recalculatePlaybooks(playbooks);
         props.setLeads({
@@ -338,7 +335,7 @@ const Template = props => {
         });
       }
     } catch (error) {
-      console.log("error", error);
+      //console.log("error", error);
     }
   };
 
@@ -369,37 +366,37 @@ const Template = props => {
         details.type
           ? details.type === "script"
             ? record.scriptData.categoryId &&
-              props.props.props.commonData.categories.data.find(
+              props.commonData.masterCategories.find(
                 c => c.id === record.scriptData.categoryId
               )
-              ? props.props.props.commonData.categories.data.filter(
+              ? props.commonData.masterCategories.filter(
                   c => c.id === record.scriptData.categoryId
                 )[0].name
               : "---"
             : details.type === "play"
             ? record.playData.categoryId &&
-              props.props.props.commonData.categories.data.find(
+              props.commonData.masterCategories.find(
                 c => c.id === record.playData.categoryId
               )
-              ? props.props.props.commonData.categories.data.filter(
+              ? props.commonData.masterCategories.filter(
                   c => c.id === record.playData.categoryId
                 )[0].name
               : "---"
             : details.type === "collateral"
             ? record.collateralData.categoryId &&
-              props.props.props.commonData.categories.data.find(
+              props.commonData.masterCategories.find(
                 c => c.id === record.collateralData.categoryId
               )
-              ? props.props.props.commonData.categories.data.filter(
+              ? props.commonData.masterCategories.filter(
                   c => c.id === record.collateralData.categoryId
                 )[0].name
               : "---"
             : details.type === "template"
             ? record.eTemplateData.categoryId &&
-              props.props.props.commonData.categories.data.find(
+              props.commonData.masterCategories.find(
                 c => c.id === record.eTemplateData.categoryId
               )
-              ? props.props.props.commonData.categories.data.filter(
+              ? props.commonData.masterCategories.filter(
                   c => c.id === record.eTemplateData.categoryId
                 )[0].name
               : "---"
@@ -509,102 +506,7 @@ const Template = props => {
   ];
 
   const contentList = {
-    all: (
-      <Table
-        dataSource={
-          !loading &&
-          playbookData &&
-          playbookData.allPlaybooks &&
-          playbookData.allPlaybooks.length > 0
-            ? playbookData.allPlaybooks
-            : []
-        }
-        rowSelection={rowSelection}
-        columns={columns}
-        size="small"
-        pagination={{
-          size: "small",
-          total:
-            !loading &&
-            playbookData &&
-            playbookData.allPlaybooks &&
-            playbookData.allPlaybooks.length > 0
-              ? playbookData.allPlaybooks.length
-              : 0,
-          showSizeChanger: true,
-          pageSizeOptions: [10, 25, 50, 100],
-          showTotal: showTotal
-        }}
-        rowKey="id"
-        bordered={false}
-        locale={{ emptyText: "No Playbooks created...yet!" }}
-        scroll={{ scrollToFirstRowOnChange: true, x: 100, y: "67vh" }}
-      />
-    ),
-    plays: (
-      <Table
-        dataSource={
-          !loading &&
-          playbookData &&
-          playbookData.allPlays &&
-          playbookData.allPlays.length > 0
-            ? playbookData.allPlays
-            : []
-        }
-        rowSelection={rowSelection}
-        columns={columns}
-        size="small"
-        pagination={{
-          size: "small",
-          total:
-            !loading &&
-            playbookData &&
-            playbookData.allPlays &&
-            playbookData.allPlays.length > 0
-              ? playbookData.allPlays.length
-              : 0,
-          showSizeChanger: true,
-          pageSizeOptions: [10, 25, 50, 100],
-          showTotal: showTotal
-        }}
-        rowKey="id"
-        bordered={false}
-        locale={{ emptyText: "No Playbooks created...yet!" }}
-        scroll={{ scrollToFirstRowOnChange: true, x: 100, y: "67vh" }}
-      />
-    ),
-    scripts: (
-      <Table
-        dataSource={
-          !loading &&
-          playbookData &&
-          playbookData.allScripts &&
-          playbookData.allScripts.length > 0
-            ? playbookData.allScripts
-            : []
-        }
-        rowSelection={rowSelection}
-        columns={columns}
-        size="small"
-        pagination={{
-          size: "small",
-          total:
-            !loading &&
-            playbookData &&
-            playbookData.allScripts &&
-            playbookData.allScripts.length > 0
-              ? playbookData.allScripts.length
-              : 0,
-          showSizeChanger: true,
-          pageSizeOptions: [10, 25, 50, 100],
-          showTotal: showTotal
-        }}
-        rowKey="id"
-        bordered={false}
-        locale={{ emptyText: "No Playbooks created...yet!" }}
-        scroll={{ scrollToFirstRowOnChange: true, x: 100, y: "67vh" }}
-      />
-    ),
+    about: <Explanation />,
     templates: (
       <Table
         dataSource={
@@ -637,55 +539,13 @@ const Template = props => {
         scroll={{ scrollToFirstRowOnChange: true, x: 100, y: "67vh" }}
       />
     ),
-    collaterals: (
-      <Table
-        dataSource={
-          !loading &&
-          playbookData &&
-          playbookData.allCollaterals &&
-          playbookData.allCollaterals.length > 0
-            ? playbookData.allCollaterals
-            : []
-        }
-        rowSelection={rowSelection}
-        columns={columns}
-        size="small"
-        pagination={{
-          size: "small",
-          total:
-            !loading &&
-            playbookData &&
-            playbookData.allCollaterals &&
-            playbookData.allCollaterals.length > 0
-              ? playbookData.allCollaterals.length
-              : 0,
-          showSizeChanger: true,
-          pageSizeOptions: [10, 25, 50, 100],
-          showTotal: showTotal
-        }}
-        rowKey="id"
-        bordered={false}
-        locale={{ emptyText: "No Playbooks created...yet!" }}
-        scroll={{ scrollToFirstRowOnChange: true, x: 100, y: "67vh" }}
-      />
-    ),
     selected:
       !loading && (selectedPlaybook.view || selectedPlaybook.edit) ? (
-        selectedPlaybook.type === "script" ? (
-          <ScriptView
-            script={selectedPlaybook.record}
-            categories={props.props.props.commonData.categories.data}
-            users={props.props.props.tenantData.users}
-            setSelectedPlaybook={setSelectedPlaybook}
-            selectedPlaybook={selectedPlaybook}
-            submitDeletePlaybook={submitDeletePlaybook}
-            rightMenu={rightMenu}
-          />
-        ) : selectedPlaybook.type === "template" ? (
+        selectedPlaybook.type === "template" ? (
           <TemplateView
             record={selectedPlaybook.record}
-            categories={props.props.props.commonData.categories.data}
-            users={props.props.props.tenantData.users}
+            categories={props.commonData.masterCategories}
+            users={tenantData.users}
             setSelectedPlaybook={setSelectedPlaybook}
             selectedPlaybook={selectedPlaybook}
             submitDeletePlaybook={submitDeletePlaybook}
@@ -705,64 +565,8 @@ const Template = props => {
 
   const tabList = [
     {
-      key: "all",
-      tab: (
-        <span>
-          All{" "}
-          <small className="superscript">
-            <sup>
-              (
-              {!loading &&
-              playbookData &&
-              playbookData.allPlaybooks &&
-              playbookData.allPlaybooks.length > 0
-                ? playbookData.allPlaybooks.length
-                : 0}
-              )
-            </sup>
-          </small>
-        </span>
-      )
-    },
-    {
-      key: "plays",
-      tab: (
-        <span>
-          Plays{" "}
-          <small className="superscript">
-            <sup>
-              (
-              {!loading &&
-              playbookData &&
-              playbookData.allPlays &&
-              playbookData.allPlays.length > 0
-                ? playbookData.allPlays.length
-                : 0}
-              )
-            </sup>
-          </small>
-        </span>
-      )
-    },
-    {
-      key: "scripts",
-      tab: (
-        <span>
-          Scripts{" "}
-          <small className="superscript">
-            <sup>
-              (
-              {!loading &&
-              playbookData &&
-              playbookData.allScripts &&
-              playbookData.allScripts.length > 0
-                ? playbookData.allScripts.length
-                : 0}
-              )
-            </sup>
-          </small>
-        </span>
-      )
+      key: "about",
+      tab: <span>About</span>
     },
     {
       key: "templates",
@@ -785,26 +589,6 @@ const Template = props => {
       )
     },
     {
-      key: "collaterals",
-      tab: (
-        <span>
-          Collaterals{" "}
-          <small className="superscript">
-            <sup>
-              (
-              {!loading &&
-              playbookData &&
-              playbookData.allCollaterals &&
-              playbookData.allCollaterals.length > 0
-                ? playbookData.allCollaterals.length
-                : 0}
-              )
-            </sup>
-          </small>
-        </span>
-      )
-    },
-    {
       key: "selected",
       tab:
         !loading &&
@@ -818,7 +602,7 @@ const Template = props => {
 
   return (
     <Layout className="PlaybookLayout">
-      <Content className="Template">
+      <Content className="Templates">
         {!loading ? (
           <Row>
             <Col span={24}>
@@ -844,13 +628,12 @@ const Template = props => {
                               type: "template",
                               record: {
                                 ...template.playbookTemplate,
-                                tenantId: props.props.props.token.token.tId,
-                                userId: props.props.props.token.token.id,
+                                tenantId: token.tId,
+                                userId: token.id,
                                 owner: {
                                   ...template.playbookTemplate.owner,
-                                  createdBy: props.props.props.token.token.id,
-                                  lastUpdatedBy:
-                                    props.props.props.token.token.id
+                                  createdBy: token.id,
+                                  lastUpdatedBy: token.id
                                 },
                                 details: {
                                   ...template.playbookTemplate.details,
@@ -875,14 +658,14 @@ const Template = props => {
               >
                 <Row>
                   <Col span={24}>
-                    {contentList[minorTab]}
+                    {!loading && contentList[minorTab]}
 
                     {newPlaybook.flag ? (
                       newPlaybook.type === "template" ? (
                         <CreateTemplate
                           setNewPlaybook={setNewPlaybook}
                           newPlaybook={newPlaybook}
-                          commonData={props.props.props.commonData}
+                          commonData={props.commonData}
                           template={template}
                           submitNewPlaybook={submitNewPlaybookE}
                           toolbar={toolbarOptions}
@@ -899,17 +682,15 @@ const Template = props => {
                         <EditTemplate
                           selectedPlaybook={selectedPlaybook}
                           setSelectedPlaybook={setSelectedPlaybook}
-                          commonData={props.props.props.commonData}
+                          commonData={props.commonData}
                           template={template}
-                          tenantId={props.props.props.token.token.tId}
-                          userId={props.props.props.token.token.id}
-                          authToken={props.props.props.token.authToken}
-                          stage={props.props.props.stage}
+                          tenantId={token.tId}
+                          userId={token.id}
+                          authToken={token.authToken}
+                          stage={"dev"}
                           submitEditPlaybook={submitEditPlaybook}
-                          categories={
-                            props.props.props.commonData.categories.data
-                          }
-                          users={props.props.props.tenantData.users}
+                          categories={props.commonData.masterCategories}
+                          users={tenantData.users}
                           toolbar={toolbarOptions}
                           editorState={localEditorState}
                           onEditorStateChange={onEditorStateChange}

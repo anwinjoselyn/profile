@@ -75,7 +75,7 @@ const Campaigns = props => {
   const submitCampaigns = async e => {
     e.preventDefault();
 
-    console.log("newCampaign.data", newCampaign.data);
+    //console.log("newCampaign.data", newCampaign.data);
 
     let contacts = [];
     /*
@@ -111,7 +111,7 @@ const Campaigns = props => {
       contacts: contacts
     };
 
-    console.log("updatedData", updatedData);
+    //console.log("updatedData", updatedData);
 
     try {
       const result = await axios({
@@ -120,7 +120,7 @@ const Campaigns = props => {
         headers: { Authorization: `${props.authToken}` },
         data: updatedData
       });
-      console.log("result.data", result.data);
+      //console.log("result.data", result.data);
 
       if (
         result.data &&
@@ -166,14 +166,14 @@ const Campaigns = props => {
         message.error("Sorry, something went wrong!");
       }
     } catch (error) {
-      console.log("error", error);
+      //console.log("error", error);
     }
   };
 
   const updateToCampaign = async e => {
     e.preventDefault();
 
-    console.log("props.addCampaigns.single", props.addCampaigns.single);
+    //console.log("props.addCampaigns.single", props.addCampaigns.single);
 
     let contacts = [];
 
@@ -193,7 +193,7 @@ const Campaigns = props => {
       contacts: contacts
     };
 
-    console.log("updatedData", updatedData);
+    //console.log("updatedData", updatedData);
 
     try {
       const result = await axios({
@@ -202,7 +202,7 @@ const Campaigns = props => {
         headers: { Authorization: `${props.authToken}` },
         data: updatedData
       });
-      console.log("result.data", result.data);
+      //console.log("result.data", result.data);
 
       if (
         result.data &&
@@ -248,7 +248,7 @@ const Campaigns = props => {
         message.error("Sorry, something went wrong!");
       }
     } catch (error) {
-      console.log("error", error);
+      //console.log("error", error);
     }
   };
 
