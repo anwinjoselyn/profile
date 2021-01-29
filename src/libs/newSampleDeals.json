@@ -1,0 +1,2338 @@
+{
+  "dealTemplate": {
+    "id": null,
+    "tenantId": null,
+    "userId": null,
+    "orgId": null,
+    "pipeId": null,
+    "type": {
+      "options": ["Deal", "Renewal"],
+      "type": "Deal",
+      "currentTeam": 1,
+      "customerId": null
+    },
+    "owner": {
+      "tenantId": null,
+      "userId": null
+    },
+    "details": {
+      "name": "",
+      "source": "",
+      "smartBCC": "",
+      "icpData": {}
+    },
+    "contacts": {
+      "orgId": null,
+      "mainContactId": null,
+      "orgName": ""
+    },
+    "stage": {
+      "pipeId": null,
+      "stageId": null,
+      "checklistId": null
+    },
+    "moreDetails": {
+      "expectedClosureDate": "",
+      "statusId": null,
+      "reasonId": null
+    },
+    "dealValue": {
+      "totalValue": null,
+      "products": [
+        {
+          "productId": null,
+          "productType": "",
+          "qty": null,
+          "subscriptionMonths": null,
+          "discount": null,
+          "subTotal": null,
+          "isActive": true
+        }
+      ]
+    },
+    "isActive": true,
+    "mqlJourney": {
+      "date": "",
+      "reasonId": null,
+      "userId": null
+    },
+    "sqlJourney": {
+      "date": "",
+      "reasonId": null,
+      "userId": null
+    },
+    "wonJourney": {
+      "date": "",
+      "reasonId": null,
+      "userId": null
+    },
+    "renewalJourney": {
+      "date": "",
+      "reasonId": null,
+      "userId": null
+    },
+    "maCLJourney": {
+      "data": [
+        {
+          "stageId": null,
+          "stageName": "",
+          "CLId": null,
+          "CLName": "",
+          "completedDate": "",
+          "completedBy": null
+        }
+      ]
+    },
+    "sdCLJourney": {
+      "data": [
+        {
+          "stageId": null,
+          "stageName": "",
+          "CLId": null,
+          "CLName": "",
+          "completedDate": "",
+          "completedBy": null
+        }
+      ]
+    },
+    "saCLJourney": {
+      "data": [
+        {
+          "stageId": null,
+          "stageName": "",
+          "CLId": null,
+          "CLName": "",
+          "completedDate": "",
+          "completedBy": null
+        }
+      ]
+    },
+    "reCLJourney": {
+      "data": [
+        {
+          "stageId": null,
+          "stageName": "",
+          "CLId": null,
+          "CLName": "",
+          "completedDate": "",
+          "completedBy": null
+        }
+      ]
+    },
+    "lostDetails": {
+      "isLost": false,
+      "lostDate": "",
+      "reasonId": null
+    },
+    "notes": {
+      "data": [{ "id": null, "text": "", "entryDate": "", "entryBy": null }]
+    }
+  },
+  "contactTemplate": {
+    "id": null,
+    "tenantId": null,
+    "userId": null,
+    "lastUpdateBy": null,
+    "fullDomain": "",
+    "orgName": "",
+    "address": {
+      "city": "",
+      "country": "",
+      "state": "",
+      "locality": "",
+      "street": "",
+      "door": "",
+      "zip": ""
+    },
+    "details": {
+      "website": "",
+      "industry": "",
+      "companyType": "",
+      "companyTypeId": null,
+      "empSize": "",
+      "annualRevenue": null,
+      "logoSlug": "",
+      "description": ""
+    },
+    "contactInfo": {
+      "mainEmail": "",
+      "altEmail": "",
+      "mainPhone": "",
+      "altPhone": ""
+    },
+    "isActive": true,
+    "people": {
+      "data": [
+        {
+          "id": null,
+          "profile": {
+            "fullName": "",
+            "shortName": "",
+            "title": "",
+            "department": "",
+            "avatar": "",
+            "persona": ""
+          },
+          "contactInfo": {
+            "mainEmail": "",
+            "altEmail": "",
+            "mainPhone": "",
+            "altPhone": "",
+            "linkedInUrl": "",
+            "IMs": [],
+            "socialMedia": [],
+            "others": [],
+            "description": ""
+          },
+          "owner": null,
+          "contactType": null,
+          "persona": null,
+          "isActive": true,
+          "lastUpdatedBy": null,
+          "previousHistory": [
+            {
+              "dates": "",
+              "company": "",
+              "designation": "",
+              "role": "",
+              "remarks": ""
+            }
+          ],
+          "type": "",
+          "exposure": {
+            "campaigns": [],
+            "deals": [],
+            "renewals": [],
+            "customers": [],
+            "unassigned": true,
+            "source": null
+          }
+        }
+      ]
+    }
+  },
+  "deals": [
+    {
+      "tenantId": null,
+      "userId": null,
+      "orgId": null,
+      "pipeId": null,
+      "type": {
+        "options": ["Deal", "Renewal"],
+        "type": "Deal",
+        "currentTeam": 1,
+        "customerId": null
+      },
+      "owner": {
+        "tenantId": null,
+        "userId": null
+      },
+      "details": {
+        "name": "Trad Software Company Deal",
+        "source": "",
+        "smartBCC": "",
+        "icpData": {}
+      },
+      "contacts": {
+        "orgId": null,
+        "mainContactId": null,
+        "orgName": "Trad Software Company"
+      },
+      "stage": {
+        "pipeId": null,
+        "stageId": null,
+        "checklistId": null,
+        "pipeName": "Marketing",
+        "stageName": "Raw"
+      },
+      "moreDetails": {
+        "expectedClosureDate": "",
+        "statusId": 1,
+        "reasonId": 1
+      },
+      "dealValue": {
+        "totalValue": 0,
+        "products": [
+          {
+            "productId": null,
+            "productType": "",
+            "qty": null,
+            "subscriptionMonths": null,
+            "discount": null,
+            "subTotal": null,
+            "isActive": true
+          }
+        ]
+      },
+      "isActive": true,
+      "mqlJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "sqlJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "wonJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "renewalJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "maCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "sdCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "saCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "reCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "lostDetails": {
+        "isLost": false,
+        "lostDate": "",
+        "reasonId": null
+      },
+      "notes": {
+        "data": [{ "id": null, "text": "", "entryDate": "", "entryBy": null }]
+      }
+    },
+    {
+      "tenantId": null,
+      "userId": null,
+      "orgId": null,
+      "pipeId": null,
+      "type": {
+        "options": ["Deal", "Renewal"],
+        "type": "Deal",
+        "currentTeam": 1,
+        "customerId": null
+      },
+      "owner": {
+        "tenantId": null,
+        "userId": null
+      },
+      "details": {
+        "name": "Rad Software Company Deal",
+        "source": "",
+        "smartBCC": "",
+        "icpData": {}
+      },
+      "contacts": {
+        "orgId": null,
+        "mainContactId": null,
+        "orgName": "Rad Software Company"
+      },
+      "stage": {
+        "pipeId": null,
+        "stageId": null,
+        "checklistId": null,
+        "pipeName": "Marketing",
+        "stageName": "Raw"
+      },
+      "moreDetails": {
+        "expectedClosureDate": "",
+        "statusId": 1,
+        "reasonId": 1
+      },
+      "dealValue": {
+        "totalValue": 0,
+        "products": [
+          {
+            "productId": null,
+            "productType": "",
+            "qty": null,
+            "subscriptionMonths": null,
+            "discount": null,
+            "subTotal": null,
+            "isActive": true
+          }
+        ]
+      },
+      "isActive": true,
+      "mqlJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "sqlJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "wonJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "renewalJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "maCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "sdCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "saCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "reCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "lostDetails": {
+        "isLost": false,
+        "lostDate": "",
+        "reasonId": null
+      },
+      "notes": {
+        "data": [{ "id": null, "text": "", "entryDate": "", "entryBy": null }]
+      }
+    },
+    {
+      "tenantId": null,
+      "userId": null,
+      "orgId": null,
+      "pipeId": null,
+      "type": {
+        "options": ["Deal", "Renewal"],
+        "type": "Deal",
+        "currentTeam": 1,
+        "customerId": null
+      },
+      "owner": {
+        "tenantId": null,
+        "userId": null
+      },
+      "details": {
+        "name": "Monopoly Online Deal",
+        "source": "",
+        "smartBCC": "",
+        "icpData": {}
+      },
+      "contacts": {
+        "orgId": null,
+        "mainContactId": null,
+        "orgName": "Monopoly Online Services"
+      },
+      "stage": {
+        "pipeId": null,
+        "stageId": null,
+        "checklistId": null,
+        "pipeName": "Marketing",
+        "stageName": "Raw"
+      },
+      "moreDetails": {
+        "expectedClosureDate": "",
+        "statusId": 1,
+        "reasonId": 1
+      },
+      "dealValue": {
+        "totalValue": 0,
+        "products": [
+          {
+            "productId": null,
+            "productType": "",
+            "qty": null,
+            "subscriptionMonths": null,
+            "discount": null,
+            "subTotal": null,
+            "isActive": true
+          }
+        ]
+      },
+      "isActive": true,
+      "mqlJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "sqlJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "wonJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "renewalJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "maCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "sdCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "saCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "reCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "lostDetails": {
+        "isLost": false,
+        "lostDate": "",
+        "reasonId": null
+      },
+      "notes": {
+        "data": [{ "id": null, "text": "", "entryDate": "", "entryBy": null }]
+      }
+    },
+    {
+      "tenantId": null,
+      "userId": null,
+      "orgId": null,
+      "pipeId": null,
+      "type": {
+        "options": ["Deal", "Renewal"],
+        "type": "Deal",
+        "currentTeam": 1,
+        "customerId": null
+      },
+      "owner": {
+        "tenantId": null,
+        "userId": null
+      },
+      "details": {
+        "name": "Brave New World Deal",
+        "source": "",
+        "smartBCC": "",
+        "icpData": {}
+      },
+      "contacts": {
+        "orgId": null,
+        "mainContactId": null,
+        "orgName": "Brave New World Clean Energy"
+      },
+      "stage": {
+        "pipeId": null,
+        "stageId": null,
+        "checklistId": null,
+        "pipeName": "Marketing",
+        "stageName": "Raw"
+      },
+      "moreDetails": {
+        "expectedClosureDate": "",
+        "statusId": 1,
+        "reasonId": 1
+      },
+      "dealValue": {
+        "totalValue": 0,
+        "products": [
+          {
+            "productId": null,
+            "productType": "",
+            "qty": null,
+            "subscriptionMonths": null,
+            "discount": null,
+            "subTotal": null,
+            "isActive": true
+          }
+        ]
+      },
+      "isActive": true,
+      "mqlJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "sqlJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "wonJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "renewalJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "maCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "sdCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "saCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "reCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "lostDetails": {
+        "isLost": false,
+        "lostDate": "",
+        "reasonId": null
+      },
+      "notes": {
+        "data": [{ "id": null, "text": "", "entryDate": "", "entryBy": null }]
+      }
+    },
+    {
+      "tenantId": null,
+      "userId": null,
+      "orgId": null,
+      "pipeId": null,
+      "type": {
+        "options": ["Deal", "Renewal"],
+        "type": "Deal",
+        "currentTeam": 1,
+        "customerId": null
+      },
+      "owner": {
+        "tenantId": null,
+        "userId": null
+      },
+      "details": {
+        "name": "Motiv Microfinance Deal",
+        "source": "",
+        "smartBCC": "",
+        "icpData": {}
+      },
+      "contacts": {
+        "orgId": null,
+        "mainContactId": null,
+        "orgName": "Motiv Microfinance Ltd."
+      },
+      "stage": {
+        "pipeId": null,
+        "stageId": null,
+        "checklistId": null,
+        "pipeName": "Marketing",
+        "stageName": "Qualifying"
+      },
+      "moreDetails": {
+        "expectedClosureDate": "",
+        "statusId": 1,
+        "reasonId": 1
+      },
+      "dealValue": {
+        "totalValue": 0,
+        "products": [
+          {
+            "productId": null,
+            "productType": "",
+            "qty": null,
+            "subscriptionMonths": null,
+            "discount": null,
+            "subTotal": null,
+            "isActive": true
+          }
+        ]
+      },
+      "isActive": true,
+      "mqlJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "sqlJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "wonJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "renewalJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "maCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "sdCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "saCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "reCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "lostDetails": {
+        "isLost": false,
+        "lostDate": "",
+        "reasonId": null
+      },
+      "notes": {
+        "data": [{ "id": null, "text": "", "entryDate": "", "entryBy": null }]
+      }
+    },
+    {
+      "tenantId": null,
+      "userId": null,
+      "orgId": null,
+      "pipeId": null,
+      "type": {
+        "options": ["Deal", "Renewal"],
+        "type": "Deal",
+        "currentTeam": 1,
+        "customerId": null
+      },
+      "owner": {
+        "tenantId": null,
+        "userId": null
+      },
+      "details": {
+        "name": "Realtalk Deal",
+        "source": "",
+        "smartBCC": "",
+        "icpData": {}
+      },
+      "contacts": {
+        "orgId": null,
+        "mainContactId": null,
+        "orgName": "Realtalk Intelligent Systems"
+      },
+      "stage": {
+        "pipeId": null,
+        "stageId": null,
+        "checklistId": null,
+        "pipeName": "Marketing",
+        "stageName": "Qualifying"
+      },
+      "moreDetails": {
+        "expectedClosureDate": "",
+        "statusId": 1,
+        "reasonId": 1
+      },
+      "dealValue": {
+        "totalValue": 0,
+        "products": [
+          {
+            "productId": null,
+            "productType": "",
+            "qty": null,
+            "subscriptionMonths": null,
+            "discount": null,
+            "subTotal": null,
+            "isActive": true
+          }
+        ]
+      },
+      "isActive": true,
+      "mqlJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "sqlJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "wonJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "renewalJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "maCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "sdCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "saCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "reCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "lostDetails": {
+        "isLost": false,
+        "lostDate": "",
+        "reasonId": null
+      },
+      "notes": {
+        "data": [{ "id": null, "text": "", "entryDate": "", "entryBy": null }]
+      }
+    },
+    {
+      "tenantId": null,
+      "userId": null,
+      "orgId": null,
+      "pipeId": null,
+      "type": {
+        "options": ["Deal", "Renewal"],
+        "type": "Deal",
+        "currentTeam": 1,
+        "customerId": null
+      },
+      "owner": {
+        "tenantId": null,
+        "userId": null
+      },
+      "details": {
+        "name": "BoLD Genetics Deal",
+        "source": "",
+        "smartBCC": "",
+        "icpData": {}
+      },
+      "contacts": {
+        "orgId": null,
+        "mainContactId": null,
+        "orgName": "BoLD Genetics Pvt. Ltd."
+      },
+      "stage": {
+        "pipeId": null,
+        "stageId": null,
+        "checklistId": null,
+        "pipeName": "Marketing",
+        "stageName": "Qualifying"
+      },
+      "moreDetails": {
+        "expectedClosureDate": "",
+        "statusId": 1,
+        "reasonId": 1
+      },
+      "dealValue": {
+        "totalValue": 0,
+        "products": [
+          {
+            "productId": null,
+            "productType": "",
+            "qty": null,
+            "subscriptionMonths": null,
+            "discount": null,
+            "subTotal": null,
+            "isActive": true
+          }
+        ]
+      },
+      "isActive": true,
+      "mqlJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "sqlJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "wonJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "renewalJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "maCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "sdCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "saCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "reCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "lostDetails": {
+        "isLost": false,
+        "lostDate": "",
+        "reasonId": null
+      },
+      "notes": {
+        "data": [{ "id": null, "text": "", "entryDate": "", "entryBy": null }]
+      }
+    },
+    {
+      "tenantId": null,
+      "userId": null,
+      "orgId": null,
+      "pipeId": null,
+      "type": {
+        "options": ["Deal", "Renewal"],
+        "type": "Deal",
+        "currentTeam": 1,
+        "customerId": null
+      },
+      "owner": {
+        "tenantId": null,
+        "userId": null
+      },
+      "details": {
+        "name": "NoHacker Deal",
+        "source": "",
+        "smartBCC": "",
+        "icpData": {}
+      },
+      "contacts": {
+        "orgId": null,
+        "mainContactId": null,
+        "orgName": "NoHacker Software Solutions"
+      },
+      "stage": {
+        "pipeId": null,
+        "stageId": null,
+        "checklistId": null,
+        "pipeName": "Marketing",
+        "stageName": "Qualifying"
+      },
+      "moreDetails": {
+        "expectedClosureDate": "",
+        "statusId": 1,
+        "reasonId": 1
+      },
+      "dealValue": {
+        "totalValue": 0,
+        "products": [
+          {
+            "productId": null,
+            "productType": "",
+            "qty": null,
+            "subscriptionMonths": null,
+            "discount": null,
+            "subTotal": null,
+            "isActive": true
+          }
+        ]
+      },
+      "isActive": true,
+      "mqlJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "sqlJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "wonJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "renewalJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "maCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "sdCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "saCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "reCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "lostDetails": {
+        "isLost": false,
+        "lostDate": "",
+        "reasonId": null
+      },
+      "notes": {
+        "data": [{ "id": null, "text": "", "entryDate": "", "entryBy": null }]
+      }
+    },
+    {
+      "tenantId": null,
+      "userId": null,
+      "orgId": null,
+      "pipeId": null,
+      "type": {
+        "options": ["Deal", "Renewal"],
+        "type": "Deal",
+        "currentTeam": 1,
+        "customerId": null
+      },
+      "owner": {
+        "tenantId": null,
+        "userId": null
+      },
+      "details": {
+        "name": "NoSales Deal",
+        "source": "",
+        "smartBCC": "",
+        "icpData": {}
+      },
+      "contacts": {
+        "orgId": null,
+        "mainContactId": null,
+        "orgName": "NoSales Customer Services"
+      },
+      "stage": {
+        "pipeId": null,
+        "stageId": null,
+        "checklistId": null,
+        "pipeName": "Marketing",
+        "stageName": "Qualifying"
+      },
+      "moreDetails": {
+        "expectedClosureDate": "",
+        "statusId": 1,
+        "reasonId": 1
+      },
+      "dealValue": {
+        "totalValue": 0,
+        "products": [
+          {
+            "productId": null,
+            "productType": "",
+            "qty": null,
+            "subscriptionMonths": null,
+            "discount": null,
+            "subTotal": null,
+            "isActive": true
+          }
+        ]
+      },
+      "isActive": true,
+      "mqlJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "sqlJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "wonJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "renewalJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "maCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "sdCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "saCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "reCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "lostDetails": {
+        "isLost": false,
+        "lostDate": "",
+        "reasonId": null
+      },
+      "notes": {
+        "data": [{ "id": null, "text": "", "entryDate": "", "entryBy": null }]
+      }
+    },
+    {
+      "tenantId": null,
+      "userId": null,
+      "orgId": null,
+      "pipeId": null,
+      "type": {
+        "options": ["Deal", "Renewal"],
+        "type": "Deal",
+        "currentTeam": 1,
+        "customerId": null
+      },
+      "owner": {
+        "tenantId": null,
+        "userId": null
+      },
+      "details": {
+        "name": "Streetmap Deal",
+        "source": "",
+        "smartBCC": "",
+        "icpData": {}
+      },
+      "contacts": {
+        "orgId": null,
+        "mainContactId": null,
+        "orgName": "Streetmap Tech Inc."
+      },
+      "stage": {
+        "pipeId": null,
+        "stageId": null,
+        "checklistId": null,
+        "pipeName": "Marketing",
+        "stageName": "Qualifying"
+      },
+      "moreDetails": {
+        "expectedClosureDate": "",
+        "statusId": 1,
+        "reasonId": 1
+      },
+      "dealValue": {
+        "totalValue": 0,
+        "products": [
+          {
+            "productId": null,
+            "productType": "",
+            "qty": null,
+            "subscriptionMonths": null,
+            "discount": null,
+            "subTotal": null,
+            "isActive": true
+          }
+        ]
+      },
+      "isActive": true,
+      "mqlJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "sqlJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "wonJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "renewalJourney": {
+        "date": "",
+        "reasonId": null,
+        "userId": null
+      },
+      "maCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "sdCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "saCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "reCLJourney": {
+        "data": [
+          {
+            "stageId": null,
+            "stageName": "",
+            "CLId": null,
+            "CLName": "",
+            "completedDate": "",
+            "completedBy": null
+          }
+        ]
+      },
+      "lostDetails": {
+        "isLost": false,
+        "lostDate": "",
+        "reasonId": null
+      },
+      "notes": {
+        "data": [{ "id": null, "text": "", "entryDate": "", "entryBy": null }]
+      }
+    }
+  ],
+  "contacts": [
+    {
+      "tenantId": null,
+      "userId": null,
+      "lastUpdateBy": null,
+      "fullDomain": "tradsoft.coom",
+      "orgName": "Trad Software Company",
+      "address": {
+        "city": "New York",
+        "country": "United States",
+        "state": "",
+        "locality": "",
+        "street": "",
+        "door": "",
+        "zip": ""
+      },
+      "details": {
+        "website": "tradsoft.coom",
+        "industry": "",
+        "companyType": "Medium Enterprise",
+        "companyTypeId": 4,
+        "empSize": "",
+        "annualRevenue": 0,
+        "logoSlug": "",
+        "description": ""
+      },
+      "contactInfo": {
+        "mainEmail": "",
+        "altEmail": "",
+        "mainPhone": "",
+        "altPhone": ""
+      },
+      "isActive": true,
+      "people": {
+        "data": [
+          {
+            "id": 1,
+            "profile": {
+              "fullName": "Cecilia Ramon",
+              "shortName": "Cecilia",
+              "title": "",
+              "department": "",
+              "avatar": "",
+              "persona": ""
+            },
+            "contactInfo": {
+              "mainEmail": "cece@tradsoft.coom",
+              "altEmail": "",
+              "mainPhone": "+1 917-289-6896",
+              "altPhone": "",
+              "linkedInUrl": "",
+              "IMs": [],
+              "socialMedia": [],
+              "others": [],
+              "description": ""
+            },
+            "owner": null,
+            "contactType": 4,
+            "persona": null,
+            "isActive": true,
+            "lastUpdatedBy": null,
+            "previousHistory": [
+              {
+                "dates": "",
+                "company": "",
+                "designation": "",
+                "role": "",
+                "remarks": ""
+              }
+            ],
+            "type": "lead",
+            "exposure": {
+              "campaigns": [],
+              "deals": [],
+              "renewals": [],
+              "customers": [],
+              "unassigned": true,
+              "source": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "tenantId": null,
+      "userId": null,
+      "lastUpdateBy": null,
+      "fullDomain": "radsoft.com",
+      "orgName": "Rad Software Company",
+      "address": {
+        "city": "Los Angeles",
+        "country": "United States",
+        "state": "",
+        "locality": "",
+        "street": "",
+        "door": "",
+        "zip": ""
+      },
+      "details": {
+        "website": "radsoft.com",
+        "industry": "",
+        "companyType": "SME",
+        "companyTypeId": 3,
+        "empSize": "",
+        "annualRevenue": null,
+        "logoSlug": "",
+        "description": ""
+      },
+      "contactInfo": {
+        "mainEmail": "",
+        "altEmail": "",
+        "mainPhone": "",
+        "altPhone": ""
+      },
+      "isActive": true,
+      "people": {
+        "data": [
+          {
+            "id": 1,
+            "profile": {
+              "fullName": "Lesley Hinder",
+              "shortName": "Lesley",
+              "title": "",
+              "department": "",
+              "avatar": "",
+              "persona": ""
+            },
+            "contactInfo": {
+              "mainEmail": "lesleyh@radsoft.com",
+              "altEmail": "",
+              "mainPhone": "+1 408-836-7941",
+              "altPhone": "",
+              "linkedInUrl": "",
+              "IMs": [],
+              "socialMedia": [],
+              "others": [],
+              "description": ""
+            },
+            "owner": null,
+            "contactType": 3,
+            "persona": null,
+            "isActive": true,
+            "lastUpdatedBy": null,
+            "previousHistory": [
+              {
+                "dates": "",
+                "company": "",
+                "designation": "",
+                "role": "",
+                "remarks": ""
+              }
+            ],
+            "type": "",
+            "exposure": {
+              "campaigns": [],
+              "deals": [],
+              "renewals": [],
+              "customers": [],
+              "unassigned": true,
+              "source": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "tenantId": null,
+      "userId": null,
+      "lastUpdateBy": null,
+      "fullDomain": "monopolypvt.com",
+      "orgName": "Monopoly Online Services",
+      "address": {
+        "city": "Frankfurt",
+        "country": "Germany",
+        "state": "",
+        "locality": "",
+        "street": "",
+        "door": "",
+        "zip": ""
+      },
+      "details": {
+        "website": "monopolypvt.com",
+        "industry": "",
+        "companyType": "Micro SME",
+        "companyTypeId": 2,
+        "empSize": "",
+        "annualRevenue": null,
+        "logoSlug": "",
+        "description": ""
+      },
+      "contactInfo": {
+        "mainEmail": "",
+        "altEmail": "",
+        "mainPhone": "",
+        "altPhone": ""
+      },
+      "isActive": true,
+      "people": {
+        "data": [
+          {
+            "id": 1,
+            "profile": {
+              "fullName": "Leta Zimm",
+              "shortName": "Leta",
+              "title": "",
+              "department": "",
+              "avatar": "",
+              "persona": ""
+            },
+            "contactInfo": {
+              "mainEmail": "letaz@monopolypvt.com",
+              "altEmail": "",
+              "mainPhone": "+49 152 901820",
+              "altPhone": "",
+              "linkedInUrl": "",
+              "IMs": [],
+              "socialMedia": [],
+              "others": [],
+              "description": ""
+            },
+            "owner": null,
+            "contactType": 3,
+            "persona": null,
+            "isActive": true,
+            "lastUpdatedBy": null,
+            "previousHistory": [
+              {
+                "dates": "",
+                "company": "",
+                "designation": "",
+                "role": "",
+                "remarks": ""
+              }
+            ],
+            "type": "lead",
+            "exposure": {
+              "campaigns": [],
+              "deals": [],
+              "renewals": [],
+              "customers": [],
+              "unassigned": true,
+              "source": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "tenantId": null,
+      "userId": null,
+      "lastUpdateBy": null,
+      "fullDomain": "bravenewcomp.com",
+      "orgName": "Brave New World Clean Energy",
+      "address": {
+        "city": "Amsterdam",
+        "country": "Netherlands",
+        "state": "",
+        "locality": "",
+        "street": "",
+        "door": "",
+        "zip": ""
+      },
+      "details": {
+        "website": "bravenewcomp.com",
+        "industry": "",
+        "companyType": "Micro SME",
+        "companyTypeId": 2,
+        "empSize": "",
+        "annualRevenue": null,
+        "logoSlug": "",
+        "description": ""
+      },
+      "contactInfo": {
+        "mainEmail": "",
+        "altEmail": "",
+        "mainPhone": "",
+        "altPhone": ""
+      },
+      "isActive": true,
+      "people": {
+        "data": [
+          {
+            "id": 1,
+            "profile": {
+              "fullName": "Brendon Slimwire",
+              "shortName": "Brendon",
+              "title": "",
+              "department": "",
+              "avatar": "",
+              "persona": ""
+            },
+            "contactInfo": {
+              "mainEmail": "brendon@bravenewcomp.com",
+              "altEmail": "",
+              "mainPhone": "+31-655-5535-21",
+              "altPhone": "",
+              "linkedInUrl": "",
+              "IMs": [],
+              "socialMedia": [],
+              "others": [],
+              "description": ""
+            },
+            "owner": null,
+            "contactType": 4,
+            "persona": null,
+            "isActive": true,
+            "lastUpdatedBy": null,
+            "previousHistory": [
+              {
+                "dates": "",
+                "company": "",
+                "designation": "",
+                "role": "",
+                "remarks": ""
+              }
+            ],
+            "type": "",
+            "exposure": {
+              "campaigns": [],
+              "deals": [],
+              "renewals": [],
+              "customers": [],
+              "unassigned": true,
+              "source": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "tenantId": null,
+      "userId": null,
+      "lastUpdateBy": null,
+      "fullDomain": "motivmfc.com",
+      "orgName": "Motiv Microfinance Ltd.",
+      "address": {
+        "city": "Mumbai",
+        "country": "India",
+        "state": "",
+        "locality": "",
+        "street": "",
+        "door": "",
+        "zip": ""
+      },
+      "details": {
+        "website": "motivmfc.com",
+        "industry": "",
+        "companyType": "Micro SME",
+        "companyTypeId": 2,
+        "empSize": "",
+        "annualRevenue": null,
+        "logoSlug": "",
+        "description": ""
+      },
+      "contactInfo": {
+        "mainEmail": "",
+        "altEmail": "",
+        "mainPhone": "",
+        "altPhone": ""
+      },
+      "isActive": true,
+      "people": {
+        "data": [
+          {
+            "id": 1,
+            "profile": {
+              "fullName": "Annika Sivaraman",
+              "shortName": "Annika",
+              "title": "",
+              "department": "",
+              "avatar": "",
+              "persona": ""
+            },
+            "contactInfo": {
+              "mainEmail": "annika@motivmfc.com",
+              "altEmail": "",
+              "mainPhone": "+91 93425 43532",
+              "altPhone": "",
+              "linkedInUrl": "",
+              "IMs": [],
+              "socialMedia": [],
+              "others": [],
+              "description": ""
+            },
+            "owner": null,
+            "contactType": 3,
+            "persona": null,
+            "isActive": true,
+            "lastUpdatedBy": null,
+            "previousHistory": [
+              {
+                "dates": "",
+                "company": "",
+                "designation": "",
+                "role": "",
+                "remarks": ""
+              }
+            ],
+            "type": "",
+            "exposure": {
+              "campaigns": [],
+              "deals": [],
+              "renewals": [],
+              "customers": [],
+              "unassigned": true,
+              "source": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "tenantId": null,
+      "userId": null,
+      "lastUpdateBy": null,
+      "fullDomain": "realtalk.io",
+      "orgName": "Realtalk Intelligent Systems",
+      "address": {
+        "city": "Geneva",
+        "country": "Switzerland",
+        "state": "",
+        "locality": "",
+        "street": "",
+        "door": "",
+        "zip": ""
+      },
+      "details": {
+        "website": "realtalk.io",
+        "industry": "",
+        "companyType": "SME",
+        "companyTypeId": 3,
+        "empSize": "",
+        "annualRevenue": null,
+        "logoSlug": "",
+        "description": ""
+      },
+      "contactInfo": {
+        "mainEmail": "",
+        "altEmail": "",
+        "mainPhone": "",
+        "altPhone": ""
+      },
+      "isActive": true,
+      "people": {
+        "data": [
+          {
+            "id": 1,
+            "profile": {
+              "fullName": "Selma Heyak",
+              "shortName": "Selma",
+              "title": "",
+              "department": "",
+              "avatar": "",
+              "persona": ""
+            },
+            "contactInfo": {
+              "mainEmail": "selma@realtalk.io",
+              "altEmail": "",
+              "mainPhone": "+41-755-5525-21",
+              "altPhone": "",
+              "linkedInUrl": "",
+              "IMs": [],
+              "socialMedia": [],
+              "others": [],
+              "description": ""
+            },
+            "owner": null,
+            "contactType": 1,
+            "persona": null,
+            "isActive": true,
+            "lastUpdatedBy": null,
+            "previousHistory": [
+              {
+                "dates": "",
+                "company": "",
+                "designation": "",
+                "role": "",
+                "remarks": ""
+              }
+            ],
+            "type": "",
+            "exposure": {
+              "campaigns": [],
+              "deals": [],
+              "renewals": [],
+              "customers": [],
+              "unassigned": true,
+              "source": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "tenantId": null,
+      "userId": null,
+      "lastUpdateBy": null,
+      "fullDomain": "boldgenetics.kr",
+      "orgName": "BoLD Genetics Pvt. Ltd.",
+      "address": {
+        "city": "Seoul",
+        "country": "South Korea",
+        "state": "",
+        "locality": "",
+        "street": "",
+        "door": "",
+        "zip": ""
+      },
+      "details": {
+        "website": "boldgenetics.kr",
+        "industry": "",
+        "companyType": "Startup",
+        "companyTypeId": 1,
+        "empSize": "",
+        "annualRevenue": null,
+        "logoSlug": "",
+        "description": ""
+      },
+      "contactInfo": {
+        "mainEmail": "",
+        "altEmail": "",
+        "mainPhone": "",
+        "altPhone": ""
+      },
+      "isActive": true,
+      "people": {
+        "data": [
+          {
+            "id": 1,
+            "profile": {
+              "fullName": "Bu Kim",
+              "shortName": "Kim",
+              "title": "",
+              "department": "",
+              "avatar": "",
+              "persona": ""
+            },
+            "contactInfo": {
+              "mainEmail": "kim@boldgenetics.kr",
+              "altEmail": "",
+              "mainPhone": "+82-115-5556-571",
+              "altPhone": "",
+              "linkedInUrl": "",
+              "IMs": [],
+              "socialMedia": [],
+              "others": [],
+              "description": ""
+            },
+            "owner": null,
+            "contactType": 4,
+            "persona": null,
+            "isActive": true,
+            "lastUpdatedBy": null,
+            "previousHistory": [
+              {
+                "dates": "",
+                "company": "",
+                "designation": "",
+                "role": "",
+                "remarks": ""
+              }
+            ],
+            "type": "",
+            "exposure": {
+              "campaigns": [],
+              "deals": [],
+              "renewals": [],
+              "customers": [],
+              "unassigned": true,
+              "source": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "tenantId": null,
+      "userId": null,
+      "lastUpdateBy": null,
+      "fullDomain": "nohackerltd.com",
+      "orgName": "NoHacker Software Solutions",
+      "address": {
+        "city": "Taiwan",
+        "country": "Taiwan",
+        "state": "",
+        "locality": "",
+        "street": "",
+        "door": "",
+        "zip": ""
+      },
+      "details": {
+        "website": "nohackerltd.com",
+        "industry": "",
+        "companyType": "SME",
+        "companyTypeId": 3,
+        "empSize": "",
+        "annualRevenue": null,
+        "logoSlug": "",
+        "description": ""
+      },
+      "contactInfo": {
+        "mainEmail": "",
+        "altEmail": "",
+        "mainPhone": "",
+        "altPhone": ""
+      },
+      "isActive": true,
+      "people": {
+        "data": [
+          {
+            "id": 1,
+            "profile": {
+              "fullName": "Wei Nuang",
+              "shortName": "Wei",
+              "title": "",
+              "department": "",
+              "avatar": "",
+              "persona": ""
+            },
+            "contactInfo": {
+              "mainEmail": "wei@nohackerltd.com",
+              "altEmail": "",
+              "mainPhone": "+886-955-5930-46",
+              "altPhone": "",
+              "linkedInUrl": "",
+              "IMs": [],
+              "socialMedia": [],
+              "others": [],
+              "description": ""
+            },
+            "owner": null,
+            "contactType": 2,
+            "persona": null,
+            "isActive": true,
+            "lastUpdatedBy": null,
+            "previousHistory": [
+              {
+                "dates": "",
+                "company": "",
+                "designation": "",
+                "role": "",
+                "remarks": ""
+              }
+            ],
+            "type": "",
+            "exposure": {
+              "campaigns": [],
+              "deals": [],
+              "renewals": [],
+              "customers": [],
+              "unassigned": true,
+              "source": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "tenantId": null,
+      "userId": null,
+      "lastUpdateBy": null,
+      "fullDomain": "nosalestech.com",
+      "orgName": "NoSales Customer Services",
+      "address": {
+        "city": "Newark",
+        "country": "United States",
+        "state": "",
+        "locality": "",
+        "street": "",
+        "door": "",
+        "zip": ""
+      },
+      "details": {
+        "website": "nosalestech.com",
+        "industry": "",
+        "companyType": "Medium Enterprise",
+        "companyTypeId": 4,
+        "empSize": "",
+        "annualRevenue": null,
+        "logoSlug": "",
+        "description": ""
+      },
+      "contactInfo": {
+        "mainEmail": "",
+        "altEmail": "",
+        "mainPhone": "",
+        "altPhone": ""
+      },
+      "isActive": true,
+      "people": {
+        "data": [
+          {
+            "id": 1,
+            "profile": {
+              "fullName": "Brie Nicholson",
+              "shortName": "Brie",
+              "title": "",
+              "department": "",
+              "avatar": "",
+              "persona": ""
+            },
+            "contactInfo": {
+              "mainEmail": "brien@nosalestech.com",
+              "altEmail": "",
+              "mainPhone": "+1 908-727-1341",
+              "altPhone": "",
+              "linkedInUrl": "",
+              "IMs": [],
+              "socialMedia": [],
+              "others": [],
+              "description": ""
+            },
+            "owner": null,
+            "contactType": 1,
+            "persona": null,
+            "isActive": true,
+            "lastUpdatedBy": null,
+            "previousHistory": [
+              {
+                "dates": "",
+                "company": "",
+                "designation": "",
+                "role": "",
+                "remarks": ""
+              }
+            ],
+            "type": "",
+            "exposure": {
+              "campaigns": [],
+              "deals": [],
+              "renewals": [],
+              "customers": [],
+              "unassigned": true,
+              "source": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "tenantId": null,
+      "userId": null,
+      "lastUpdateBy": null,
+      "fullDomain": "streetmap.ai",
+      "orgName": "Streetmap Tech Inc.",
+      "address": {
+        "city": "London",
+        "country": "",
+        "state": "",
+        "locality": "",
+        "street": "",
+        "door": "",
+        "zip": ""
+      },
+      "details": {
+        "website": "streetmap.ai",
+        "industry": "",
+        "companyType": "Startup",
+        "companyTypeId": 1,
+        "empSize": "",
+        "annualRevenue": null,
+        "logoSlug": "",
+        "description": ""
+      },
+      "contactInfo": {
+        "mainEmail": "",
+        "altEmail": "",
+        "mainPhone": "",
+        "altPhone": ""
+      },
+      "isActive": true,
+      "people": {
+        "data": [
+          {
+            "id": 1,
+            "profile": {
+              "fullName": "Stan Ongowa",
+              "shortName": "Stan",
+              "title": "",
+              "department": "",
+              "avatar": "",
+              "persona": ""
+            },
+            "contactInfo": {
+              "mainEmail": "stan@streetmap.ai",
+              "altEmail": "",
+              "mainPhone": "+44 20 7946 0832",
+              "altPhone": "",
+              "linkedInUrl": "",
+              "IMs": [],
+              "socialMedia": [],
+              "others": [],
+              "description": ""
+            },
+            "owner": null,
+            "contactType": 4,
+            "persona": null,
+            "isActive": true,
+            "lastUpdatedBy": null,
+            "previousHistory": [
+              {
+                "dates": "",
+                "company": "",
+                "designation": "",
+                "role": "",
+                "remarks": ""
+              }
+            ],
+            "type": "",
+            "exposure": {
+              "campaigns": [],
+              "deals": [],
+              "renewals": [],
+              "customers": [],
+              "unassigned": true,
+              "source": ""
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

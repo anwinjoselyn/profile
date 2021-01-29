@@ -31,7 +31,7 @@ const App = () => {
   const [collapsed, setColapse] = useState(true);
   const [darkTheme, setTheme] = useState(false);
   const [themeClasses, setClasses] = useState({});
-  const [selectedKey, setSelectedKey] = useState("1");
+  const [selectedKey, setSelectedKey] = useState("5");
 
   //console.log("selectedKey", selectedKey);
   useEffect(() => {
@@ -199,7 +199,7 @@ const App = () => {
           ) : selectedKey === "6" ? (
             <Resume />
           ) : selectedKey === "5" ? (
-            <Showcase />
+            <Showcase theme={darkTheme ? "dark" : "light"} />
           ) : selectedKey === "7" ? (
             <Contact />
           ) : selectedKey === "8" ? (

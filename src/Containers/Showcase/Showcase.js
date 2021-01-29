@@ -13,6 +13,7 @@ import { isEmpty } from "../../libs/validators.js";
 import Kanban1 from "./Components/Kanban1/Kanban1";
 import Kanban2 from "./Components/Kanban2/Kanban2";
 import Activities from "./Components/Tasks/Tasks";
+import Parser from "./Components/Parser/Parser";
 import Overview from "./Overview";
 
 import "./Showcase.css";
@@ -53,7 +54,7 @@ const ShowCase = props => {
   const [sdDeals, setSdDeals] = useState([]);
   const [saDeals, setsaDeals] = useState([]);
   const [filtered, setFiltered] = useState(null);
-  const [tabKey, setTabKey] = useState("0");
+  const [tabKey, setTabKey] = useState("5");
   const [theActs, setTheActs] = useState([]);
   const [dataLoaded, setLoaded] = useState(false);
 
@@ -868,16 +869,8 @@ const ShowCase = props => {
           >
             Content of Tab Pane 4
           </TabPane>
-          <TabPane
-            disabled
-            tab={
-              <div>
-                CSS Parser<sup>*</sup>
-              </div>
-            }
-            key="5"
-          >
-            Content of Tab Pane 5
+          <TabPane tab={<div>Leads</div>} key="5">
+            {dataLoaded ? <Parser commonData={common} /> : "Loading..."}
           </TabPane>
           <TabPane
             disabled

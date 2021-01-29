@@ -1,0 +1,588 @@
+{
+  "tenant": {
+    "id": 3,
+    "name": "Playbook Software",
+    "fyStartMonth": "Apr",
+    "subdomain": "pb",
+    "address": {
+      "zip": "411001",
+      "city": "Pune",
+      "door": "666",
+      "state": "Maharashtra",
+      "street": "Infinity",
+      "country": "India",
+      "locality": "Baner"
+    },
+    "moreDetails": {
+      "empSize": "5",
+      "website": "https://theplaybook.rocks",
+      "currency": "INR",
+      "industry": "Business Software",
+      "logoslug": "",
+      "timezone": "Asia/Kolkata",
+      "utcOffset": "+0530",
+      "companytype": "Startup",
+      "annualrevenue": "0"
+    },
+    "subscription": {
+      "plan": "Empire",
+      "status": true,
+      "endDate": "2040-10-31",
+      "prevPlans": [],
+      "startDate": "2020-10-01"
+    },
+    "onboarding": {
+      "pipes": true,
+      "mTargets": true,
+      "rTargets": true,
+      "csTargets": true,
+      "fyUpdated": true,
+      "sdTargets": true,
+      "srTargets": true,
+      "allInvites": true,
+      "revTargets": true,
+      "cashBalance": false,
+      "csUserTargets": true,
+      "dataOnboarded": true,
+      "maUserTargets": true,
+      "reUserTargets": true,
+      "saUserTargets": true,
+      "sdUserTargets": true,
+      "srTargetsAnnual": true,
+      "onboardingComplete": true
+    },
+    "connectedRecords": {
+      "org": {},
+      "deals": [],
+      "contacts": [
+        {
+          "id": 1,
+          "cta": {
+            "type": "Super Admin",
+            "remarks": "1st User in V3 PB DB"
+          },
+          "tokens": {
+            "isConfirmed": true,
+            "confirmedDate": "",
+            "confirmationCode": "",
+            "confirmationCodeExpires": ""
+          },
+          "profile": {
+            "title": "Founder",
+            "avatar": "",
+            "persona": "",
+            "fullName": "Anwin Joselyn",
+            "shortName": "Anwin",
+            "department": "Tech"
+          },
+          "isActive": true,
+          "password": {
+            "setOn": "",
+            "currentPassword": "$2a$10$3lkHNeVw7s1ASNMtqJrDw.jknSj2wScCzXxZSw41GMyFTd/T8nXEa",
+            "resetRequestDate": "",
+            "passwordResetDate": "",
+            "resetPasswordToken": "",
+            "resetPasswordExpires": ""
+          },
+          "tenantId": 3,
+          "createdAt": "2020-10-07T11:43:19.004Z",
+          "isPBAdmin": true,
+          "mainEmail": "anwin@theplaybook.rocks",
+          "updatedAt": "2020-10-07T11:43:19.004Z",
+          "contactInfo": {
+            "IMs": [null],
+            "others": [null],
+            "altEmail": "anwin@myplaybook.in",
+            "altPhone": "96200 23555",
+            "mainEmail": "anwin@theplaybook.rocks",
+            "mainPhone": "91450 77550",
+            "description": "PB Founder",
+            "linkedInUrl": "",
+            "socialMedia": [null]
+          },
+          "responsibilities": {
+            "role": "",
+            "teams": [0, 1, 2, 3, 4, 5]
+          }
+        }
+      ],
+      "customer": {},
+      "mainContact": 1
+    },
+    "fullDomain": "theplaybook.rocks",
+    "isActive": true,
+    "createdAt": "2020-10-07T10:57:08.825Z",
+    "updatedAt": "2020-11-13T14:53:54.452Z"
+  },
+  "users": [
+    {
+      "id": 1,
+      "profile": {
+        "title": "Founder",
+        "avatar": "",
+        "persona": "",
+        "fullName": "Anwin Joselyn",
+        "shortName": "Anwin",
+        "department": "Tech"
+      },
+      "contactInfo": {
+        "IMs": [
+          {
+            "name": "Skype",
+            "handle": "anwin.joselyn"
+          }
+        ],
+        "others": [null],
+        "altEmail": "anwin@myplaybook.in",
+        "altPhone": "96200 23555",
+        "mainEmail": "anwin@theplaybook.rocks",
+        "mainPhone": "91450 77550",
+        "description": "PB Founder",
+        "linkedInUrl": "https://linkedin.com/in/anwin",
+        "socialMedia": [
+          {
+            "name": "Twitter",
+            "handle": "https://twitter.com/anwinj"
+          }
+        ]
+      },
+      "responsibilities": {
+        "role": "CEO",
+        "teams": [1, 2, 3, 4, 5, 6]
+      },
+      "password": {
+        "setOn": "",
+        "currentPassword": "$2a$10$3lkHNeVw7s1ASNMtqJrDw.jknSj2wScCzXxZSw41GMyFTd/T8nXEa",
+        "resetRequestDate": "",
+        "passwordResetDate": "",
+        "resetPasswordToken": "",
+        "resetPasswordExpires": ""
+      },
+      "tokens": {
+        "isConfirmed": true,
+        "confirmedDate": "2020-10-01",
+        "confirmationCode": "",
+        "confirmationCodeExpires": ""
+      },
+      "tenantId": 3,
+      "isPBAdmin": true,
+      "mainEmail": "anwin@theplaybook.rocks",
+      "cta": {
+        "type": "Super Admin",
+        "remarks": "1st User in V3 PB DB"
+      },
+      "isActive": true,
+      "createdAt": "2020-10-07T11:43:19.004Z",
+      "updatedAt": "2020-10-24T10:13:36.349Z"
+    }
+  ],
+  "user": {
+    "id": 1,
+    "profile": {
+      "title": "Founder",
+      "avatar": "",
+      "persona": "",
+      "fullName": "Anwin Joselyn",
+      "shortName": "Anwin",
+      "department": "Tech"
+    },
+    "contactInfo": {
+      "IMs": [
+        {
+          "name": "Skype",
+          "handle": "anwin.joselyn"
+        }
+      ],
+      "others": [null],
+      "altEmail": "anwin@myplaybook.in",
+      "altPhone": "96200 23555",
+      "mainEmail": "anwin@theplaybook.rocks",
+      "mainPhone": "91450 77550",
+      "description": "PB Founder",
+      "linkedInUrl": "https://linkedin.com/in/anwin",
+      "socialMedia": [
+        {
+          "name": "Twitter",
+          "handle": "https://twitter.com/anwinj"
+        }
+      ]
+    },
+    "responsibilities": {
+      "role": "CEO",
+      "teams": [1, 2, 3, 4, 5, 6]
+    },
+    "password": {
+      "setOn": "",
+      "currentPassword": "$2a$10$3lkHNeVw7s1ASNMtqJrDw.jknSj2wScCzXxZSw41GMyFTd/T8nXEa",
+      "resetRequestDate": "",
+      "passwordResetDate": "",
+      "resetPasswordToken": "",
+      "resetPasswordExpires": ""
+    },
+    "tokens": {
+      "isConfirmed": true,
+      "confirmedDate": "2020-10-01",
+      "confirmationCode": "",
+      "confirmationCodeExpires": ""
+    },
+    "tenantId": 3,
+    "isPBAdmin": true,
+    "mainEmail": "anwin@theplaybook.rocks",
+    "cta": {
+      "type": "Super Admin",
+      "remarks": "1st User in V3 PB DB"
+    },
+    "isActive": true,
+    "createdAt": "2020-10-07T11:43:19.004Z",
+    "updatedAt": "2020-10-24T10:13:36.349Z"
+  },
+  "products": [
+    {
+      "id": 1,
+      "owner": {
+        "tenantId": 3,
+        "createdBy": 1,
+        "lastModifiedBy": 1
+      },
+      "tenantId": 3,
+      "details": {
+        "code": "TRBINR",
+        "name": "Tribe - INR",
+        "specs": [],
+        "features": [
+          "Sales CRM /w Quota Management",
+          "Tasks Management",
+          "Dashboard & SaaS Metrics",
+          "Up to 5 Users",
+          "Email Support"
+        ],
+        "description": "Plan for startups",
+        "companyTypeId": 1
+      },
+      "type": "app",
+      "pricing": {
+        "monthlyCost": 3499,
+        "oneTimeCost": 0
+      },
+      "moreDetails": {
+        "infoURL": "https://theplaybook.rocks/#why",
+        "imageURL": "",
+        "specsURL": "https://theplaybook.rocks/#about",
+        "brochureURL": "https://theplaybook.rocks/#screens"
+      },
+      "isActive": true,
+      "createdAt": "2020-11-17T14:22:18.285Z",
+      "updatedAt": "2020-11-19T10:52:09.264Z"
+    }
+  ],
+  "maUsers": [
+    {
+      "id": 1,
+      "profile": {
+        "title": "Founder",
+        "avatar": "",
+        "persona": "",
+        "fullName": "Anwin Joselyn",
+        "shortName": "Anwin",
+        "department": "Tech"
+      },
+      "contactInfo": {
+        "IMs": [
+          {
+            "name": "Skype",
+            "handle": "anwin.joselyn"
+          }
+        ],
+        "others": [null],
+        "altEmail": "anwin@myplaybook.in",
+        "altPhone": "96200 23555",
+        "mainEmail": "anwin@theplaybook.rocks",
+        "mainPhone": "91450 77550",
+        "description": "PB Founder",
+        "linkedInUrl": "https://linkedin.com/in/anwin",
+        "socialMedia": [
+          {
+            "name": "Twitter",
+            "handle": "https://twitter.com/anwinj"
+          }
+        ]
+      },
+      "responsibilities": {
+        "role": "CEO",
+        "teams": [1, 2, 3, 4, 5, 6]
+      },
+      "password": {
+        "setOn": "",
+        "currentPassword": "$2a$10$3lkHNeVw7s1ASNMtqJrDw.jknSj2wScCzXxZSw41GMyFTd/T8nXEa",
+        "resetRequestDate": "",
+        "passwordResetDate": "",
+        "resetPasswordToken": "",
+        "resetPasswordExpires": ""
+      },
+      "tokens": {
+        "isConfirmed": true,
+        "confirmedDate": "2020-10-01",
+        "confirmationCode": "",
+        "confirmationCodeExpires": ""
+      },
+      "tenantId": 3,
+      "isPBAdmin": true,
+      "mainEmail": "anwin@theplaybook.rocks",
+      "cta": {
+        "type": "Super Admin",
+        "remarks": "1st User in V3 PB DB"
+      },
+      "isActive": true,
+      "createdAt": "2020-10-07T11:43:19.004Z",
+      "updatedAt": "2020-10-24T10:13:36.349Z"
+    }
+  ],
+  "sdUsers": [
+    {
+      "id": 1,
+      "profile": {
+        "title": "Founder",
+        "avatar": "",
+        "persona": "",
+        "fullName": "Anwin Joselyn",
+        "shortName": "Anwin",
+        "department": "Tech"
+      },
+      "contactInfo": {
+        "IMs": [
+          {
+            "name": "Skype",
+            "handle": "anwin.joselyn"
+          }
+        ],
+        "others": [null],
+        "altEmail": "anwin@myplaybook.in",
+        "altPhone": "96200 23555",
+        "mainEmail": "anwin@theplaybook.rocks",
+        "mainPhone": "91450 77550",
+        "description": "PB Founder",
+        "linkedInUrl": "https://linkedin.com/in/anwin",
+        "socialMedia": [
+          {
+            "name": "Twitter",
+            "handle": "https://twitter.com/anwinj"
+          }
+        ]
+      },
+      "responsibilities": {
+        "role": "CEO",
+        "teams": [1, 2, 3, 4, 5, 6]
+      },
+      "password": {
+        "setOn": "",
+        "currentPassword": "$2a$10$3lkHNeVw7s1ASNMtqJrDw.jknSj2wScCzXxZSw41GMyFTd/T8nXEa",
+        "resetRequestDate": "",
+        "passwordResetDate": "",
+        "resetPasswordToken": "",
+        "resetPasswordExpires": ""
+      },
+      "tokens": {
+        "isConfirmed": true,
+        "confirmedDate": "2020-10-01",
+        "confirmationCode": "",
+        "confirmationCodeExpires": ""
+      },
+      "tenantId": 3,
+      "isPBAdmin": true,
+      "mainEmail": "anwin@theplaybook.rocks",
+      "cta": {
+        "type": "Super Admin",
+        "remarks": "1st User in V3 PB DB"
+      },
+      "isActive": true,
+      "createdAt": "2020-10-07T11:43:19.004Z",
+      "updatedAt": "2020-10-24T10:13:36.349Z"
+    }
+  ],
+  "saUsers": [
+    {
+      "id": 1,
+      "profile": {
+        "title": "Founder",
+        "avatar": "",
+        "persona": "",
+        "fullName": "Anwin Joselyn",
+        "shortName": "Anwin",
+        "department": "Tech"
+      },
+      "contactInfo": {
+        "IMs": [
+          {
+            "name": "Skype",
+            "handle": "anwin.joselyn"
+          }
+        ],
+        "others": [null],
+        "altEmail": "anwin@myplaybook.in",
+        "altPhone": "96200 23555",
+        "mainEmail": "anwin@theplaybook.rocks",
+        "mainPhone": "91450 77550",
+        "description": "PB Founder",
+        "linkedInUrl": "https://linkedin.com/in/anwin",
+        "socialMedia": [
+          {
+            "name": "Twitter",
+            "handle": "https://twitter.com/anwinj"
+          }
+        ]
+      },
+      "responsibilities": {
+        "role": "CEO",
+        "teams": [1, 2, 3, 4, 5, 6]
+      },
+      "password": {
+        "setOn": "",
+        "currentPassword": "$2a$10$3lkHNeVw7s1ASNMtqJrDw.jknSj2wScCzXxZSw41GMyFTd/T8nXEa",
+        "resetRequestDate": "",
+        "passwordResetDate": "",
+        "resetPasswordToken": "",
+        "resetPasswordExpires": ""
+      },
+      "tokens": {
+        "isConfirmed": true,
+        "confirmedDate": "2020-10-01",
+        "confirmationCode": "",
+        "confirmationCodeExpires": ""
+      },
+      "tenantId": 3,
+      "isPBAdmin": true,
+      "mainEmail": "anwin@theplaybook.rocks",
+      "cta": {
+        "type": "Super Admin",
+        "remarks": "1st User in V3 PB DB"
+      },
+      "isActive": true,
+      "createdAt": "2020-10-07T11:43:19.004Z",
+      "updatedAt": "2020-10-24T10:13:36.349Z"
+    }
+  ],
+  "csUsers": [
+    {
+      "id": 1,
+      "profile": {
+        "title": "Founder",
+        "avatar": "",
+        "persona": "",
+        "fullName": "Anwin Joselyn",
+        "shortName": "Anwin",
+        "department": "Tech"
+      },
+      "contactInfo": {
+        "IMs": [
+          {
+            "name": "Skype",
+            "handle": "anwin.joselyn"
+          }
+        ],
+        "others": [null],
+        "altEmail": "anwin@myplaybook.in",
+        "altPhone": "96200 23555",
+        "mainEmail": "anwin@theplaybook.rocks",
+        "mainPhone": "91450 77550",
+        "description": "PB Founder",
+        "linkedInUrl": "https://linkedin.com/in/anwin",
+        "socialMedia": [
+          {
+            "name": "Twitter",
+            "handle": "https://twitter.com/anwinj"
+          }
+        ]
+      },
+      "responsibilities": {
+        "role": "CEO",
+        "teams": [1, 2, 3, 4, 5, 6]
+      },
+      "password": {
+        "setOn": "",
+        "currentPassword": "$2a$10$3lkHNeVw7s1ASNMtqJrDw.jknSj2wScCzXxZSw41GMyFTd/T8nXEa",
+        "resetRequestDate": "",
+        "passwordResetDate": "",
+        "resetPasswordToken": "",
+        "resetPasswordExpires": ""
+      },
+      "tokens": {
+        "isConfirmed": true,
+        "confirmedDate": "2020-10-01",
+        "confirmationCode": "",
+        "confirmationCodeExpires": ""
+      },
+      "tenantId": 3,
+      "isPBAdmin": true,
+      "mainEmail": "anwin@theplaybook.rocks",
+      "cta": {
+        "type": "Super Admin",
+        "remarks": "1st User in V3 PB DB"
+      },
+      "isActive": true,
+      "createdAt": "2020-10-07T11:43:19.004Z",
+      "updatedAt": "2020-10-24T10:13:36.349Z"
+    }
+  ],
+  "reUsers": [
+    {
+      "id": 1,
+      "profile": {
+        "title": "Founder",
+        "avatar": "",
+        "persona": "",
+        "fullName": "Anwin Joselyn",
+        "shortName": "Anwin",
+        "department": "Tech"
+      },
+      "contactInfo": {
+        "IMs": [
+          {
+            "name": "Skype",
+            "handle": "anwin.joselyn"
+          }
+        ],
+        "others": [null],
+        "altEmail": "anwin@myplaybook.in",
+        "altPhone": "96200 23555",
+        "mainEmail": "anwin@theplaybook.rocks",
+        "mainPhone": "91450 77550",
+        "description": "PB Founder",
+        "linkedInUrl": "https://linkedin.com/in/anwin",
+        "socialMedia": [
+          {
+            "name": "Twitter",
+            "handle": "https://twitter.com/anwinj"
+          }
+        ]
+      },
+      "responsibilities": {
+        "role": "CEO",
+        "teams": [1, 2, 3, 4, 5, 6]
+      },
+      "password": {
+        "setOn": "",
+        "currentPassword": "$2a$10$3lkHNeVw7s1ASNMtqJrDw.jknSj2wScCzXxZSw41GMyFTd/T8nXEa",
+        "resetRequestDate": "",
+        "passwordResetDate": "",
+        "resetPasswordToken": "",
+        "resetPasswordExpires": ""
+      },
+      "tokens": {
+        "isConfirmed": true,
+        "confirmedDate": "2020-10-01",
+        "confirmationCode": "",
+        "confirmationCodeExpires": ""
+      },
+      "tenantId": 3,
+      "isPBAdmin": true,
+      "mainEmail": "anwin@theplaybook.rocks",
+      "cta": {
+        "type": "Super Admin",
+        "remarks": "1st User in V3 PB DB"
+      },
+      "isActive": true,
+      "createdAt": "2020-10-07T11:43:19.004Z",
+      "updatedAt": "2020-10-24T10:13:36.349Z"
+    }
+  ]
+}

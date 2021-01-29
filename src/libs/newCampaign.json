@@ -1,0 +1,206 @@
+{
+  "first": {
+    "tenantId": null,
+    "userId": null,
+    "createdBy": null,
+    "cmDetails": {
+      "name": "Generic",
+      "objective": "To continuously generate leads",
+      "description": "A generic campaign where you can hold leads that have no known source",
+      "isForever": false
+    },
+    "cmType": "Others",
+    "cmMedium": "Custom",
+    "cmChannelType": "Direct",
+    "cmChannel": "Others",
+    "isComplete": false,
+    "cmDates": {
+      "startDate": "",
+      "endDate": "",
+      "actualStartDate": "",
+      "actualEndDate": ""
+    },
+    "cmBudgets": {
+      "estCost": 0,
+      "estEarning": 0,
+      "actCost": 0,
+      "actEarning": 0
+    },
+    "cmOutput": {
+      "estReach": [],
+      "actReach": [],
+      "failedReach": [],
+      "verifiedLeads": []
+    },
+    "cmAudience": {
+      "name": "",
+      "companyTypes": {
+        "isActive": false,
+        "data": []
+      },
+      "contactTypes": {
+        "isActive": false,
+        "data": []
+      },
+      "personas": {
+        "isActive": false,
+        "data": []
+      },
+      "industries": {
+        "isActive": false,
+        "data": []
+      },
+      "empSize": {
+        "isActive": false,
+        "min": "",
+        "max": ""
+      },
+      "location": {
+        "isActive": false,
+        "city": "",
+        "country": "",
+        "state": ""
+      }
+    },
+    "cmChecklist": [
+      {
+        "id": 1,
+        "details": {
+          "clName": "",
+          "clObjective": "",
+          "clSCriteria": "",
+          "csFCriteria": "",
+          "SAction": "",
+          "FAction": ""
+        },
+        "dates": {
+          "estStartDate": "",
+          "actStartDate": "",
+          "completedDate": "",
+          "estEndDate": ""
+        },
+        "audience": {
+          "estReach": [],
+          "actReach": [],
+          "failedReach": [],
+          "DND": [],
+          "successes": []
+        },
+        "connectedTo": {
+          "type": "",
+          "id": null,
+          "options": ["play", "script", "template", "collateral"]
+        },
+        "order": 1,
+        "inProgress": false,
+        "isComplete": false,
+        "createdBy": null,
+        "lastModifiedBy": null,
+        "isActive": false
+      }
+    ],
+    "isActive": true
+  },
+  "template": {
+    "tenantId": null,
+    "userId": null,
+    "createdBy": null,
+    "cmDetails": {
+      "name": "",
+      "objective": "",
+      "description": "",
+      "isForever": false
+    },
+    "cmType": "",
+    "cmMedium": "",
+    "cmChannelType": "",
+    "cmChannel": "",
+    "isComplete": false,
+    "cmDates": {
+      "startDate": "",
+      "endDate": "",
+      "actualStartDate": "",
+      "actualEndDate": ""
+    },
+    "cmBudgets": {
+      "estCost": 0,
+      "estEarning": 0,
+      "actCost": 0,
+      "actEarning": 0
+    },
+    "cmOutput": {
+      "estReach": [],
+      "actReach": [],
+      "failedReach": [],
+      "verifiedLeads": []
+    },
+    "cmAudience": {
+      "name": "",
+      "companyTypes": {
+        "isActive": false,
+        "data": []
+      },
+      "contactTypes": {
+        "isActive": false,
+        "data": []
+      },
+      "personas": {
+        "isActive": false,
+        "data": []
+      },
+      "industries": {
+        "isActive": false,
+        "data": []
+      },
+      "empSize": {
+        "isActive": false,
+        "min": "",
+        "max": ""
+      },
+      "location": {
+        "isActive": false,
+        "city": "",
+        "country": "",
+        "state": ""
+      }
+    },
+    "cmChecklist": [
+      {
+        "id": 1,
+        "details": {
+          "clName": "",
+          "clObjective": "",
+          "clSCriteria": "",
+          "csFCriteria": "",
+          "SAction": "",
+          "FAction": ""
+        },
+        "dates": {
+          "estStartDate": "",
+          "actStartDate": "",
+          "completedDate": "",
+          "estEndDate": ""
+        },
+        "audience": {
+          "estReach": [],
+          "actReach": [],
+          "failedReach": [],
+          "DND": [],
+          "successes": []
+        },
+        "connectedTo": {
+          "type": "",
+          "id": null,
+          "options": ["play", "script", "template", "collateral"]
+        },
+        "order": 1,
+        "inProgress": false,
+        "isComplete": false,
+        "createdBy": null,
+        "lastModifiedBy": null,
+        "isActive": false
+      }
+    ],
+    "isActive": true
+  }
+}
