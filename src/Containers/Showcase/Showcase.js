@@ -15,6 +15,8 @@ import Kanban2 from "./Components/Kanban2/Kanban2";
 import Activities from "./Components/Tasks/Tasks";
 import Parser from "./Components/Parser/Parser";
 import Templates from "./Components/Templates/Templates";
+//import Charts2 from "./Components/Charts2/Charts2";
+import Timeline1 from "./Components/Timeline1/Timeline1";
 import Overview from "./Overview";
 
 import "./Showcase.css";
@@ -35,6 +37,9 @@ const stages = require("./Data/stages.json").data;
 const users = require("./Data/users.json").data;
 
 const leadsData = require("../../libs/leadsData.json");
+const tenantData = require("../../libs/tenantData.json");
+const token = require("../../libs/token.json");
+const oldDatas = require("../../libs/oldDatas.json");
 
 const ShowCase = props => {
   const [filteredDeals, setFilteredDeals] = useState([]);
@@ -57,7 +62,7 @@ const ShowCase = props => {
   const [sdDeals, setSdDeals] = useState([]);
   const [saDeals, setsaDeals] = useState([]);
   const [filtered, setFiltered] = useState(null);
-  const [tabKey, setTabKey] = useState("4");
+  const [tabKey, setTabKey] = useState("1");
   const [theActs, setTheActs] = useState([]);
   const [dataLoaded, setLoaded] = useState(false);
 
@@ -882,27 +887,34 @@ const ShowCase = props => {
           >
             Content of Tab Pane 6
           </TabPane>
-          <TabPane
-            disabled
-            tab={
-              <div>
-                AntD Charts<sup>*</sup>
-              </div>
-            }
-            key="7"
-          >
-            Content of Tab Pane 7
+          <TabPane tab={<div>AntD Charts</div>} key="7">
+            AntD charts example will come here
+            {/*dataLoaded ? (
+              <Charts2 leadsData={leadsData} commonData={common} />
+            ) : (
+              "Loading..."
+            )*/}
           </TabPane>
           <TabPane
-            disabled
             tab={
               <div>
                 Timeline 1<sup>*</sup>
               </div>
             }
             key="8"
+            disabled
           >
-            Content of Tab Pane 8
+            {dataLoaded ? (
+              <Timeline1
+                commonData={common}
+                tenantData={tenantData}
+                token={token}
+                oldDatas={oldDatas}
+                users={users}
+              />
+            ) : (
+              "Loading..."
+            )}
           </TabPane>
           <TabPane
             disabled

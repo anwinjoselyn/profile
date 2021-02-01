@@ -1,0 +1,285 @@
+.Timeline1 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #343a40;
+  font-size: 16px;
+  background: white;
+  display: block;
+}
+
+.Timeline1.container-fluid {
+  width: 100%;
+}
+
+.Timeline1 .col {
+  display: block !important;
+}
+
+.Timeline1 .card {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding-bottom: 0px;
+}
+
+.Timeline1 .CardHeader {
+  margin-bottom: 10px;
+
+  border-radius: 0px 0px 5px 5px;
+}
+
+.Timeline1 .HeaderSpan {
+  font-size: 24px;
+}
+
+.InnerNavTop {
+}
+
+.Timeline1 .navbar .para {
+  margin: 5px !important;
+  display: inline;
+}
+
+.Timeline1 .navbar {
+  margin: 0;
+  padding: 5px;
+}
+
+.Timeline1 .navbar-brand {
+  font-weight: bold;
+  color: #f2f3f3;
+  font-size: 16px;
+}
+
+.Timeline1 .buttonDeal {
+  font-size: 16px;
+  min-width: 54px;
+  min-height: 32px;
+}
+
+.SpanStage {
+  float: left;
+  font-size: 12px;
+  margin-left: 10px;
+  color: #343a40;
+}
+.SpanDate {
+  float: right;
+  font-size: 12px;
+  margin-right: 10px;
+  color: #dddddd !important;
+}
+
+.Timeline1 .Pipe {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.Timeline1 .Pipe .list-group {
+}
+
+.Timeline1 .Pipe .LGItem:nth-child(n) {
+  border-radius: 16px 40px 40px 16px;
+  margin: 0.5px;
+  min-height: 15px;
+}
+
+.Timeline1 .Pipe .LGItem {
+  background: #adadad;
+  font-size: 12px !important;
+  padding: 2px !important;
+  margin: 2px !important;
+  text-align: center;
+  font-weight: bold;
+}
+
+.Timeline1 .Pipe .LGItemActive {
+  background: #59a2a8;
+  font-size: 12px;
+  padding: 2px !important;
+  margin: 2px !important;
+  text-align: center;
+  font-weight: bold;
+  color: #dddddd;
+}
+
+.Timeline1 .Pipe .LGItemActive:nth-child(n) {
+  border-radius: 16px 40px 40px 16px;
+  margin: 0.5px;
+  min-height: 15px;
+}
+
+.Timeline1 .Details {
+  border: 0.5px solid #f2f3f3;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #adadad;
+}
+
+.Timeline1 .Details .card-header {
+  text-align: center;
+  padding-top: 5px !important;
+}
+
+.Timeline1 .Details .SpanDetails {
+  white-space: nowrap;
+
+  max-width: 50%;
+  overflow: hidden; /* "overflow" value must be different from  visible"*/
+  -o-text-overflow: ellipsis; /* Opera < 11*/
+  text-overflow: ellipsis;
+  padding: 0px !important;
+  margin: 0px !important;
+  text-align: right;
+  float: right;
+  color: #adadad;
+}
+
+.Timeline1 .Details .SpanHeading {
+  white-space: nowrap;
+  padding: 0px !important;
+  margin: 0px !important;
+  max-width: 50%;
+  overflow: hidden; /* "overflow" value must be different from  visible"*/
+  -o-text-overflow: ellipsis; /* Opera < 11*/
+  text-overflow: ellipsis;
+}
+
+.Overview .row {
+  padding: 0px 0px 10px 0px;
+}
+
+.Org {
+  border: 0.5px solid #f2f3f3;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #adadad;
+}
+
+.Timeline1 .Org .card-header {
+  text-align: center;
+  padding-top: 5px !important;
+}
+
+.Org .SpanOrg {
+  display: block;
+  float: right;
+  padding: 5px;
+  font-size: 16px;
+  color: #adadad;
+}
+
+.Contact {
+  border: 0.5px solid #f2f3f3;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #adadad;
+}
+
+.Contact .SpanContact {
+  display: block;
+  float: right;
+  padding: 5px;
+  font-size: 16px;
+  color: #adadad;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.Timeline1 .Contact .card-header {
+  text-align: center;
+  padding-top: 5px !important;
+}
+
+.Contacts {
+  border: 0.5px solid #f2f3f3;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #adadad;
+  text-align: left;
+}
+
+.Contacts .SpanContacts {
+  margin-bottom: 5px;
+  padding: 5px;
+  border: 0px;
+  text-align: left;
+  font-size: 16px;
+  color: #adadad;
+}
+
+.Timeline1 .Contacts .card-header {
+  text-align: center;
+  padding-top: 5px !important;
+}
+
+.Overview {
+  border: 0.5px solid #f2f3f3;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #adadad;
+}
+
+.Timeline1 .Overview .card-header {
+  text-align: center;
+  padding-top: 5px !important;
+  color: #adadad !important;
+}
+
+.ContentHeader .navbar-content .para {
+  margin: 5px;
+}
+
+.ContentHeader .navbar-content {
+  margin: 0;
+  padding: 0;
+}
+
+.ContentHeader .CHCBody {
+  margin: 0;
+  padding: 0;
+}
+
+.BadgeCard {
+  display: block;
+  width: 98%;
+  color: #adadad;
+}
+
+.BadgeCard .SpanContacts {
+  display: block;
+  margin-bottom: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+.badge {
+  padding: 5px;
+  margin: auto;
+  display: block;
+  max-width: 100px;
+  font-size: 12px;
+  color: #dddddd;
+}
+
+.NormalSpan {
+  cursor: pointer;
+}
+
+.wonDeal {
+  background-color: green;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  font-size: 12px;
+  color: white;
+}
+
+.Timeline1 .archivedSpan {
+  font-size: 16px !important;
+}

@@ -1,0 +1,58 @@
+.notesSpan {
+  max-height: 150px !important;
+  white-space: nowrap;
+  overflow: hidden; /* "overflow" value must be different from  visible"*/
+  -o-text-overflow: ellipsis; /* Opera < 11*/
+  text-overflow: ellipsis;
+  padding: 0px !important;
+  margin: 0px !important;
+  display: block;
+  font-size: 14px;
+  color: #dddddd !important;
+}
+
+.contactSpan {
+  color: #adadad !important;
+}
+
+.notesSpan a {
+  color: #adadad !important;
+}
+
+.time-line-header .card-header {
+  border: 0px !important;
+  padding: 5px !important;
+  background: #343a40;
+  border-radius: 5px;
+  color: #adadad;
+  font-size: 16px;
+  border: 0px;
+}
+
+.topHeaderSpan {
+  margin-left: 250px;
+  text-align: center;
+}
+
+.time-line-header {
+  display: block;
+  border: 0px;
+}
+
+#timelineTooltip {
+  color: #343a40;
+  background-color: #faffff;
+  font-size: 14px;
+  display: block !important;
+  min-width: 800px !important;
+  text-align: left;
+}
+
+#timelineTooltip .tooltip-inner {
+  color: #343a40;
+  background-color: #faffff;
+  font-size: 14px;
+  display: block !important;
+  min-width: 800px !important;
+  text-align: left;
+}

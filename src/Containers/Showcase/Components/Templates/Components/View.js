@@ -79,14 +79,14 @@ const TemplateView = props => {
                     {
                       props.categories.filter(
                         c => c.id === props.record.eTemplateData.categoryId
-                      )[0].name
+                      )[0].categoryName
                     }{" "}
                     <Tooltip
                       placement="topRight"
                       title={
                         props.categories.filter(
                           c => c.id === props.record.eTemplateData.categoryId
-                        )[0].description
+                        )[0].categoryDesc
                       }
                     >
                       <i className="far fa-question-circle opaqueIcon" />

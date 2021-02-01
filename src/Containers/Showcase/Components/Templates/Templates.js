@@ -371,7 +371,7 @@ const Template = props => {
               )
               ? props.commonData.masterCategories.filter(
                   c => c.id === record.scriptData.categoryId
-                )[0].name
+                )[0].categoryName
               : "---"
             : details.type === "play"
             ? record.playData.categoryId &&
@@ -380,7 +380,7 @@ const Template = props => {
               )
               ? props.commonData.masterCategories.filter(
                   c => c.id === record.playData.categoryId
-                )[0].name
+                )[0].categoryName
               : "---"
             : details.type === "collateral"
             ? record.collateralData.categoryId &&
@@ -389,7 +389,7 @@ const Template = props => {
               )
               ? props.commonData.masterCategories.filter(
                   c => c.id === record.collateralData.categoryId
-                )[0].name
+                )[0].categoryName
               : "---"
             : details.type === "template"
             ? record.eTemplateData.categoryId &&
@@ -398,7 +398,7 @@ const Template = props => {
               )
               ? props.commonData.masterCategories.filter(
                   c => c.id === record.eTemplateData.categoryId
-                )[0].name
+                )[0].categoryName
               : "---"
             : "---"
           : "---"
