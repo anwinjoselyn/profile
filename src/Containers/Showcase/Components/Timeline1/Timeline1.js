@@ -37,6 +37,7 @@ import ShowOrgs from "./Components/ShowOrgs";
 import ShowDetails from "./Components/ShowDetails";
 import ShowOneContact from "./Components/ShowOneContact";
 import SmartBcc from "./Components/SmartBcc";
+import Explanation from "./Components/Explanation";
 
 import axios from "axios";
 
@@ -136,7 +137,8 @@ export default class Timeline1 extends Component {
           : [],
       editICPData: false,
       showArchiveDeal: false,
-      showReactivate: false
+      showReactivate: false,
+      showExp: false
     };
   }
 
@@ -145,7 +147,7 @@ export default class Timeline1 extends Component {
       let note = [];
       let deal = this.props.oldDatas.deal;
 
-      console.log("deal", deal);
+      //console.log("deal", deal);
       let dealDoesNotExist = false;
       if (isEmpty(deal)) {
         dealDoesNotExist = true;
@@ -157,7 +159,7 @@ export default class Timeline1 extends Component {
 
       let dealUserId =
         deal !== undefined && deal.userId !== undefined ? deal.userId : null;
-      console.log("dealUserId", dealUserId);
+      //console.log("dealUserId", dealUserId);
       //console.log("users.data.data", users.data.data);
 
       let syncedEmails = this.props.oldDatas.syncedEmails;
@@ -165,7 +167,7 @@ export default class Timeline1 extends Component {
       this.setState({
         syncedEmails: syncedEmails
       });
-      console.log("syncedEmails", syncedEmails);
+      //console.log("syncedEmails", syncedEmails);
 
       this.setState({
         deal: deal !== undefined ? deal : {},
@@ -198,13 +200,13 @@ export default class Timeline1 extends Component {
 
         let people = this.props.oldDatas.people;
 
-        console.log("people", people);
+        //console.log("people", people);
         this.setState({
           org: org,
           orgName: org.orgName,
           people: people
         });
-        console.log("org", org);
+        //console.log("org", org);
       }
 
       let orgs = this.props.oldDatas.orgs;
@@ -212,7 +214,7 @@ export default class Timeline1 extends Component {
       this.setState({
         orgs: orgs
       });
-      console.log("orgs", orgs);
+      //console.log("orgs", orgs);
 
       let contact = this.props.oldDatas.contact;
 
@@ -221,7 +223,7 @@ export default class Timeline1 extends Component {
         contactName: contact.contactName
       });
 
-      console.log("contact", contact);
+      //console.log("contact", contact);
 
       //console.log("this.state.people", this.state.people);
 
@@ -231,18 +233,18 @@ export default class Timeline1 extends Component {
         contacts: contacts
       });
 
-      console.log("contacts", contacts);
+      //console.log("contacts", contacts);
 
       const pipes = this.props.oldDatas.pipes;
 
       this.setState({
         pipes: pipes
       });
-      console.log("pipes", pipes);
+      //console.log("pipes", pipes);
 
       const stages = this.props.oldDatas.stages;
 
-      console.log("stages", stages);
+      //  console.log("stages", stages);
 
       this.setState(
         {
@@ -252,7 +254,7 @@ export default class Timeline1 extends Component {
           const stage = stages
             .filter(s => s.isActive)
             .filter(stage => parseInt(deal.stageId) === parseInt(stage.id));
-          console.log("stage", stage);
+          //  console.log("stage", stage);
           this.setState({
             stageName: stage[0].stageName,
             pipeId: stage[0].pipeId,
@@ -262,10 +264,10 @@ export default class Timeline1 extends Component {
           });
         }
       );
-      console.log("this.state.deal.stageId", this.state.deal.stageId);
-      console.log("stageName", this.state.stageName);
+      //console.log("this.state.deal.stageId", this.state.deal.stageId);
+      //console.log("stageName", this.state.stageName);
 
-      console.log("pipeId", this.state.pipeId);
+      //console.log("pipeId", this.state.pipeId);
 
       //testing some data... remove later
 
@@ -275,12 +277,12 @@ export default class Timeline1 extends Component {
         deals: deals
       });
 
-      console.log("deals", deals);
+      //console.log("deals", deals);
 
       let dealTeamId = this.props.commonData.dealStatuses.filter(
         ds => ds.id === deal.statusId
       )[0].teamId;
-      console.log("dealTeamId", dealTeamId);
+      //console.log("dealTeamId", dealTeamId);
 
       this.setState({
         dealTeamId: dealTeamId
@@ -292,7 +294,7 @@ export default class Timeline1 extends Component {
         activities: activities
       });
 
-      console.log("activities", activities);
+      //console.log("activities", activities);
 
       this.createTimelines(
         activities,
@@ -309,7 +311,7 @@ export default class Timeline1 extends Component {
       this.setState({
         dealDoesNotExist: true
       });
-      console.log(err);
+      //console.log(err);
     }
   }
 
@@ -333,7 +335,7 @@ export default class Timeline1 extends Component {
       object2 = activities.filter(act => isFuture(parseISO(act.activityDate)));
 
       object.forEach((act, key) => {
-        console.log("act.id", act.id);
+        //console.log("act.id", act.id);
         let activityType = activityTypes.filter(
           type => type.id === act.activityTypeId
         );
@@ -363,14 +365,14 @@ export default class Timeline1 extends Component {
           contactId: contactId,
           orgId: orgId
         };
-        console.log("tempAct", tempAct);
+        //console.log("tempAct", tempAct);
         events.push(tempAct);
       });
 
-      console.log("events(object)", object);
+      //  console.log("events(object)", object);
 
       object2.forEach((act, key) => {
-        console.log("act.id", act.id);
+        //  console.log("act.id", act.id);
         let activityType = activityTypes.filter(
           type => type.id === act.activityTypeId
         );
@@ -400,13 +402,13 @@ export default class Timeline1 extends Component {
           contactId: contactId,
           orgId: orgId
         };
-        console.log("tempAct", tempAct);
+        //  console.log("tempAct", tempAct);
         futureEvents.push(tempAct);
       });
-      console.log("events(object2)", object2);
+      //  console.log("events(object2)", object2);
     }
 
-    console.log("events", events);
+    //  console.log("events", events);
 
     //Push notes also into timeline just like activities
     let notePast = [];
@@ -418,7 +420,7 @@ export default class Timeline1 extends Component {
       noteFuture = notes.filter(item => isFuture(parseISO(item.createdAt)));
 
       notePast.forEach((note, key) => {
-        console.log("note.id", note.id);
+        //  console.log("note.id", note.id);
 
         let icon = "far fa-sticky-note";
 
@@ -445,14 +447,14 @@ export default class Timeline1 extends Component {
           contactId: contactId,
           orgId: orgId
         };
-        console.log("tempNote", tempNote);
+        //  console.log("tempNote", tempNote);
         events.push(tempNote);
       });
 
-      console.log("events(object)", object);
+      //  console.log("events(object)", object);
 
       noteFuture.forEach((note, key) => {
-        console.log("note.id", note.id);
+        //  console.log("note.id", note.id);
 
         let icon = "far fa-sticky-note";
 
@@ -479,10 +481,10 @@ export default class Timeline1 extends Component {
           contactId: contactId,
           orgId: orgId
         };
-        console.log("tempNote", tempNote);
+        //console.log("tempNote", tempNote);
         futureEvents.push(tempNote);
       });
-      console.log("events(object2)", object2);
+      //console.log("events(object2)", object2);
     }
 
     //Push Emails also into timeline
@@ -495,7 +497,7 @@ export default class Timeline1 extends Component {
       emailsFuture = emails.filter(item => isFuture(parseISO(item.timeStamp)));
 
       emailsPast.forEach((email, key) => {
-        console.log("email.id", email.id);
+        //  console.log("email.id", email.id);
 
         let icon = "fas fa-at";
 
@@ -532,14 +534,14 @@ export default class Timeline1 extends Component {
           contactId: contactId,
           orgId: orgId
         };
-        console.log("tempEmail", tempEmail);
+        //console.log("tempEmail", tempEmail);
         events.push(tempEmail);
       });
 
-      console.log("events(object)", object);
+      //  console.log("events(object)", object);
 
       emailsFuture.forEach((email, key) => {
-        console.log("email.id", email.id);
+        //  console.log("email.id", email.id);
 
         let icon = "fas fa-at";
 
@@ -576,10 +578,10 @@ export default class Timeline1 extends Component {
           contactId: contactId,
           orgId: orgId
         };
-        console.log("tempEmail", tempEmail);
+        //  console.log("tempEmail", tempEmail);
         futureEvents.push(tempEmail);
       });
-      console.log("events(object2)", object2);
+      //  console.log("events(object2)", object2);
     }
 
     this.setState({
@@ -621,7 +623,7 @@ export default class Timeline1 extends Component {
   };
 
   setReactivation = deal => {
-    console.log("this.state.deal", this.state.deal);
+    //console.log("this.state.deal", this.state.deal);
     this.setState({
       dataLoaded: false
     });
@@ -697,14 +699,14 @@ export default class Timeline1 extends Component {
       let stage = this.state.stages.filter(
         stage => parseInt(selectedStage) === parseInt(stage.id)
       );
-      console.log("stage", stage);
+      //console.log("stage", stage);
       this.setState({
         stageName: stage[0].stageName
       });
     });
-    console.log("selected", selectedStage);
-    console.log("this.state.deal.stageId", this.state.deal.stageId);
-    console.log("stageName", this.state.stageName);
+    //console.log("selected", selectedStage);
+    //console.log("this.state.deal.stageId", this.state.deal.stageId);
+    //console.log("stageName", this.state.stageName);
 
     if (this.state.deal.stageId === selectedStage) return;
 
@@ -715,7 +717,7 @@ export default class Timeline1 extends Component {
       headers: { Authorization: `${this.props.authToken}` }
     })
       .then(data => {
-        console.log("updated stage for deal", data.data.data);
+        //console.log("updated stage for deal", data.data.data);
 
         this.setState({
           deal: data.data.data
@@ -743,7 +745,7 @@ export default class Timeline1 extends Component {
       data: { userId: this.state.newUserId },
       headers: { Authorization: `${this.props.authToken}` }
     }).then(data => {
-      console.log("received data", data.data.data);
+      //console.log("received data", data.data.data);
       let dealUserName = this.state.users.filter(
         u => u.id === this.state.newUserId
       )[0].userName;
@@ -795,13 +797,13 @@ export default class Timeline1 extends Component {
   handleChangeNotes = event => {
     //event.preventDefault();
 
-    console.log("event.target.value", event.target.value);
+    //console.log("event.target.value", event.target.value);
 
     this.setState({
       note: event.target.value
     });
 
-    console.log("event.target.id", event.target.id);
+    //console.log("event.target.id", event.target.id);
 
     //call axios here
   };
@@ -817,7 +819,7 @@ export default class Timeline1 extends Component {
       contactId: parseInt(this.state.deal.contactId)
     };
 
-    console.log("Notes data before submit", data);
+    //console.log("Notes data before submit", data);
 
     axios({
       method: "POST",
@@ -825,7 +827,7 @@ export default class Timeline1 extends Component {
       data: data,
       headers: { Authorization: `${this.props.authToken}` }
     }).then(data => {
-      console.log("data", data.data.data);
+      //console.log("data", data.data.data);
       let notes = this.state.connectedNotes;
       notes.push(data.data.data);
 
@@ -851,13 +853,13 @@ export default class Timeline1 extends Component {
   handleDealChange(event) {
     event.preventDefault();
 
-    console.log("event.target.value", event.target.value);
+    //console.log("event.target.value", event.target.value);
 
     this.setState({
       [event.target.id]: event.target.value
     });
 
-    console.log("event.target.id", event.target.id);
+    //  console.log("event.target.id", event.target.id);
   }
 
   updateDealValue = dealValue => {
@@ -891,8 +893,8 @@ export default class Timeline1 extends Component {
 
   handleDValueChange = event => {
     //event.preventDefault();
-    console.log("event.target.id", event.target.id);
-    console.log("event.target.value", event.target.value);
+    //  console.log("event.target.id", event.target.id);
+    //console.log("event.target.value", event.target.value);
 
     this.setState({
       [event.target.id]: event.target.value
@@ -931,7 +933,7 @@ export default class Timeline1 extends Component {
       headers: { Authorization: `${this.props.authToken}` }
     })
       .then(data => {
-        console.log("update deal", data.data.data);
+        //  console.log("update deal", data.data.data);
 
         this.setState({
           deal: data.data.data,
@@ -956,7 +958,7 @@ export default class Timeline1 extends Component {
       headers: { Authorization: `${this.props.authToken}` }
     })
       .then(data => {
-        console.log("update deal", data.data.data);
+        //console.log("update deal", data.data.data);
 
         this.setState({
           deal: data.data.data,
@@ -989,7 +991,7 @@ export default class Timeline1 extends Component {
   };
 
   updateActivities = (activity, type) => {
-    console.log("activity", activity);
+    //  console.log("activity", activity);
     if (type === "new") {
       this.setState({
         addActivity: false
@@ -1063,7 +1065,7 @@ export default class Timeline1 extends Component {
       orgName: org.orgName
     });
 
-    console.log("this.state.org", this.state.org);
+    //  console.log("this.state.org", this.state.org);
   };
 
   updateDealContact = contact => {
@@ -1071,7 +1073,7 @@ export default class Timeline1 extends Component {
       contact: contact
     });
 
-    console.log("this.state.contact", this.state.contact);
+    //console.log("this.state.contact", this.state.contact);
   };
 
   updateContacts = (contact, type) => {
@@ -1153,15 +1155,14 @@ export default class Timeline1 extends Component {
         variant="light"
         expand="sm"
         border-radius="5"
-        className="navbar"
+        className="justify-content-between"
         style={{ borderRadius: "0px 5px 5px 0px", color: "#dddddd" }}
       >
         {/*<Navbar.Toggle />*/}
-
-        <Navbar.Collapse>
+        <Container fluid style={{ display: "block", width: "100%" }}>
           <Row>
-            <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-              <Nav className="justify-content-center InnerNavTop">
+            <Col>
+              <Nav className="mr-auto InnerNavTop">
                 {this.state.dataLoaded && !this.state.dealEditing ? (
                   <p className="para">
                     <span
@@ -1227,18 +1228,13 @@ export default class Timeline1 extends Component {
                   </Form>
                 )}
               </Nav>
-            </Col>
-            <Col xs={6} sm={6} md={6} lg={6} xl={6}>
               {/*<Nav
             className="mr-auto justify-content-center"
             defaultActiveKey="/deals/all"
           />*/}
-
-              <Nav
-                justify
-                className="justify-content-end"
-                style={{ float: "right" }}
-              >
+            </Col>
+            <Col>
+              <Nav className="justify-content-end">
                 <p className="para" />
                 {this.state.deal.isActive ? (
                   this.state.deal.statusId !== 8 ? (
@@ -1380,7 +1376,7 @@ export default class Timeline1 extends Component {
               </Nav>
             </Col>
           </Row>
-        </Navbar.Collapse>
+        </Container>
       </Navbar>
     );
   }
@@ -1422,20 +1418,12 @@ export default class Timeline1 extends Component {
             <p className="para" />
             <p className="para">
               <i className="NormalSpan fas fa-user" />{" "}
-              <span className="NormalSpan">
-                <a href={`/people/details/${this.state.contact.id}`}>
-                  {this.state.contactName}
-                </a>
-              </span>
+              <span className="NormalSpan">{this.state.contactName}</span>
             </p>
             <p className="para" />
             <p className="para">
               <i className="NormalSpan fas fa-building" />{" "}
-              <span className="NormalSpan">
-                <a href={`/orgs/details/${this.state.org.id}`}>
-                  {this.state.orgName}
-                </a>
-              </span>
+              <span className="NormalSpan">{this.state.orgName}</span>
             </p>
           </Nav>
           <Nav justify className="justify-content-end ml-auto">
@@ -1801,122 +1789,144 @@ export default class Timeline1 extends Component {
       <Container fluid className="Timeline1">
         <Row>
           <Col>
-            <Card bg="dark" className="CardHeader">
-              <Card.Body>
-                {this.state.dealDoesNotExist ? this.nonexistantDeal() : null}
-                <div>{this.state.dataLoaded && this.renderNav()}</div>
-                <div>{this.state.dataLoaded && this.renderNav2()}</div>
-                <div>{this.state.dataLoaded && this.renderPipe()}</div>
-              </Card.Body>
-            </Card>
+            <LoaderButton
+              variant="outline-info"
+              size="sm"
+              text={
+                this.state.showExp
+                  ? "Toggle for Deal View"
+                  : "Toggle for Brief Explanation"
+              }
+              onClick={() => this.setState({ showExp: !this.state.showExp })}
+            />
           </Col>
         </Row>
-        <Row>
-          <Col xs="3" lg="3" md="3" sm="3" xl="3">
-            {" "}
-            {this.state.dataLoaded && (
-              <ShowDetails
-                deal={this.state.deal}
-                dealStatuses={this.state.dealStatuses}
-                reasons={this.state.reasons}
-                updateDealSource={this.updateDealSource}
-                authToken={this.props.authToken}
-              />
-            )}
-            {this.state.dataLoaded && (
-              <ShowOrgs
-                companyTypes={this.state.companyTypes}
-                org={this.state.org}
-                deal={this.state.deal}
-                authToken={this.props.authToken}
-                updateDealOrg={this.updateDealOrg}
-              />
-            )}
-            {this.state.dataLoaded && (
-              <ShowOneContact
-                contactTypes={this.state.contactTypes}
-                contact={this.state.contact}
-                authToken={this.props.authToken}
-                updateDealContact={this.updateDealContact}
-                updateFunction={this.updateDeal}
-                deal={this.state.deal}
-                people={this.state.people}
-                type="deal"
-              />
-            )}
-            {this.state.dataLoaded && (
-              <ShowContacts
-                people={this.state.people}
-                authToken={this.props.authToken}
-                contactTypes={this.props.commonData.contactTypes}
-                tenantId={this.state.tenantId}
-                userId={this.state.userId}
-                org={this.state.org}
-                updateFunction={this.updateContacts}
-              />
-            )}
-            {this.state.dataLoaded && (
-              <Overview
-                deal={this.state.deal}
-                activities={this.state.activities}
-              />
-            )}
-            {this.state.dataLoaded && (
-              <SmartBcc
-                deal={this.state.deal}
-                updateFunction={this.updateSmartBcc}
-                authToken={this.props.authToken}
-              />
-            )}
-          </Col>
+        {!this.state.showExp ? (
+          <React.Fragment>
+            <Row>
+              <Col>
+                <Card bg="dark" className="CardHeader">
+                  <Card.Body>
+                    {this.state.dealDoesNotExist
+                      ? this.nonexistantDeal()
+                      : null}
+                    <div>{this.state.dataLoaded && this.renderNav()}</div>
+                    <div>{this.state.dataLoaded && this.renderNav2()}</div>
+                    <div>{this.state.dataLoaded && this.renderPipe()}</div>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+            <Row>
+              <Col xs="3" lg="3" md="3" sm="3" xl="3">
+                {" "}
+                {this.state.dataLoaded && (
+                  <ShowDetails
+                    deal={this.state.deal}
+                    dealStatuses={this.state.dealStatuses}
+                    reasons={this.state.reasons}
+                    updateDealSource={this.updateDealSource}
+                    authToken={this.props.authToken}
+                  />
+                )}
+                {this.state.dataLoaded && (
+                  <ShowOrgs
+                    companyTypes={this.state.companyTypes}
+                    org={this.state.org}
+                    deal={this.state.deal}
+                    authToken={this.props.authToken}
+                    updateDealOrg={this.updateDealOrg}
+                  />
+                )}
+                {this.state.dataLoaded && (
+                  <ShowOneContact
+                    contactTypes={this.state.contactTypes}
+                    contact={this.state.contact}
+                    authToken={this.props.authToken}
+                    updateDealContact={this.updateDealContact}
+                    updateFunction={this.updateDeal}
+                    deal={this.state.deal}
+                    people={this.state.people}
+                    type="deal"
+                  />
+                )}
+                {this.state.dataLoaded && (
+                  <ShowContacts
+                    people={this.state.people}
+                    authToken={this.props.authToken}
+                    contactTypes={this.props.commonData.contactTypes}
+                    tenantId={this.state.tenantId}
+                    userId={this.state.userId}
+                    org={this.state.org}
+                    updateFunction={this.updateContacts}
+                  />
+                )}
+                {this.state.dataLoaded && (
+                  <Overview
+                    deal={this.state.deal}
+                    activities={this.state.activities}
+                  />
+                )}
+                {this.state.dataLoaded && (
+                  <SmartBcc
+                    deal={this.state.deal}
+                    updateFunction={this.updateSmartBcc}
+                    authToken={this.props.authToken}
+                  />
+                )}
+              </Col>
 
-          <Col
-            xs="9"
-            lg="9"
-            md="9"
-            sm="9"
-            xl="9"
-            style={{ margin: "0px", padding: "0px" }}
-          >
-            {this.state.dataLoaded && (
-              <Card bg="dark" className="BadgeCard">
-                <Card.Body>
-                  {this.state.dataLoaded && this.renderContentHeader()}
+              <Col
+                xs="9"
+                lg="9"
+                md="9"
+                sm="9"
+                xl="9"
+                style={{ margin: "0px", padding: "0px" }}
+              >
+                {this.state.dataLoaded && (
+                  <Card bg="dark" className="BadgeCard">
+                    <Card.Body>
+                      {this.state.dataLoaded && this.renderContentHeader()}
 
-                  <br />
+                      <br />
 
-                  <Badge className="badge" pill variant="info">
-                    Planned
-                  </Badge>
-                  <br />
-                  {this.state.dataLoaded &&
-                  this.state.futureEvents.length > 0 ? (
-                    <Timeline items={futureEvents} />
-                  ) : (
-                    <span className="SpanContacts">
-                      Nothing scheduled for this deal
-                    </span>
-                  )}
-                  <br />
+                      <Badge className="badge" pill variant="info">
+                        Planned
+                      </Badge>
+                      <br />
+                      {this.state.dataLoaded &&
+                      this.state.futureEvents.length > 0 ? (
+                        <Timeline items={futureEvents} />
+                      ) : (
+                        <span className="SpanContacts">
+                          Nothing scheduled for this deal
+                        </span>
+                      )}
+                      <br />
 
-                  <Badge className="badge" pill variant="info">
-                    Past
-                  </Badge>
-                  <br />
-                  {this.state.dataLoaded && this.state.events.length > 0 ? (
-                    <Timeline items={events} />
-                  ) : (
-                    <span className="SpanContacts">
-                      No actions have happened yet on this deal
-                    </span>
-                  )}
-                </Card.Body>
-              </Card>
-            )}
+                      <Badge className="badge" pill variant="info">
+                        Past
+                      </Badge>
+                      <br />
+                      {this.state.dataLoaded && this.state.events.length > 0 ? (
+                        <Timeline items={events} />
+                      ) : (
+                        <span className="SpanContacts">
+                          No actions have happened yet on this deal
+                        </span>
+                      )}
+                    </Card.Body>
+                  </Card>
+                )}
 
-            <br />
-          </Col>
-        </Row>
+                <br />
+              </Col>
+            </Row>
+          </React.Fragment>
+        ) : (
+          <Explanation />
+        )}
       </Container>
     );
   }

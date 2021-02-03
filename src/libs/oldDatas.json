@@ -889,7 +889,7 @@
     "mqlUserId": 2,
     "sqlUserId": 3,
     "wonUserId": null,
-    "smartBCC": null,
+    "smartBCC": "capustancitydeal@parse.playbook.rocks",
     "icpData": {
       "scores": [
         {
@@ -1621,140 +1621,6 @@
       "isActive": true,
       "createdAt": "2020-04-08T10:35:19.542Z",
       "updatedAt": "2020-04-08T11:49:06.708Z"
-    },
-    {
-      "id": 8,
-      "tenantId": 1,
-      "userId": 2,
-      "fromAddress": {
-        "name": "Anwin Joselyn",
-        "email": "anwin@myplaybook.in"
-      },
-      "toAddress": {
-        "data": [
-          {
-            "name": "Anwin Joselyn",
-            "email": "anwin@theplaybook.rocks"
-          }
-        ]
-      },
-      "ccAddress": {
-        "data": [
-          {
-            "name": "Anwin Joselyn",
-            "email": "anwinj@gmail.com"
-          }
-        ]
-      },
-      "bccAddress": {
-        "data": [
-          {
-            "name": "",
-            "email": "d24f2b40-7980-11ea-98c3-53c5c152b51f+deal+awesome@parse.theplaybook.rocks"
-          }
-        ]
-      },
-      "subject": "Covid-19 Stay safe",
-      "timeStamp": "2020-04-08T10:35:19.420Z",
-      "headers": {
-        "headers": "Received: by mx0049p1mdw1.sendgrid.net with SMTP id p6CtbyuZgs Wed, 08 Apr 2020 10:35:18 +0000 (UTC)\nReceived: from mail-ua1-f47.google.com (mail-ua1-f47.google.com [209.85.222.47]) by mx0049p1mdw1.sendgrid.net (Postfix) with ESMTPS id 9CC1DA85874 for <d24f2b40-7980-11ea-98c3-53c5c152b51f+deal+awesome@parse.theplaybook.rocks>; Wed,  8 Apr 2020 10:35:18 +0000 (UTC)\nReceived: by mail-ua1-f47.google.com with SMTP id y17so2461841uap.13 for <d24f2b40-7980-11ea-98c3-53c5c152b51f+deal+awesome@parse.theplaybook.rocks>; Wed, 08 Apr 2020 03:35:18 -0700 (PDT)\nDKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=myplaybook-in.20150623.gappssmtp.com; s=20150623; h=mime-version:from:date:message-id:subject:to; bh=PPDm5WtaImDViEnOZ114xgr2SFKbCsqr2njng148MXo=; b=pIjnoCAFM9ZZgwSPHWEke3dYkQpzLjzMXHGcjm6XDNN6l6kH6x630bflB9eLFe025A qsiCxFdLWHwK00a6IxVgJrBfM325vkSIZAGMshy6FDnVfA9jgu/1F9xIdcNm0a2m/uXz ++KHasTX/hJugdiya+EmafJyCjAZOKpssHkZSFkuxHiU816m0dYCVDDXQih/hRMwVJEa CYdUNE8JMdXt//dDadgWiUkAAXRXJCZ4EyHw64z46DAZ3eEPK9BY2rO6oGL702wcMAOD qbOotOto15KbAjD3l3JIK9uL4AJEKFcuLcL8D/S9znsVtEEErHDHTdMHWzUsJsRySHn/ VCJw==\nX-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:mime-version:from:date:message-id:subject:to; bh=PPDm5WtaImDViEnOZ114xgr2SFKbCsqr2njng148MXo=; b=YMpDc8DUeMnZ71Av34HHiFFJaZYbgMBvlq1tkyh8sPsbvhQ6tQ5DMhv8NH0zBlhkD/ dk7/KxxOkw1Ndm+7O955hsZVMAm+fNMZuHa0h5vYmuZrJ+gc179AyGEY3POZpKrLfetO SbSxoPU/tZekbEoo5Y1942oWIChCQE8mywmoDD+TNMo+aSqICgDhOmRsXxbSGmFZB0Hx mxCeB9caVwYi9bjEvjjj//uvviWG4y5xPcXzqRq6HsGG6XmIGggtXKb9LpnGtnKPuPuf Gr4wJ36zpVpg99aWeGaqAqKP647sX9mQm3DEiUIXRzJ+AkOD2gHe1/A6G8zhGTx1JrHP EHNg==\nX-Gm-Message-State: AGi0PuYTklPm0ah4WIpuAVMQtWIzEu2MZU7E5Ci/54fEQRLFC10aqpU2 SFSBgWEtxkMuJWGSXZ+u+Yjg0WTjjihTTKR4sihDDw==\nX-Google-Smtp-Source: APiQypJrMFM/mNWbwtRH9+M/SR/YhS+DGswQFaMVGU+u+BqsBEGhHa9EWZklNxXfLMJqfeye29EEKVMzEbbYMHVbR1k=\nX-Received: by 2002:ab0:703:: with SMTP id h3mr4814682uah.65.1586342118102; Wed, 08 Apr 2020 03:35:18 -0700 (PDT)\nMIME-Version: 1.0\nFrom: Anwin Joselyn <anwin@myplaybook.in>\nDate: Wed, 8 Apr 2020 16:05:07 +0530\nMessage-ID: <CAFagEoE_yu411Pu3LaQdvj+WR1w6vUNzrQEa71EaKoLxqpHjDQ@mail.gmail.com>\nSubject: Covid-19 Stay safe\nTo: Anwin Joselyn <anwinj@gmail.com>\nContent-Type: multipart/alternative; boundary=\"000000000000712ff205a2c50e76\"\n"
-      },
-      "replyTo": {
-        "name": "Anwin Joselyn",
-        "email": "anwin@myplaybook.in"
-      },
-      "dealId": 5,
-      "rDealId": null,
-      "customerId": null,
-      "messageId": "",
-      "attachments": {
-        "data": []
-      },
-      "content": {
-        "data": [
-          {
-            "type": "text/html",
-            "value": "<div dir=\"ltr\">Dear Anwin,<div><br></div><div>We all feel the pinch due to this pandemic. Since we understand and being in the same boat please take advantage of our 3 months payment waiver.</div><div><br></div><div>Note: No payments required from April - June. Stay safe and sane!</div><div>Anwin</div></div>\n"
-          },
-          {
-            "type": "text/plain",
-            "value": "Dear Anwin,\r\n\r\nWe all feel the pinch due to this pandemic. Since we understand and being\r\nin the same boat please take advantage of our 3 months payment waiver.\r\n\r\nNote: No payments required from April - June. Stay safe and sane!\r\nAnwin\n"
-          }
-        ]
-      },
-      "contactId": 67,
-      "orgId": 67,
-      "uniqueString": "d24f2b40-7980-11ea-98c3-53c5c152b51f",
-      "isActive": true,
-      "createdAt": "2020-04-08T10:35:19.542Z",
-      "updatedAt": "2020-06-09T11:58:36.636Z"
-    },
-    {
-      "id": 9,
-      "tenantId": 1,
-      "userId": 2,
-      "fromAddress": {
-        "name": "Anwin Joselyn",
-        "email": "anwin@myplaybook.in"
-      },
-      "toAddress": {
-        "data": [
-          {
-            "name": "Anwin Joselyn",
-            "email": "anwin@theplaybook.rocks"
-          }
-        ]
-      },
-      "ccAddress": {
-        "data": [
-          {
-            "name": "Anwin Joselyn",
-            "email": "anwinj@gmail.com"
-          }
-        ]
-      },
-      "bccAddress": {
-        "data": [
-          {
-            "name": "",
-            "email": "d24f2b40-7980-11ea-98c3-53c5c152b51f+deal+awesome@parse.theplaybook.rocks"
-          }
-        ]
-      },
-      "subject": "Covid-19 Stay safe",
-      "timeStamp": "2020-04-08T10:35:19.420Z",
-      "headers": {
-        "headers": "Received: by mx0049p1mdw1.sendgrid.net with SMTP id p6CtbyuZgs Wed, 08 Apr 2020 10:35:18 +0000 (UTC)\nReceived: from mail-ua1-f47.google.com (mail-ua1-f47.google.com [209.85.222.47]) by mx0049p1mdw1.sendgrid.net (Postfix) with ESMTPS id 9CC1DA85874 for <d24f2b40-7980-11ea-98c3-53c5c152b51f+deal+awesome@parse.theplaybook.rocks>; Wed,  8 Apr 2020 10:35:18 +0000 (UTC)\nReceived: by mail-ua1-f47.google.com with SMTP id y17so2461841uap.13 for <d24f2b40-7980-11ea-98c3-53c5c152b51f+deal+awesome@parse.theplaybook.rocks>; Wed, 08 Apr 2020 03:35:18 -0700 (PDT)\nDKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=myplaybook-in.20150623.gappssmtp.com; s=20150623; h=mime-version:from:date:message-id:subject:to; bh=PPDm5WtaImDViEnOZ114xgr2SFKbCsqr2njng148MXo=; b=pIjnoCAFM9ZZgwSPHWEke3dYkQpzLjzMXHGcjm6XDNN6l6kH6x630bflB9eLFe025A qsiCxFdLWHwK00a6IxVgJrBfM325vkSIZAGMshy6FDnVfA9jgu/1F9xIdcNm0a2m/uXz ++KHasTX/hJugdiya+EmafJyCjAZOKpssHkZSFkuxHiU816m0dYCVDDXQih/hRMwVJEa CYdUNE8JMdXt//dDadgWiUkAAXRXJCZ4EyHw64z46DAZ3eEPK9BY2rO6oGL702wcMAOD qbOotOto15KbAjD3l3JIK9uL4AJEKFcuLcL8D/S9znsVtEEErHDHTdMHWzUsJsRySHn/ VCJw==\nX-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20161025; h=x-gm-message-state:mime-version:from:date:message-id:subject:to; bh=PPDm5WtaImDViEnOZ114xgr2SFKbCsqr2njng148MXo=; b=YMpDc8DUeMnZ71Av34HHiFFJaZYbgMBvlq1tkyh8sPsbvhQ6tQ5DMhv8NH0zBlhkD/ dk7/KxxOkw1Ndm+7O955hsZVMAm+fNMZuHa0h5vYmuZrJ+gc179AyGEY3POZpKrLfetO SbSxoPU/tZekbEoo5Y1942oWIChCQE8mywmoDD+TNMo+aSqICgDhOmRsXxbSGmFZB0Hx mxCeB9caVwYi9bjEvjjj//uvviWG4y5xPcXzqRq6HsGG6XmIGggtXKb9LpnGtnKPuPuf Gr4wJ36zpVpg99aWeGaqAqKP647sX9mQm3DEiUIXRzJ+AkOD2gHe1/A6G8zhGTx1JrHP EHNg==\nX-Gm-Message-State: AGi0PuYTklPm0ah4WIpuAVMQtWIzEu2MZU7E5Ci/54fEQRLFC10aqpU2 SFSBgWEtxkMuJWGSXZ+u+Yjg0WTjjihTTKR4sihDDw==\nX-Google-Smtp-Source: APiQypJrMFM/mNWbwtRH9+M/SR/YhS+DGswQFaMVGU+u+BqsBEGhHa9EWZklNxXfLMJqfeye29EEKVMzEbbYMHVbR1k=\nX-Received: by 2002:ab0:703:: with SMTP id h3mr4814682uah.65.1586342118102; Wed, 08 Apr 2020 03:35:18 -0700 (PDT)\nMIME-Version: 1.0\nFrom: Anwin Joselyn <anwin@myplaybook.in>\nDate: Wed, 8 Apr 2020 16:05:07 +0530\nMessage-ID: <CAFagEoE_yu411Pu3LaQdvj+WR1w6vUNzrQEa71EaKoLxqpHjDQ@mail.gmail.com>\nSubject: Covid-19 Stay safe\nTo: Anwin Joselyn <anwinj@gmail.com>\nContent-Type: multipart/alternative; boundary=\"000000000000712ff205a2c50e76\"\n"
-      },
-      "replyTo": {
-        "name": "Anwin Joselyn",
-        "email": "anwin@myplaybook.in"
-      },
-      "dealId": 5,
-      "rDealId": null,
-      "customerId": null,
-      "messageId": "",
-      "attachments": {
-        "data": []
-      },
-      "content": {
-        "data": [
-          {
-            "type": "text/html",
-            "value": "<div dir=\"ltr\">Dear Anwin,<div><br></div><div>We all feel the pinch due to this pandemic. Since we understand and being in the same boat please take advantage of our 3 months payment waiver.</div><div><br></div><div>Note: No payments required from April - June. Stay safe and sane!</div><div>Anwin</div></div>\n"
-          },
-          {
-            "type": "text/plain",
-            "value": "Dear Anwin,\r\n\r\nWe all feel the pinch due to this pandemic. Since we understand and being\r\nin the same boat please take advantage of our 3 months payment waiver.\r\n\r\nNote: No payments required from April - June. Stay safe and sane!\r\nAnwin\n"
-          }
-        ]
-      },
-      "contactId": 67,
-      "orgId": 67,
-      "uniqueString": "d24f2b40-7980-11ea-98c3-53c5c152b51f",
-      "isActive": true,
-      "createdAt": "2020-04-08T10:35:19.542Z",
-      "updatedAt": "2020-06-09T12:00:57.565Z"
     }
   ],
   "people": [

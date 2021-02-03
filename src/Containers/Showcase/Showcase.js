@@ -62,7 +62,7 @@ const ShowCase = props => {
   const [sdDeals, setSdDeals] = useState([]);
   const [saDeals, setsaDeals] = useState([]);
   const [filtered, setFiltered] = useState(null);
-  const [tabKey, setTabKey] = useState("1");
+  const [tabKey, setTabKey] = useState("0");
   const [theActs, setTheActs] = useState([]);
   const [dataLoaded, setLoaded] = useState(false);
 
@@ -895,15 +895,7 @@ const ShowCase = props => {
               "Loading..."
             )*/}
           </TabPane>
-          <TabPane
-            tab={
-              <div>
-                Timeline 1<sup>*</sup>
-              </div>
-            }
-            key="8"
-            disabled
-          >
+          <TabPane tab={<div>Timeline 1</div>} key="8">
             {dataLoaded ? (
               <Timeline1
                 commonData={common}

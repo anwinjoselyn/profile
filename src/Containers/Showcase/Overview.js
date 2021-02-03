@@ -18,7 +18,16 @@ const Overview = props => {
       Where I have not shown actual functions, I will upload Screenshots (where
       tabs are disabled for now)
     </div>,
-    <div>Can show demo of all these if so desired</div>
+    <div>Can show demo of all these if so desired</div>,
+    <div>
+      <a
+        href="https://github.com/anwinjoselyn/profile/tree/master"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        GitHub link
+      </a>
+    </div>
   ];
 
   return (

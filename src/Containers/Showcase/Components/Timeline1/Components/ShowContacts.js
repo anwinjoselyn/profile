@@ -52,16 +52,7 @@ export default class ShowContacts extends Component<*, State> {
     return (
       <Card bg="dark" className="Contacts">
         <Card.Header>
-          <Card.Title>
-            All Contacts
-            <LoaderButton
-              className="far fa-plus-square"
-              variant="outline-secondary"
-              style={{ float: "right", marginRight: "5px" }}
-              onClick={() => this.setState({ addContactModalFlag: true })}
-              size="sm"
-            />
-          </Card.Title>
+          <Card.Title>All Contacts</Card.Title>
         </Card.Header>
         <Card.Body>
           {this.props.people
@@ -73,7 +64,6 @@ export default class ShowContacts extends Component<*, State> {
                       variant="outline-secondary"
                       size="md"
                       className="SpanContacts"
-                      href={`/people/details/${contact.id}`}
                     />{" "}
                     {!contact.isActive ? "(Inactive)" : null}
                   </React.Fragment>

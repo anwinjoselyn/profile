@@ -106,7 +106,7 @@ export default class ShowDetails extends Component<*, State> {
             </Form.Group>
           </Form>
           <p>
-            Reason {"  "}
+            <span className="SpanHeading">Reason {"  "}</span>
             <span className="SpanDetails">
               {this.props.reasons
                 ? this.props.reasons.map(reason => {
@@ -120,7 +120,7 @@ export default class ShowDetails extends Component<*, State> {
             </span>
           </p>
           <p>
-            Status {"  "}
+            <span className="SpanHeading">Status {"  "}</span>
             <span className="SpanDetails">
               {this.props.dealStatuses
                 ? this.props.dealStatuses.map(status => {

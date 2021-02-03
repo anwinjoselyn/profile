@@ -1,7 +1,7 @@
 .notesSpan {
   max-height: 150px !important;
   white-space: nowrap;
-  overflow: hidden; /* "overflow" value must be different from  visible"*/
+  overflow: scroll;
   -o-text-overflow: ellipsis; /* Opera < 11*/
   text-overflow: ellipsis;
   padding: 0px !important;
@@ -9,6 +9,7 @@
   display: block;
   font-size: 14px;
   color: #dddddd !important;
+  width: inherit !important;
 }
 
 .contactSpan {

@@ -27,7 +27,7 @@ import "./Kanban1.css";
 const Kanban1 = props => {
   const renderNavNew = () => {
     return (
-      <Container>
+      <Container fluid>
         <Row
           style={{
             display: "inline-flex",
@@ -37,7 +37,7 @@ const Kanban1 = props => {
         >
           <Col xs={4} sm={4} md={4} lg={4} xl={4} style={{ width: "100%" }}>
             <Button
-              variant="dark"
+              variant="light"
               size="sm"
               block
               style={{ cursor: "pointer" }}
@@ -49,7 +49,7 @@ const Kanban1 = props => {
           </Col>
           <Col xs={4} sm={4} md={4} lg={4} xl={4} style={{ width: "100%" }}>
             <Button
-              variant="dark"
+              variant="light"
               size="sm"
               block
               style={{ cursor: "pointer" }}
@@ -61,7 +61,7 @@ const Kanban1 = props => {
           </Col>
           <Col xs={4} sm={4} md={4} lg={4} xl={4} style={{ width: "100%" }}>
             <Button
-              variant="dark"
+              variant="light"
               size="sm"
               block
               style={{ cursor: "pointer" }}
@@ -239,58 +239,56 @@ const Kanban1 = props => {
           xl={12}
           style={{ margin: "0px", padding: "0px" }}
         >
-          <Card>
-            <Card bg="dark" style={{ border: "0px" }}>
-              <Card.Header
-                style={{
-                  marginBottom: "0px",
-                  paddingBottom: "0px",
-                  border: "0px"
-                }}
-              >
-                {renderNavNew()}
-              </Card.Header>
+          <Card style={{ border: "0px" }}>
+            <Card.Header
+              style={{
+                margin: "0px",
+                padding: "0px",
+                border: "0px"
+              }}
+            >
+              {renderNavNew()}
+            </Card.Header>
 
-              <Card.Body style={{ margin: "0px", padding: "0px" }}>
-                {props.counter === 0 ? (
-                  <PipeView
-                    filtered={props.filtered}
-                    stagesLength={props.filtered.length}
-                    onDragOver={props.onDragOver}
-                    onDrop={props.onDrop}
-                    filteredDeals={props.filteredDeals}
-                    total={props.total}
-                    pipeDeals={props.pipeDeals}
-                  />
-                ) : props.counter === 1 ? (
-                  <DealsList
-                    roleId={1}
-                    filteredDeals={props.filteredDeals}
-                    stages={props.stages}
-                    orgs={props.orgs}
-                    people={props.contacts}
-                    tenantId={1}
-                    tenant={props.tenant}
-                    currency={"USD"}
-                    dealStatuses={props.common.dealStatuses}
-                    users={props.users}
-                    userId={props.selectedUserId}
-                    allTenantActs={props.activities}
-                    currentPage={1}
-                    perPage={10}
-                    lastPage={Math.ceil(props.filteredDeals.length / 10)}
-                    updateFunction={props.updateGeneralBulk}
-                    pipelines={props.pipelines}
-                    reasons={props.common.reasons}
-                    common={props.common}
-                  />
-                ) : props.counter === 2 ? (
-                  <Explanation />
-                ) : (
-                  "Retrieving all your current deals..."
-                )}
-              </Card.Body>
-            </Card>
+            <Card.Body style={{ margin: "0px", padding: "0px" }}>
+              {props.counter === 0 ? (
+                <PipeView
+                  filtered={props.filtered}
+                  stagesLength={props.filtered.length}
+                  onDragOver={props.onDragOver}
+                  onDrop={props.onDrop}
+                  filteredDeals={props.filteredDeals}
+                  total={props.total}
+                  pipeDeals={props.pipeDeals}
+                />
+              ) : props.counter === 1 ? (
+                <DealsList
+                  roleId={1}
+                  filteredDeals={props.filteredDeals}
+                  stages={props.stages}
+                  orgs={props.orgs}
+                  people={props.contacts}
+                  tenantId={1}
+                  tenant={props.tenant}
+                  currency={"USD"}
+                  dealStatuses={props.common.dealStatuses}
+                  users={props.users}
+                  userId={props.selectedUserId}
+                  allTenantActs={props.activities}
+                  currentPage={1}
+                  perPage={10}
+                  lastPage={Math.ceil(props.filteredDeals.length / 10)}
+                  updateFunction={props.updateGeneralBulk}
+                  pipelines={props.pipelines}
+                  reasons={props.common.reasons}
+                  common={props.common}
+                />
+              ) : props.counter === 2 ? (
+                <Explanation />
+              ) : (
+                "Retrieving all your current deals..."
+              )}
+            </Card.Body>
           </Card>
         </Col>
       </Row>

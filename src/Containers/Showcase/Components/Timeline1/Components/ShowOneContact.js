@@ -163,33 +163,16 @@ export default class ShowOneContact extends Component<*, State> {
 
   renderContact() {
     return (
-      <Card bg="dark" className="Contact">
+      <Card bg="dark" className="Contact1">
         <Card.Header>
-          <Card.Title>
-            Main Contact
-            <LoaderButton
-              className="fas fa-edit"
-              variant="outline-secondary"
-              style={{ float: "right", marginRight: "5px" }}
-              onClick={() => this.setState({ changeContactModalFlag: true })}
-              size="sm"
-            />
-          </Card.Title>
+          <Card.Title>Main Contact</Card.Title>
         </Card.Header>
         <Card.Body>
           <Form onBlur={this.updateContact}>
             <Form.Group controlId="contactName">
               Name {"  "}
-              <LoaderButton
-                className="far fa-edit"
-                variant="dark"
-                onDoubleClick={this.toggleEditName}
-                size="sm"
-              />
               <span className="SpanContact" onDoubleClick={this.toggleEditName}>
-                <a href={`/people/details/${this.props.contact.id}`}>
-                  {this.props.contact.contactName}
-                </a>
+                {this.props.contact.contactName}
               </span>
               {this.state.editName && (
                 <Form.Control
@@ -309,17 +292,9 @@ export default class ShowOneContact extends Component<*, State> {
                 className="SpanContact"
                 onDoubleClick={this.toggleEditLinkedin}
               >
-                {this.props.contact.linkedInUrl ? (
-                  <a
-                    href={this.props.contact.linkedInUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {this.props.contact.linkedInUrl}
-                  </a>
-                ) : (
-                  "Not Set"
-                )}
+                {this.props.contact.linkedInUrl
+                  ? this.props.contact.linkedInUrl
+                  : "Not Set"}
               </span>
               {this.state.editLinkedin && (
                 <Form.Control

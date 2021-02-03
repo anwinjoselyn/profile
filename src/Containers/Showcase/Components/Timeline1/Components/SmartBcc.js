@@ -90,7 +90,12 @@ export default class SmartBcc extends Component<*, State> {
               }
               variant="dark"
               size="sm"
-              style={{ float: "right", margin: "2px", padding: "2px" }}
+              style={{
+                float: "right",
+                margin: "2px",
+                padding: "2px",
+                maxWidth: "2em"
+              }}
             />
           </Card.Title>
         </Card.Header>
@@ -99,15 +104,20 @@ export default class SmartBcc extends Component<*, State> {
             <span
               style={
                 this.state.clipSuccessful
-                  ? { background: "#adadad", color: "#343a40" }
-                  : null
+                  ? {
+                      background: "#adadad",
+                      color: "#343a40",
+                      fontSize: "1.5em",
+                      width: "inherit"
+                    }
+                  : { fontSize: "1.3em", width: "inherit", color: "#fcfcfc" }
               }
             >
               {this.props.deal.smartBCC !== undefined &&
               this.props.deal.smartBCC !== null &&
               this.props.deal.smartBCC !== "" ? (
                 this.state.clipSuccessful ? (
-                  this.props.deal.smartBCC + "copied"
+                  this.props.deal.smartBCC + " copied"
                 ) : (
                   this.props.deal.smartBCC
                 )
@@ -117,7 +127,7 @@ export default class SmartBcc extends Component<*, State> {
                   size="md"
                   text="Generate"
                   block
-                  onClick={this.generateSmartBcc}
+                  disabled
                 />
               )}
             </span>

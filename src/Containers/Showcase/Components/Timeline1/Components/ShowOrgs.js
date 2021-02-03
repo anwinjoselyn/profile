@@ -114,17 +114,7 @@ export default class ShowOrgs extends Component<*, State> {
           <Form onBlur={this.updateOrg}>
             <Form.Group controlId="orgName">
               Name {"  "}
-              <LoaderButton
-                className="far fa-edit"
-                variant="dark"
-                onDoubleClick={this.toggleEditOrg}
-                size="sm"
-              />
-              <span className="SpanOrg">
-                <a href={`/orgs/details/${this.props.org.id}`}>
-                  {this.props.org.orgName}
-                </a>
-              </span>
+              <span className="SpanOrg">{this.props.org.orgName}</span>
               {this.state.editOrgName && (
                 <Form.Control
                   onChange={this.handleChange}
@@ -200,17 +190,7 @@ export default class ShowOrgs extends Component<*, State> {
           <br />
           Website {"  "}
           <span className="SpanOrg">
-            {this.props.org.url ? (
-              <a
-                href={this.props.org.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {this.props.org.url}
-              </a>
-            ) : (
-              "Not Set"
-            )}
+            {this.props.org.url ? this.props.org.url : "Not Set"}
           </span>
           <br />
           <br />
