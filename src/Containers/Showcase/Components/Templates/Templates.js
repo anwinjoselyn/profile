@@ -16,7 +16,7 @@ import {
 
 import { EditorState, convertToRaw, convertFromRaw } from "draft-js";
 
-import axios from "axios";
+//import axios from "axios";
 
 import CreateTemplate from "./Components/Create";
 import TemplateView from "./Components/View";
@@ -36,10 +36,10 @@ const { Content } = Layout;
 
 const Template = props => {
   const [loading, setLoading] = useState(true);
-  const [rightMenu, setRightMenu] = useState({
+  /*  const [rightMenu, setRightMenu] = useState({
     show: false,
     data: "stats"
-  });
+  });*/
   const [minorTab, setMinor] = useState("templates");
   const [selectedRecords, setSelected] = useState({
     loading: false,
@@ -253,13 +253,13 @@ const Template = props => {
       //console.log("error", error);
     }
   };
-
+  /*
   const submitNewPlaybook = async e => {
     e.preventDefault();
     //console.log("newPlaybook.record", newPlaybook.record);
 
     try {
-      /*
+
       const result = await axios({
         method: "POST",
         url: `/${"dev"}/v3/playbooks/create`,
@@ -267,7 +267,7 @@ const Template = props => {
         data: newPlaybook.record
       });
       console.log("result.data", result.data);
-*/
+
       if (newPlaybook.record) {
         let playbooks = props.leadsData.playbooks;
         playbooks.push(newPlaybook.record);
@@ -290,7 +290,7 @@ const Template = props => {
       //console.log("error", error);
     }
   };
-
+*/
   const submitNewPlaybookE = async e => {
     e.preventDefault();
     //console.log("newPlaybook.record", newPlaybook.record);
@@ -557,7 +557,6 @@ const Template = props => {
             setEditorState={setEditorState}
             convertFromRaw={convertFromRaw}
             EditorState={EditorState}
-            rightMenu={rightMenu}
           />
         ) : null
       ) : null
