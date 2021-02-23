@@ -95,6 +95,7 @@
 
 .Home h5 span {
   font-weight: 500;
+  color: #fa4a09;
 }
 
 .Home h2 span {
@@ -152,21 +153,60 @@ p {
 }
 
 .Home .user-btn {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   margin-top: 1em;
+}
+
+.Home .user-btn .ant-row .ant-col {
+}
+
+.Home .user-btn .ant-row .ant-col .ant-btn {
+  width: 100%;
 }
 
 @media only screen and (max-width: 425px) and (min-width: 320px) {
   .Home {
     margin: 0 !important;
+    padding: 5vh 2.5vw !important;
   }
 
-  .container-fluid {
+  .Home.container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .MainColumn,
+  .MainColumn2 {
     padding-right: 5px !important;
     padding-left: 5px !important;
   }
 
-  .MainColumn {
-    padding-right: 5px !important;
-    padding-left: 5px !important;
+  .Home .ant-card-body {
+    padding: 0;
+    margin: 0;
+  }
+
+  .Home h2 {
+    font-size: 1.2em;
+  }
+
+  .Home h5 {
+    font-size: 0.9em !important;
+    letter-spacing: 0.3em;
+  }
+
+  .Home .lead {
+    font-size: 1em;
+    margin-bottom: 2.25rem;
+    text-align: left;
+  }
+
+  .Home .user-btn .ant-row .ant-col .ant-btn {
+    padding: 0;
+    font-size: 0.8em;
+    line-height: inherit;
   }
 }

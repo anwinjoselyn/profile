@@ -32,20 +32,26 @@ const Home = props => {
           </p>
 
           <div className="user-btn">
-            <Button
-              type="warning"
-              className="btn btn-brand mr-3"
-              onClick={() => props.setSelectedKey("6")}
-            >
-              Hire Me
-            </Button>
-            <Button
-              type="warning"
-              className="btn btn-brand-border"
-              onClick={() => props.setSelectedKey("3")}
-            >
-              Skills
-            </Button>
+            <Row>
+              <Col span={12}>
+                <Button
+                  type="warning"
+                  className="btn btn-brand mr-3"
+                  onClick={() => props.setSelectedKey("6")}
+                >
+                  Hire Me
+                </Button>
+              </Col>
+              <Col span={12}>
+                <Button
+                  type="warning"
+                  className="btn btn-brand-border"
+                  onClick={() => props.setSelectedKey("3")}
+                >
+                  Skills
+                </Button>
+              </Col>
+            </Row>
           </div>
         </Col>
         <Col span={8} className="MainColumn2">

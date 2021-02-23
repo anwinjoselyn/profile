@@ -186,7 +186,7 @@
 }
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 320px) {
+@media (max-width: 320px) {
   .ThemeDiv {
     font-size: 14px;
     padding: 1em;
@@ -195,6 +195,13 @@
   .ThemeDivD {
     font-size: 14px;
     padding: 1em;
+  }
+
+  .MainMenuItem,
+  .MainMenuItemD,
+  .MainMenuItemS,
+  .MainMenuItemDS {
+    font-size: 0.5em;
   }
 }
 

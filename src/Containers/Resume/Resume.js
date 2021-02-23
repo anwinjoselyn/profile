@@ -27,11 +27,7 @@ const Resume = props => {
                   <p className="c31 title" id="h.x8fm1uorkbaw">
                     <span className="c4 c43">Anwin Joselyn</span>
                     <span className="PseudoButton">
-                      <a
-                        href="../../assets/FullStackAnwin.pdf"
-                        download
-                        target="_blank"
-                      >
+                      <a href="FullStackAnwin.pdf" download target="_blank">
                         <i className="fas fa-cloud-download-alt" /> Download CV
                       </a>
                     </span>

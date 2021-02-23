@@ -3,7 +3,7 @@ import { Button, Spinner } from "react-bootstrap";
 //import { Glyphicon } from "react-bootstrap/Glyphicon";
 import "./LoaderButton.css";
 
-export default ({
+const LoaderButton = ({
   isLoading,
   text,
   loadingText,
@@ -30,3 +30,5 @@ export default ({
     {!isLoading ? text : loadingText}
   </Button>
 );
+
+export default LoaderButton;
